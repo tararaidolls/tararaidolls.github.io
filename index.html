@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TararaiDolls — Language Dictation Library</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,sans-serif;background:linear-gradient(135deg,#e8f5f3,#f5f0eb);min-height:100vh;padding:20px}
+.container{max-width:600px;margin:0 auto;text-align:center}
+h1{color:#286464;font-size:28px;margin:30px 0 5px}
+.sub{color:#509a8c;font-size:16px;margin-bottom:10px}
+.desc{color:#666;font-size:14px;margin-bottom:40px;line-height:1.6}
+.lang-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:30px}
+.lang-card{background:#fff;border-radius:16px;padding:24px 16px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,.08);transition:transform .2s}
+.lang-card:hover{transform:translateY(-3px)}
+.flag{font-size:40px;display:block;margin-bottom:8px}
+.lang-name{color:#286464;font-weight:700;font-size:16px;display:block}
+.lang-levels{color:#888;font-size:12px;margin-top:5px}
+.coming{opacity:.4;pointer-events:none}
+.coming .lang-name::after{content:" (coming soon)";font-weight:400;font-size:11px;color:#aaa}
+.brand{color:#aaa;font-size:12px;margin-top:30px}
+.brand a{color:#509a8c;text-decoration:none}
+.how{background:#fff;border-radius:16px;padding:24px;text-align:left;margin:20px 0;box-shadow:0 4px 15px rgba(0,0,0,.05)}
+.how h3{color:#286464;margin-bottom:12px}
+.how ol{color:#555;line-height:2;padding-left:20px}
+</style></head><body>
+<div class="container">
+<h1>📚 Language Dictation Library</h1>
+<p class="sub">Listen. Write. Learn.</p>
+<p class="desc">Scan QR codes from your TararaiDolls workbook, listen to native audio, and write what you hear. The best way to train your ear!</p>
+
+<div class="lang-grid">
+  <a href="ro/beginner/" class="lang-card">
+    <span class="flag">🇷🇴</span>
+    <span class="lang-name">Romanian</span>
+    <span class="lang-levels">Beginner (20 exercises)</span>
+  </a>
+  <a href="es/beginner/" class="lang-card coming">
+    <span class="flag">🇪🇸</span>
+    <span class="lang-name">Spanish</span>
+    <span class="lang-levels">Beginner</span>
+  </a>
+  <a href="fr/beginner/" class="lang-card coming">
+    <span class="flag">🇫🇷</span>
+    <span class="lang-name">French</span>
+    <span class="lang-levels">Beginner</span>
+  </a>
+  <a href="de/beginner/" class="lang-card coming">
+    <span class="flag">🇩🇪</span>
+    <span class="lang-name">German</span>
+    <span class="lang-levels">Beginner</span>
+  </a>
+  <a href="it/beginner/" class="lang-card coming">
+    <span class="flag">🇮🇹</span>
+    <span class="lang-name">Italian</span>
+    <span class="lang-levels">Beginner</span>
+  </a>
+  <a href="pt/beginner/" class="lang-card coming">
+    <span class="flag">🇧🇷</span>
+    <span class="lang-name">Portuguese</span>
+    <span class="lang-levels">Beginner</span>
+  </a>
+</div>
+
+<div class="how">
+  <h3>How to use:</h3>
+  <ol>
+    <li>Open your TararaiDolls dictation workbook</li>
+    <li>Scan the QR code with your phone camera</li>
+    <li>Listen to the audio (at least 3 times!)</li>
+    <li>Write what you hear in the workbook</li>
+    <li>Check with the answer key at the back</li>
+  </ol>
+</div>
+
+<p class="brand">Made with ❤ by <a href="https://tararaidolls.etsy.com">TararaiDolls</a></p>
+</div></body></html>
