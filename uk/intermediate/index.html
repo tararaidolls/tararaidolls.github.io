@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Українська Dictation - Intermediate A2</title>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f0f4f4; color: #333; }
+        .header { background: rgb(40,100,100); color: white; padding: 20px; text-align: center; }
+        .header h1 { font-size: 1.8em; margin-bottom: 5px; }
+        .header .level { font-size: 0.9em; opacity: 0.8; }
+        .container { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+        .card { background: white; border-radius: 12px; padding: 25px; margin: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .exercise-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+        .exercise-link { display: block; background: rgb(40,100,100); color: white; padding: 15px; border-radius: 8px; text-decoration: none; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
+        .exercise-link:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(40,100,100,0.3); }
+        .exercise-link .num { font-size: 1.5em; font-weight: bold; }
+        .exercise-link .preview { font-size: 0.75em; opacity: 0.8; margin-top: 5px; }
+        .audio-section { margin: 20px 0; }
+        .audio-btn { display: inline-block; background: rgb(40,100,100); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 5px; cursor: pointer; border: none; font-size: 1em; }
+        .audio-btn:hover { background: rgb(30,80,80); }
+        .audio-btn.slow { background: rgb(60,130,130); }
+        .writing-area { width: 100%; min-height: 150px; padding: 15px; border: 2px solid #dce8e8; border-radius: 8px; font-size: 1.1em; line-height: 1.8; resize: vertical; font-family: inherit; }
+        .writing-area:focus { outline: none; border-color: rgb(40,100,100); }
+        .answer-section { background: #f8fafa; border-left: 4px solid rgb(40,100,100); padding: 15px 20px; margin: 15px 0; border-radius: 0 8px 8px 0; display: none; }
+        .answer-section.visible { display: block; }
+        .show-answer-btn { background: #e8f0f0; color: rgb(40,100,100); border: 2px solid rgb(40,100,100); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 1em; font-weight: bold; }
+        .show-answer-btn:hover { background: rgb(40,100,100); color: white; }
+        .hint { background: #f0f8f8; padding: 12px 16px; border-radius: 8px; margin: 10px 0; font-size: 0.9em; color: #555; }
+        .nav { display: flex; justify-content: space-between; margin: 20px 0; }
+        .nav a { color: rgb(40,100,100); text-decoration: none; font-weight: bold; }
+        .nav a:hover { text-decoration: underline; }
+        .vocab-table { width: 100%; border-collapse: collapse; }
+        .vocab-table th { background: rgb(40,100,100); color: white; padding: 10px; text-align: left; }
+        .vocab-table td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+        .vocab-table tr:nth-child(even) { background: #f8fafa; }
+        .back-link { display: inline-block; color: white; text-decoration: none; opacity: 0.8; margin-top: 5px; }
+        .back-link:hover { opacity: 1; }
+        audio { width: 100%; margin: 8px 0; }
+    </style>
+    
+</head>
+<body>
+    <div class="header">
+        <h1>📝 Українська Dictation</h1>
+        <div class="level">INTERMEDIATE A2 - Ukrainian</div>
+        <a href="../../index.html" class="back-link">← Back to All Languages</a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2 style="color: rgb(40,100,100); margin-bottom: 10px;">Welcome!</h2>
+            <p>Practice your Ukrainian listening and writing skills with these 20 intermediate exercises. Each exercise features compound sentences with past tense, opinions, and descriptions.</p>
+            <div class="hint" style="margin-top: 15px;">
+                <strong>How to practice:</strong> Listen to the audio, write what you hear, then check the answer. Start at normal speed, then use slow speed if needed.
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 style="color: rgb(40,100,100); margin-bottom: 15px;">Exercises</h2>
+            <div class="exercise-grid">
+                <a href="exercise-1.html" class="exercise-link">
+                    <div class="num">#1</div>
+                    <div class="preview">Вчора я була на ринку і купила свіж...</div>
+                </a>
+                <a href="exercise-2.html" class="exercise-link">
+                    <div class="num">#2</div>
+                    <div class="preview">Коли я була маленькою, жила в селі....</div>
+                </a>
+                <a href="exercise-3.html" class="exercise-link">
+                    <div class="num">#3</div>
+                    <div class="preview">Я хотіла б поїхати до Японії. Я чул...</div>
+                </a>
+                <a href="exercise-4.html" class="exercise-link">
+                    <div class="num">#4</div>
+                    <div class="preview">Минулого вікенду я приготувала овоч...</div>
+                </a>
+                <a href="exercise-5.html" class="exercise-link">
+                    <div class="num">#5</div>
+                    <div class="preview">Мій друг працює вчителем. Йому дуже...</div>
+                </a>
+                <a href="exercise-6.html" class="exercise-link">
+                    <div class="num">#6</div>
+                    <div class="preview">Три місяці тому я почала вчитися гр...</div>
+                </a>
+                <a href="exercise-7.html" class="exercise-link">
+                    <div class="num">#7</div>
+                    <div class="preview">Погода вчора різко змінилась. Вранц...</div>
+                </a>
+                <a href="exercise-8.html" class="exercise-link">
+                    <div class="num">#8</div>
+                    <div class="preview">Минулого року я вперше відвідала Ль...</div>
+                </a>
+                <a href="exercise-9.html" class="exercise-link">
+                    <div class="num">#9</div>
+                    <div class="preview">Мені треба закінчити проект до п'ят...</div>
+                </a>
+                <a href="exercise-10.html" class="exercise-link">
+                    <div class="num">#10</div>
+                    <div class="preview">Наш сусід купив нову машину. Вона е...</div>
+                </a>
+                <a href="exercise-11.html" class="exercise-link">
+                    <div class="num">#11</div>
+                    <div class="preview">Коли я прийшла додому, діти вже спа...</div>
+                </a>
+                <a href="exercise-12.html" class="exercise-link">
+                    <div class="num">#12</div>
+                    <div class="preview">Лікар сказав мені пити більше води ...</div>
+                </a>
+                <a href="exercise-13.html" class="exercise-link">
+                    <div class="num">#13</div>
+                    <div class="preview">Я прочитала дуже цікаву книгу про і...</div>
+                </a>
+                <a href="exercise-14.html" class="exercise-link">
+                    <div class="num">#14</div>
+                    <div class="preview">Моя сестра переїжджає в інше місто ...</div>
+                </a>
+                <a href="exercise-15.html" class="exercise-link">
+                    <div class="num">#15</div>
+                    <div class="preview">Вчора ввечері ходила з друзями в кі...</div>
+                </a>
+                <a href="exercise-16.html" class="exercise-link">
+                    <div class="num">#16</div>
+                    <div class="preview">Хочу змінити роботу. Шукаю щось бли...</div>
+                </a>
+                <a href="exercise-17.html" class="exercise-link">
+                    <div class="num">#17</div>
+                    <div class="preview">Ресторан, де ми вчора їли, мав живу...</div>
+                </a>
+                <a href="exercise-18.html" class="exercise-link">
+                    <div class="num">#18</div>
+                    <div class="preview">Досі я відвідала п'ять країн Європи...</div>
+                </a>
+                <a href="exercise-19.html" class="exercise-link">
+                    <div class="num">#19</div>
+                    <div class="preview">Мій син навчився їздити на велосипе...</div>
+                </a>
+                <a href="exercise-20.html" class="exercise-link">
+                    <div class="num">#20</div>
+                    <div class="preview">Дякую за запрошення. Ми чудово пров...</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 style="color: rgb(40,100,100); margin-bottom: 15px;">Key Vocabulary</h2>
+            <table class="vocab-table">
+                <tr><th>Українська</th><th>English</th></tr>
+                <tr><td><strong>ринок</strong></td><td>market</td></tr>
+                <tr><td><strong>фрукти</strong></td><td>fruits</td></tr>
+                <tr><td><strong>свіжі</strong></td><td>fresh</td></tr>
+                <tr><td><strong>яблука</strong></td><td>apples</td></tr>
+                <tr><td><strong>солодкі</strong></td><td>sweet</td></tr>
+                <tr><td><strong>маленька</strong></td><td>small/young</td></tr>
+                <tr><td><strong>село</strong></td><td>village/countryside</td></tr>
+                <tr><td><strong>бабуся</strong></td><td>grandmother</td></tr>
+                <tr><td><strong>сад</strong></td><td>garden</td></tr>
+                <tr><td><strong>поїхати</strong></td><td>to travel</td></tr>
+                <tr><td><strong>їжа</strong></td><td>food</td></tr>
+                <tr><td><strong>надзвичайна</strong></td><td>extraordinary</td></tr>
+                <tr><td><strong>суп</strong></td><td>soup</td></tr>
+                <tr><td><strong>овочі</strong></td><td>vegetables</td></tr>
+                <tr><td><strong>смачно</strong></td><td>delicious</td></tr>
+                <tr><td><strong>вчитель</strong></td><td>teacher</td></tr>
+                <tr><td><strong>викладати</strong></td><td>to teach</td></tr>
+                <tr><td><strong>гітара</strong></td><td>guitar</td></tr>
+                <tr><td><strong>складніше</strong></td><td>more difficult</td></tr>
+                <tr><td><strong>думала</strong></td><td>I thought</td></tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
