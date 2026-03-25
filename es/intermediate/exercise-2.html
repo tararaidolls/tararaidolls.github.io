@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 - Español Intermediate A2</title>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f0f4f4; color: #333; }
+        .header { background: rgb(40,100,100); color: white; padding: 20px; text-align: center; }
+        .header h1 { font-size: 1.8em; margin-bottom: 5px; }
+        .header .level { font-size: 0.9em; opacity: 0.8; }
+        .container { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+        .card { background: white; border-radius: 12px; padding: 25px; margin: 15px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .exercise-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; }
+        .exercise-link { display: block; background: rgb(40,100,100); color: white; padding: 15px; border-radius: 8px; text-decoration: none; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
+        .exercise-link:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(40,100,100,0.3); }
+        .exercise-link .num { font-size: 1.5em; font-weight: bold; }
+        .exercise-link .preview { font-size: 0.75em; opacity: 0.8; margin-top: 5px; }
+        .audio-section { margin: 20px 0; }
+        .audio-btn { display: inline-block; background: rgb(40,100,100); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin: 5px; cursor: pointer; border: none; font-size: 1em; }
+        .audio-btn:hover { background: rgb(30,80,80); }
+        .audio-btn.slow { background: rgb(60,130,130); }
+        .writing-area { width: 100%; min-height: 150px; padding: 15px; border: 2px solid #dce8e8; border-radius: 8px; font-size: 1.1em; line-height: 1.8; resize: vertical; font-family: inherit; }
+        .writing-area:focus { outline: none; border-color: rgb(40,100,100); }
+        .answer-section { background: #f8fafa; border-left: 4px solid rgb(40,100,100); padding: 15px 20px; margin: 15px 0; border-radius: 0 8px 8px 0; display: none; }
+        .answer-section.visible { display: block; }
+        .show-answer-btn { background: #e8f0f0; color: rgb(40,100,100); border: 2px solid rgb(40,100,100); padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 1em; font-weight: bold; }
+        .show-answer-btn:hover { background: rgb(40,100,100); color: white; }
+        .hint { background: #f0f8f8; padding: 12px 16px; border-radius: 8px; margin: 10px 0; font-size: 0.9em; color: #555; }
+        .nav { display: flex; justify-content: space-between; margin: 20px 0; }
+        .nav a { color: rgb(40,100,100); text-decoration: none; font-weight: bold; }
+        .nav a:hover { text-decoration: underline; }
+        .vocab-table { width: 100%; border-collapse: collapse; }
+        .vocab-table th { background: rgb(40,100,100); color: white; padding: 10px; text-align: left; }
+        .vocab-table td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+        .vocab-table tr:nth-child(even) { background: #f8fafa; }
+        .back-link { display: inline-block; color: white; text-decoration: none; opacity: 0.8; margin-top: 5px; }
+        .back-link:hover { opacity: 1; }
+        audio { width: 100%; margin: 8px 0; }
+    </style>
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Exercise 2</h1>
+        <div class="level">Español - INTERMEDIATE A2</div>
+        <a href="index.html" class="back-link">← Back to Exercises</a>
+    </div>
+    <div class="container">
+        <div class="nav"><a href="exercise-1.html">← Exercise 1</a> <a href="exercise-3.html">Exercise 3 →</a></div>
+        
+        <div class="card">
+            <h2 style="color: rgb(40,100,100); margin-bottom: 15px;">🎧 Listen</h2>
+            <div class="audio-section">
+                <p style="margin-bottom: 10px;"><strong>Normal Speed:</strong></p>
+                <audio controls preload="none">
+                    <source src="../../es-intermediate/audio/exercise-02-normal.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+                
+                <p style="margin: 15px 0 10px;"><strong>Slow Speed:</strong></p>
+                <audio controls preload="none">
+                    <source src="../../es-intermediate/audio/exercise-02-slow.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 style="color: rgb(40,100,100); margin-bottom: 15px;">✍️ Write</h2>
+            <div class="hint">
+                <strong>Hint:</strong> The text begins with "Cuando era pequeño, vivía ..." — Total words: 16
+            </div>
+            <textarea class="writing-area" placeholder="Write what you hear here..."></textarea>
+        </div>
+        
+        <div class="card">
+            <h2 style="color: rgb(40,100,100); margin-bottom: 15px;">✅ Check Answer</h2>
+            <button class="show-answer-btn" onclick="document.getElementById('answer-2').classList.toggle('visible'); this.textContent = this.textContent === 'Show Answer' ? 'Hide Answer' : 'Show Answer';">Show Answer</button>
+            <div id="answer-2" class="answer-section">
+                <p style="font-size: 1.1em; line-height: 1.6;">Cuando era pequeño, vivía en el campo. La casa de mis abuelos tenía un jardín grande.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 style="color: rgb(40,100,100); margin-bottom: 10px;">📚 Key Words</h2>
+            <table class="vocab-table">
+                <tr><th>Español</th><th>English</th></tr>
+                <tr><td><strong>pequeño</strong></td><td>small/young</td></tr>
+                <tr><td><strong>campo</strong></td><td>countryside</td></tr>
+                <tr><td><strong>abuelos</strong></td><td>grandparents</td></tr>
+                <tr><td><strong>jardín</strong></td><td>garden</td></tr>
+            </table>
+        </div>
+        
+        <div class="nav"><a href="exercise-1.html">← Exercise 1</a> <a href="exercise-3.html">Exercise 3 →</a></div>
+    </div>
+</body>
+</html>
