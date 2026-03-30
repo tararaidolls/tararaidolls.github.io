@@ -1,0 +1,1122 @@
+[
+  [
+    "a fi",
+    "to be",
+    [
+      "sunt",
+      "ești",
+      "este",
+      "suntem",
+      "sunteți",
+      "sunt"
+    ],
+    [
+      "am fost",
+      "ai fost",
+      "a fost",
+      "am fost",
+      "ați fost",
+      "au fost"
+    ],
+    [
+      "voi fi",
+      "vei fi",
+      "va fi",
+      "vom fi",
+      "veți fi",
+      "vor fi"
+    ]
+  ],
+  [
+    "a avea",
+    "to have",
+    [
+      "am",
+      "ai",
+      "are",
+      "avem",
+      "aveți",
+      "au"
+    ],
+    [
+      "am avut",
+      "ai avut",
+      "a avut",
+      "am avut",
+      "ați avut",
+      "au avut"
+    ],
+    [
+      "voi avea",
+      "vei avea",
+      "va avea",
+      "vom avea",
+      "veți avea",
+      "vor avea"
+    ]
+  ],
+  [
+    "a merge",
+    "to go",
+    [
+      "merg",
+      "mergi",
+      "merge",
+      "mergem",
+      "mergeți",
+      "merg"
+    ],
+    [
+      "am mers",
+      "ai mers",
+      "a mers",
+      "am mers",
+      "ați mers",
+      "au mers"
+    ],
+    [
+      "voi merge",
+      "vei merge",
+      "va merge",
+      "vom merge",
+      "veți merge",
+      "vor merge"
+    ]
+  ],
+  [
+    "a veni",
+    "to come",
+    [
+      "vin",
+      "vii",
+      "vine",
+      "venim",
+      "veniți",
+      "vin"
+    ],
+    [
+      "am venit",
+      "ai venit",
+      "a venit",
+      "am venit",
+      "ați venit",
+      "au venit"
+    ],
+    [
+      "voi veni",
+      "vei veni",
+      "va veni",
+      "vom veni",
+      "veți veni",
+      "vor veni"
+    ]
+  ],
+  [
+    "a face",
+    "to do/make",
+    [
+      "fac",
+      "faci",
+      "face",
+      "facem",
+      "faceți",
+      "fac"
+    ],
+    [
+      "am făcut",
+      "ai făcut",
+      "a făcut",
+      "am făcut",
+      "ați făcut",
+      "au făcut"
+    ],
+    [
+      "voi face",
+      "vei face",
+      "va face",
+      "vom face",
+      "veți face",
+      "vor face"
+    ]
+  ],
+  [
+    "a mânca",
+    "to eat",
+    [
+      "mănânc",
+      "mănânci",
+      "mănâncă",
+      "mâncăm",
+      "mâncați",
+      "mănâncă"
+    ],
+    [
+      "am mâncat",
+      "ai mâncat",
+      "a mâncat",
+      "am mâncat",
+      "ați mâncat",
+      "au mâncat"
+    ],
+    [
+      "voi mânca",
+      "vei mânca",
+      "va mânca",
+      "vom mânca",
+      "veți mânca",
+      "vor mânca"
+    ]
+  ],
+  [
+    "a bea",
+    "to drink",
+    [
+      "beau",
+      "bei",
+      "bea",
+      "bem",
+      "beți",
+      "beau"
+    ],
+    [
+      "am băut",
+      "ai băut",
+      "a băut",
+      "am băut",
+      "ați băut",
+      "au băut"
+    ],
+    [
+      "voi bea",
+      "vei bea",
+      "va bea",
+      "vom bea",
+      "veți bea",
+      "vor bea"
+    ]
+  ],
+  [
+    "a dormi",
+    "to sleep",
+    [
+      "dorm",
+      "dormi",
+      "doarme",
+      "dormim",
+      "dormiți",
+      "dorm"
+    ],
+    [
+      "am dormit",
+      "ai dormit",
+      "a dormit",
+      "am dormit",
+      "ați dormit",
+      "au dormit"
+    ],
+    [
+      "voi dormi",
+      "vei dormi",
+      "va dormi",
+      "vom dormi",
+      "veți dormi",
+      "vor dormi"
+    ]
+  ],
+  [
+    "a se trezi",
+    "to wake up",
+    [
+      "mă trezesc",
+      "te trezești",
+      "se trezește",
+      "ne trezim",
+      "vă treziți",
+      "se trezesc"
+    ],
+    [
+      "m-am trezit",
+      "te-ai trezit",
+      "s-a trezit",
+      "ne-am trezit",
+      "v-ați trezit",
+      "s-au trezit"
+    ],
+    [
+      "mă voi trezi",
+      "te vei trezi",
+      "se va trezi",
+      "ne vom trezi",
+      "vă veți trezi",
+      "se vor trezi"
+    ]
+  ],
+  [
+    "a lucra",
+    "to work",
+    [
+      "lucrez",
+      "lucrezi",
+      "lucrează",
+      "lucrăm",
+      "lucrați",
+      "lucrează"
+    ],
+    [
+      "am lucrat",
+      "ai lucrat",
+      "a lucrat",
+      "am lucrat",
+      "ați lucrat",
+      "au lucrat"
+    ],
+    [
+      "voi lucra",
+      "vei lucra",
+      "va lucra",
+      "vom lucra",
+      "veți lucra",
+      "vor lucra"
+    ]
+  ],
+  [
+    "a cumpăra",
+    "to buy",
+    [
+      "cumpăr",
+      "cumperi",
+      "cumpără",
+      "cumpărăm",
+      "cumpărați",
+      "cumpără"
+    ],
+    [
+      "am cumpărat",
+      "ai cumpărat",
+      "a cumpărat",
+      "am cumpărat",
+      "ați cumpărat",
+      "au cumpărat"
+    ],
+    [
+      "voi cumpăra",
+      "vei cumpăra",
+      "va cumpăra",
+      "vom cumpăra",
+      "veți cumpăra",
+      "vor cumpăra"
+    ]
+  ],
+  [
+    "a găti",
+    "to cook",
+    [
+      "gătesc",
+      "gătești",
+      "gătește",
+      "gătim",
+      "gătiți",
+      "gătesc"
+    ],
+    [
+      "am gătit",
+      "ai gătit",
+      "a gătit",
+      "am gătit",
+      "ați gătit",
+      "au gătit"
+    ],
+    [
+      "voi găti",
+      "vei găti",
+      "va găti",
+      "vom găti",
+      "veți găti",
+      "vor găti"
+    ]
+  ],
+  [
+    "a curăța",
+    "to clean",
+    [
+      "curăț",
+      "curăți",
+      "curăță",
+      "curățăm",
+      "curățați",
+      "curăță"
+    ],
+    [
+      "am curățat",
+      "ai curățat",
+      "a curățat",
+      "am curățat",
+      "ați curățat",
+      "au curățat"
+    ],
+    [
+      "voi curăța",
+      "vei curăța",
+      "va curăța",
+      "vom curăța",
+      "veți curăța",
+      "vor curăța"
+    ]
+  ],
+  [
+    "a citi",
+    "to read",
+    [
+      "citesc",
+      "citești",
+      "citește",
+      "citim",
+      "citiți",
+      "citesc"
+    ],
+    [
+      "am citit",
+      "ai citit",
+      "a citit",
+      "am citit",
+      "ați citit",
+      "au citit"
+    ],
+    [
+      "voi citi",
+      "vei citi",
+      "va citi",
+      "vom citi",
+      "veți citi",
+      "vor citi"
+    ]
+  ],
+  [
+    "a scrie",
+    "to write",
+    [
+      "scriu",
+      "scrii",
+      "scrie",
+      "scriem",
+      "scrieți",
+      "scriu"
+    ],
+    [
+      "am scris",
+      "ai scris",
+      "a scris",
+      "am scris",
+      "ați scris",
+      "au scris"
+    ],
+    [
+      "voi scrie",
+      "vei scrie",
+      "va scrie",
+      "vom scrie",
+      "veți scrie",
+      "vor scrie"
+    ]
+  ],
+  [
+    "a vedea",
+    "to see",
+    [
+      "văd",
+      "vezi",
+      "vede",
+      "vedem",
+      "vedeți",
+      "văd"
+    ],
+    [
+      "am văzut",
+      "ai văzut",
+      "a văzut",
+      "am văzut",
+      "ați văzut",
+      "au văzut"
+    ],
+    [
+      "voi vedea",
+      "vei vedea",
+      "va vedea",
+      "vom vedea",
+      "veți vedea",
+      "vor vedea"
+    ]
+  ],
+  [
+    "a auzi",
+    "to hear",
+    [
+      "aud",
+      "auzi",
+      "aude",
+      "auzim",
+      "auziți",
+      "aud"
+    ],
+    [
+      "am auzit",
+      "ai auzit",
+      "a auzit",
+      "am auzit",
+      "ați auzit",
+      "au auzit"
+    ],
+    [
+      "voi auzi",
+      "vei auzi",
+      "va auzi",
+      "vom auzi",
+      "veți auzi",
+      "vor auzi"
+    ]
+  ],
+  [
+    "a vorbi",
+    "to speak/talk",
+    [
+      "vorbesc",
+      "vorbești",
+      "vorbește",
+      "vorbim",
+      "vorbiți",
+      "vorbesc"
+    ],
+    [
+      "am vorbit",
+      "ai vorbit",
+      "a vorbit",
+      "am vorbit",
+      "ați vorbit",
+      "au vorbit"
+    ],
+    [
+      "voi vorbi",
+      "vei vorbi",
+      "va vorbi",
+      "vom vorbi",
+      "veți vorbi",
+      "vor vorbi"
+    ]
+  ],
+  [
+    "a asculta",
+    "to listen",
+    [
+      "ascult",
+      "asculți",
+      "ascultă",
+      "ascultăm",
+      "ascultați",
+      "ascultă"
+    ],
+    [
+      "am ascultat",
+      "ai ascultat",
+      "a ascultat",
+      "am ascultat",
+      "ați ascultat",
+      "au ascultat"
+    ],
+    [
+      "voi asculta",
+      "vei asculta",
+      "va asculta",
+      "vom asculta",
+      "veți asculta",
+      "vor asculta"
+    ]
+  ],
+  [
+    "a da",
+    "to give",
+    [
+      "dau",
+      "dai",
+      "dă",
+      "dăm",
+      "dați",
+      "dau"
+    ],
+    [
+      "am dat",
+      "ai dat",
+      "a dat",
+      "am dat",
+      "ați dat",
+      "au dat"
+    ],
+    [
+      "voi da",
+      "vei da",
+      "va da",
+      "vom da",
+      "veți da",
+      "vor da"
+    ]
+  ],
+  [
+    "a lua",
+    "to take",
+    [
+      "iau",
+      "iei",
+      "ia",
+      "luăm",
+      "luați",
+      "iau"
+    ],
+    [
+      "am luat",
+      "ai luat",
+      "a luat",
+      "am luat",
+      "ați luat",
+      "au luat"
+    ],
+    [
+      "voi lua",
+      "vei lua",
+      "va lua",
+      "vom lua",
+      "veți lua",
+      "vor lua"
+    ]
+  ],
+  [
+    "a ști",
+    "to know",
+    [
+      "știu",
+      "știi",
+      "știe",
+      "știm",
+      "știți",
+      "știu"
+    ],
+    [
+      "am știut",
+      "ai știut",
+      "a știut",
+      "am știut",
+      "ați știut",
+      "au știut"
+    ],
+    [
+      "voi ști",
+      "vei ști",
+      "va ști",
+      "vom ști",
+      "veți ști",
+      "vor ști"
+    ]
+  ],
+  [
+    "a putea",
+    "to be able",
+    [
+      "pot",
+      "poți",
+      "poate",
+      "putem",
+      "puteți",
+      "pot"
+    ],
+    [
+      "am putut",
+      "ai putut",
+      "a putut",
+      "am putut",
+      "ați putut",
+      "au putut"
+    ],
+    [
+      "voi putea",
+      "vei putea",
+      "va putea",
+      "vom putea",
+      "veți putea",
+      "vor putea"
+    ]
+  ],
+  [
+    "a vrea",
+    "to want",
+    [
+      "vreau",
+      "vrei",
+      "vrea",
+      "vrem",
+      "vreți",
+      "vor"
+    ],
+    [
+      "am vrut",
+      "ai vrut",
+      "a vrut",
+      "am vrut",
+      "ați vrut",
+      "au vrut"
+    ],
+    [
+      "voi vrea",
+      "vei vrea",
+      "va vrea",
+      "vom vrea",
+      "veți vrea",
+      "vor vrea"
+    ]
+  ],
+  [
+    "a trebui",
+    "to must/need",
+    [
+      "trebuie",
+      "trebuie",
+      "trebuie",
+      "trebuie",
+      "trebuie",
+      "trebuie"
+    ],
+    [
+      "a trebuit",
+      "a trebuit",
+      "a trebuit",
+      "a trebuit",
+      "a trebuit",
+      "a trebuit"
+    ],
+    [
+      "va trebui",
+      "va trebui",
+      "va trebui",
+      "va trebui",
+      "va trebui",
+      "va trebui"
+    ]
+  ],
+  [
+    "a plăcea",
+    "to like",
+    [
+      "îmi place",
+      "îți place",
+      "îi place",
+      "ne place",
+      "vă place",
+      "le place"
+    ],
+    [
+      "mi-a plăcut",
+      "ți-a plăcut",
+      "i-a plăcut",
+      "ne-a plăcut",
+      "v-a plăcut",
+      "le-a plăcut"
+    ],
+    [
+      "îmi va plăcea",
+      "îți va plăcea",
+      "îi va plăcea",
+      "ne va plăcea",
+      "vă va plăcea",
+      "le va plăcea"
+    ]
+  ],
+  [
+    "a iubi",
+    "to love",
+    [
+      "iubesc",
+      "iubești",
+      "iubește",
+      "iubim",
+      "iubiți",
+      "iubesc"
+    ],
+    [
+      "am iubit",
+      "ai iubit",
+      "a iubit",
+      "am iubit",
+      "ați iubit",
+      "au iubit"
+    ],
+    [
+      "voi iubi",
+      "vei iubi",
+      "va iubi",
+      "vom iubi",
+      "veți iubi",
+      "vor iubi"
+    ]
+  ],
+  [
+    "a se spăla",
+    "to wash oneself",
+    [
+      "mă spăl",
+      "te speli",
+      "se spală",
+      "ne spălăm",
+      "vă spălați",
+      "se spală"
+    ],
+    [
+      "m-am spălat",
+      "te-ai spălat",
+      "s-a spălat",
+      "ne-am spălat",
+      "v-ați spălat",
+      "s-au spălat"
+    ],
+    [
+      "mă voi spăla",
+      "te vei spăla",
+      "se va spăla",
+      "ne vom spăla",
+      "vă veți spăla",
+      "se vor spăla"
+    ]
+  ],
+  [
+    "a pleca",
+    "to leave",
+    [
+      "plec",
+      "pleci",
+      "pleacă",
+      "plecăm",
+      "plecați",
+      "pleacă"
+    ],
+    [
+      "am plecat",
+      "ai plecat",
+      "a plecat",
+      "am plecat",
+      "ați plecat",
+      "au plecat"
+    ],
+    [
+      "voi pleca",
+      "vei pleca",
+      "va pleca",
+      "vom pleca",
+      "veți pleca",
+      "vor pleca"
+    ]
+  ],
+  [
+    "a rămâne",
+    "to stay",
+    [
+      "rămân",
+      "rămâi",
+      "rămâne",
+      "rămânem",
+      "rămâneți",
+      "rămân"
+    ],
+    [
+      "am rămas",
+      "ai rămas",
+      "a rămas",
+      "am rămas",
+      "ați rămas",
+      "au rămas"
+    ],
+    [
+      "voi rămâne",
+      "vei rămâne",
+      "va rămâne",
+      "vom rămâne",
+      "veți rămâne",
+      "vor rămâne"
+    ]
+  ],
+  [
+    "a ajunge",
+    "to arrive"
+  ],
+  [
+    "a călători",
+    "to travel"
+  ],
+  [
+    "a conduce",
+    "to drive"
+  ],
+  [
+    "a alerga",
+    "to run"
+  ],
+  [
+    "a înota",
+    "to swim"
+  ],
+  [
+    "a zbura",
+    "to fly"
+  ],
+  [
+    "a dansa",
+    "to dance"
+  ],
+  [
+    "a cânta",
+    "to sing"
+  ],
+  [
+    "a juca",
+    "to play"
+  ],
+  [
+    "a desena",
+    "to draw"
+  ],
+  [
+    "a fotografia",
+    "to photograph"
+  ],
+  [
+    "a suna",
+    "to call"
+  ],
+  [
+    "a trimite",
+    "to send"
+  ],
+  [
+    "a primi",
+    "to receive"
+  ],
+  [
+    "a invita",
+    "to invite"
+  ],
+  [
+    "a ajuta",
+    "to help"
+  ],
+  [
+    "a mulțumi",
+    "to thank"
+  ],
+  [
+    "a cere",
+    "to ask for"
+  ],
+  [
+    "a răspunde",
+    "to answer"
+  ],
+  [
+    "a explica",
+    "to explain"
+  ],
+  [
+    "a înțelege",
+    "to understand"
+  ],
+  [
+    "a crede",
+    "to believe"
+  ],
+  [
+    "a spune",
+    "to say/tell"
+  ],
+  [
+    "a întâlni",
+    "to meet"
+  ],
+  [
+    "a saluta",
+    "to greet"
+  ],
+  [
+    "a îmbrățișa",
+    "to hug"
+  ],
+  [
+    "a săruta",
+    "to kiss"
+  ],
+  [
+    "a râde",
+    "to laugh"
+  ],
+  [
+    "a plânge",
+    "to cry"
+  ],
+  [
+    "a zâmbi",
+    "to smile"
+  ],
+  [
+    "a gândi",
+    "to think"
+  ],
+  [
+    "a simți",
+    "to feel"
+  ],
+  [
+    "a visa",
+    "to dream"
+  ],
+  [
+    "a uita",
+    "to forget"
+  ],
+  [
+    "a aminti",
+    "to remember"
+  ],
+  [
+    "a spera",
+    "to hope"
+  ],
+  [
+    "a dori",
+    "to wish"
+  ],
+  [
+    "a ura",
+    "to hate"
+  ],
+  [
+    "a suferi",
+    "to suffer"
+  ],
+  [
+    "a se bucura",
+    "to rejoice"
+  ],
+  [
+    "a se teme",
+    "to fear"
+  ],
+  [
+    "a se supăra",
+    "to be upset"
+  ],
+  [
+    "a se relaxa",
+    "to relax"
+  ],
+  [
+    "a se plictisi",
+    "to be bored"
+  ],
+  [
+    "a se mira",
+    "to wonder"
+  ],
+  [
+    "a admira",
+    "to admire"
+  ],
+  [
+    "a aprecia",
+    "to appreciate"
+  ],
+  [
+    "a respecta",
+    "to respect"
+  ],
+  [
+    "a ignora",
+    "to ignore"
+  ],
+  [
+    "a prefera",
+    "to prefer"
+  ],
+  [
+    "a accepta",
+    "to accept"
+  ],
+  [
+    "a refuza",
+    "to refuse"
+  ],
+  [
+    "a regreta",
+    "to regret"
+  ],
+  [
+    "a se îndoi",
+    "to doubt"
+  ],
+  [
+    "a compara",
+    "to compare"
+  ],
+  [
+    "a judeca",
+    "to judge"
+  ],
+  [
+    "a decide",
+    "to decide"
+  ],
+  [
+    "a alege",
+    "to choose"
+  ],
+  [
+    "a se concentra",
+    "to concentrate"
+  ],
+  [
+    "a medita",
+    "to meditate"
+  ],
+  [
+    "a locui",
+    "to live/reside"
+  ],
+  [
+    "a se muta",
+    "to move house"
+  ],
+  [
+    "a deschide",
+    "to open"
+  ],
+  [
+    "a închide",
+    "to close"
+  ],
+  [
+    "a aprinde",
+    "to turn on/light"
+  ],
+  [
+    "a stinge",
+    "to turn off"
+  ],
+  [
+    "a spăla",
+    "to wash"
+  ],
+  [
+    "a călca",
+    "to iron"
+  ],
+  [
+    "a coase",
+    "to sew"
+  ],
+  [
+    "a repara",
+    "to repair"
+  ]
+]
