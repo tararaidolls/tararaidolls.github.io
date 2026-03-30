@@ -1,83 +1,240 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TararaiDolls — Language Dictation Library</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,sans-serif;background:linear-gradient(135deg,#e8f5f3,#f5f0eb);min-height:100vh;padding:20px}
-.container{max-width:600px;margin:0 auto;text-align:center}
-h1{color:#286464;font-size:28px;margin:30px 0 5px}
-.sub{color:#509a8c;font-size:16px;margin-bottom:10px}
-.desc{color:#666;font-size:14px;margin-bottom:40px;line-height:1.6}
-.lang-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:30px}
-.lang-card{background:#fff;border-radius:16px;padding:24px 16px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,.08);transition:transform .2s}
-.lang-card:hover{transform:translateY(-3px)}
-.flag{font-size:40px;display:block;margin-bottom:8px}
-.lang-name{color:#286464;font-weight:700;font-size:16px;display:block}
-.lang-levels{color:#888;font-size:12px;margin-top:5px}
-.brand{color:#aaa;font-size:12px;margin-top:30px}
-.brand a{color:#509a8c;text-decoration:none}
-.how{background:#fff;border-radius:16px;padding:24px;text-align:left;margin:20px 0;box-shadow:0 4px 15px rgba(0,0,0,.05)}
-.how h3{color:#286464;margin-bottom:12px}
-.how ol{color:#555;line-height:2;padding-left:20px}
-</style></head><body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TararaiDolls Language Audio Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f4f9f7;
+            margin: 0;
+            padding: 0;
+            color: #2a5a5a;
+        }
+        header {
+            background-color: #2a5a5a;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 36px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 16px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-top: 5px solid #2a5a5a;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .card.spanish { border-color: #e67e22; }
+        .card.french { border-color: #3498db; }
+        .card.english { border-color: #e74c3c; }
+        .card.romanian { border-color: #2ecc71; }
+        .card.german { border-color: #9b59b6; }
+        .card.italian { border-color: #1abc9c; }
+        .card.portuguese { border-color: #f1c40f; }
+        .card.polish { border-color: #e84393; }
+        
+        .card h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card h3 {
+            font-size: 16px;
+            color: #666;
+            margin: 20px 0 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #2a5a5a;
+            font-weight: 700;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: #f4f9f7;
+            transition: background 0.2s, color 0.2s;
+        }
+        a:hover {
+            background: #2a5a5a;
+            color: white;
+        }
+        .coming-soon {
+            color: #aaa;
+            font-weight: 400;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TararaiDolls Audio Hub</h1>
+    <p>Your companion portal for Listen & Write Dictations and One Verb a Day workbooks.</p>
+</header>
+
 <div class="container">
-<h1>📚 Language Dictation Library</h1>
-<p class="sub">Listen. Write. Learn.</p>
-<p class="desc">Scan QR codes from your TararaiDolls workbook, listen to native audio, and write what you hear. The best way to train your ear!</p>
 
-<div class="lang-grid">
-  <a href="ro/beginner/" class="lang-card">
-    <span class="flag">🇷🇴</span>
-    <span class="lang-name">Romanian</span>
-    <span class="lang-levels">Beginner (20 exercises)</span>
-  </a>
-  <a href="es/beginner/" class="lang-card">
-    <span class="flag">🇪🇸</span>
-    <span class="lang-name">Spanish</span>
-    <span class="lang-levels">Beginner (20 exercises)</span>
-  </a>
-  <a href="it/beginner/" class="lang-card">
-    <span class="flag">🇮🇹</span>
-    <span class="lang-name">Italian</span>
-    <span class="lang-levels">Beginner (20 exercises)</span>
-  </a>
-  <a href="de/beginner/" class="lang-card">
-    <span class="flag">🇩🇪</span>
-    <span class="lang-name">German</span>
-    <span class="lang-levels">Beginner (20 exercises)</span>
-  </a>
-  <a href="fr/beginner/" class="lang-card">
-    <span class="flag">🇫🇷</span>
-    <span class="lang-name">French</span>
-    <span class="lang-levels">Beginner (20 exercises)</span>
-  </a>
-  <a href="pl/beginner/" class="lang-card">
-    <span class="flag">🇵🇱</span>
-    <span class="lang-name">Polish</span>
-    <span class="lang-levels">Beginner (20 exercises)</span>
-  </a>
-  <a href="uk/beginner/" class="lang-card">
-    <span class="flag">🇺🇦</span>
-    <span class="lang-name">Ukrainian</span>
-    <span class="lang-levels">Beginner (20 exercises)</span>
-  </a>
-  <a href="pt/beginner/" class="lang-card">
-    <span class="flag">🇵🇹</span>
-    <span class="lang-name">Portuguese</span>
-    <span class="lang-levels">Beginner (20 exercises)</span>
-  </a>
+    <!-- SPANISH -->
+    <div class="card spanish">
+        <h2>🇪🇸 Spanish</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="spanish-beginner/exercise-01.html">Beginner A1 (Ex 1-20)</a></li>
+            <li><a href="spanish-intermediate/exercise-01.html">Intermediate A2 (Ex 21-40)</a></li>
+            <li><a href="es-advanced/exercise-1.html">Advanced B1 (Ex 41-60)</a></li>
+        </ul>
+        <h3>One Verb a Day</h3>
+        <ul>
+            <li><span class="coming-soon">Volumes 1-4 (Audio links via QR codes inside books)</span></li>
+        </ul>
+    </div>
+
+    <!-- ENGLISH (ESL) -->
+    <div class="card english">
+        <h2>🇬🇧 English (ESL)</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="english/exercise-01.html">Complete Workbook (Ex 1-60)</a></li>
+        </ul>
+        <h3>One Verb a Day</h3>
+        <ul>
+            <li><span class="coming-soon">Volumes 1-4 (Audio links via QR codes inside books)</span></li>
+        </ul>
+    </div>
+
+    <!-- FRENCH -->
+    <div class="card french">
+        <h2>🇫🇷 French</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="french-beginner/exercise-01.html">Beginner A1 (Ex 1-20)</a></li>
+            <li><a href="french-intermediate/exercise-01.html">Intermediate A2 (Ex 21-40)</a></li>
+            <li><a href="fr-advanced/exercise-1.html">Advanced B1 (Ex 41-60)</a></li>
+        </ul>
+    </div>
+
+    <!-- ROMANIAN -->
+    <div class="card romanian">
+        <h2>🇷🇴 Romanian</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="romanian-beginner/exercise-01.html">Beginner A1 (Ex 1-20)</a></li>
+            <li><a href="romanian-intermediate/exercise-01.html">Intermediate A2 (Ex 21-40)</a></li>
+            <li><a href="ro-advanced/exercise-1.html">Advanced B1 (Ex 41-60)</a></li>
+        </ul>
+        <h3>One Verb a Day</h3>
+        <ul>
+            <li><span class="coming-soon">Volumes 1-4 (Audio links via QR codes inside books)</span></li>
+        </ul>
+    </div>
+    
+    <!-- GERMAN -->
+    <div class="card german">
+        <h2>🇩🇪 German</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="german-beginner/exercise-01.html">Beginner A1 (Ex 1-20)</a></li>
+            <li><a href="de-intermediate/exercise-01.html">Intermediate A2 (Ex 21-40)</a></li>
+            <li><a href="de-advanced/exercise-1.html">Advanced B1 (Ex 41-60)</a></li>
+        </ul>
+    </div>
+    
+    <!-- POLISH -->
+    <div class="card polish">
+        <h2>🇵🇱 Polish</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="polish-beginner/exercise-01.html">Beginner A1 (Ex 1-20)</a></li>
+            <li><a href="pl-intermediate/exercise-01.html">Intermediate A2 (Ex 21-40)</a></li>
+            <li><a href="pl-advanced/exercise-1.html">Advanced B1 (Ex 41-60)</a></li>
+        </ul>
+    </div>
+    
+    <!-- ITALIAN -->
+    <div class="card italian">
+        <h2>🇮🇹 Italian</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="italian-beginner/exercise-01.html">Beginner A1 (Ex 1-20)</a></li>
+            <li><a href="it-intermediate/exercise-01.html">Intermediate A2 (Ex 21-40)</a></li>
+            <li><a href="it-advanced/exercise-1.html">Advanced B1 (Ex 41-60)</a></li>
+        </ul>
+    </div>
+    
+    <!-- PORTUGUESE -->
+    <div class="card portuguese">
+        <h2>🇵🇹 Portuguese</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="portuguese-beginner/exercise-01.html">Beginner A1 (Ex 1-20)</a></li>
+            <li><a href="pt-intermediate/exercise-01.html">Intermediate A2 (Ex 21-40)</a></li>
+            <li><a href="pt-advanced/exercise-1.html">Advanced B1 (Ex 41-60)</a></li>
+        </ul>
+    </div>
+    
+    <!-- UKRAINIAN -->
+    <div class="card polish">
+        <h2>🇺🇦 Ukrainian</h2>
+        <h3>Listen & Write Dictations</h3>
+        <ul>
+            <li><a href="ukrainian-beginner/exercise-01.html">Beginner A1 (Ex 1-20)</a></li>
+            <li><a href="uk-intermediate/exercise-01.html">Intermediate A2 (Ex 21-40)</a></li>
+            <li><a href="uk-advanced/exercise-1.html">Advanced B1 (Ex 41-60)</a></li>
+        </ul>
+    </div>
+
 </div>
 
-<div class="how">
-  <h3>How to use:</h3>
-  <ol>
-    <li>Open your TararaiDolls dictation workbook</li>
-    <li>Scan the QR code with your phone camera</li>
-    <li>Listen to the audio (at least 3 times!)</li>
-    <li>Write what you hear in the workbook</li>
-    <li>Check with the answer key at the back</li>
-  </ol>
-</div>
+<footer>
+    &copy; 2026 TararaiDolls. All Audio Resources are companions to the physical and digital workbooks available on Amazon KDP and Teachers Pay Teachers.
+</footer>
 
-<p class="brand">Made with ❤ by <a href="https://tararaidolls.etsy.com">TararaiDolls</a></p>
-</div></body></html>
+</body>
+</html>
