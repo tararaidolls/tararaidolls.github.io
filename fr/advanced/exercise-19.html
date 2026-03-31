@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>French Advanced Dictation Ex 19</title>
+<title>FR Ex 19</title>
 <style>
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f9f7; margin:0; }
 .player { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); text-align: center; width: 80%; max-width: 350px; border: 2px solid #e0ece6;}
@@ -11,6 +11,7 @@ button { width: 100%; padding: 18px; margin-bottom: 15px; font-size: 16px; font-
 button:active { transform: scale(0.95); }
 .normal { background: linear-gradient(135deg, #2a5a5a, #3a7a7a); }
 .slow { background: linear-gradient(135deg, #e67e22, #f39c12); }
+.back { background: #95a5a6; margin-top: 20px; }
 </style>
 </head>
 <body>
@@ -19,11 +20,16 @@ button:active { transform: scale(0.95); }
 <audio id="audio"></audio>
 <button class="normal" onclick="play('normal')">▶ NORMAL SPEED</button>
 <button class="slow" onclick="play('slow')">▶ SLOW SPEED</button>
+<button class="back" onclick="window.location.href='https://tararaidolls.github.io/index.html'">🏠 Back to Hub</button>
 </div>
 <script>
 function play(speed) {
     var audio = document.getElementById('audio');
-    audio.src = speed === 'slow' ? 'audio/exercise-19-slow.mp3' : 'audio/exercise-19-normal.mp3';
+    if(speed === 'normal') {
+        audio.src = 'https://tararaidolls.github.io/fr/advanced/audio/exercise-19-normal.mp3';
+    } else {
+        audio.src = 'https://tararaidolls.github.io/fr/advanced/audio/exercise-19-slow.mp3';
+    }
     audio.play();
 }
 </script>
