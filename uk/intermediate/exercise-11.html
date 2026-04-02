@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dictation Ex 31</title>
+<title>UK Ex 11</title>
 <style>
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f9f7; margin:0; }
 .player { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); text-align: center; width: 80%; max-width: 350px; border: 2px solid #e0ece6;}
@@ -11,20 +11,25 @@ button { width: 100%; padding: 18px; margin-bottom: 15px; font-size: 16px; font-
 button:active { transform: scale(0.95); }
 .normal { background: linear-gradient(135deg, #2a5a5a, #3a7a7a); }
 .slow { background: linear-gradient(135deg, #e67e22, #f39c12); }
+.back { background: #95a5a6; margin-top: 20px; }
 </style>
 </head>
 <body>
 <div class="player">
-<h2>Exercise 31</h2>
+<h2>Exercise 11</h2>
 <audio id="audio"></audio>
 <button class="normal" onclick="play('normal')">▶ NORMAL SPEED</button>
 <button class="slow" onclick="play('slow')">▶ SLOW SPEED</button>
+<button class="back" onclick="window.location.href='https://tararaidolls.github.io/index.html'">🏠 Back to Hub</button>
 </div>
 <script>
 function play(speed) {
     var audio = document.getElementById('audio');
-    // FLAT PATH: Look for mp3 in the exact same folder as the HTML file!
-    audio.src = speed === 'slow' ? 'exercise-11-slow.mp3' : 'exercise-11.mp3';
+    if(speed === 'normal') {
+        audio.src = 'https://tararaidolls.github.io/uk/intermediate/audio/exercise-11-normal.mp3';
+    } else {
+        audio.src = 'https://tararaidolls.github.io/uk/intermediate/audio/exercise-11-slow.mp3';
+    }
     audio.play();
 }
 </script>
