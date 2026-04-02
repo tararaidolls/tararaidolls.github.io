@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>The What If? Game</title>
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 50%, #fff8e1 100%);
+            min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center;
+            overflow-x: hidden;
+        }
+        
+        /* LANGUAGE SELECT SCREEN */
+        #lang-screen {
+            width: 100%; max-width: 500px; padding: 20px;
+            display: flex; flex-direction: column; align-items: center;
+        }
+        #lang-screen h1 { font-size: 28px; color: #2a5a5a; margin: 30px 0 5px; }
+        #lang-screen p { color: #666; margin-bottom: 25px; font-size: 14px; }
+        .lang-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+            width: 100%; max-width: 400px;
+        }
+        .lang-btn {
+            padding: 14px 10px; border: 2px solid #2a5a5a; border-radius: 12px;
+            background: white; cursor: pointer; font-family: 'Nunito', sans-serif;
+            font-size: 15px; font-weight: 700; color: #2a5a5a;
+            transition: all 0.2s; text-align: center;
+        }
+        .lang-btn:hover, .lang-btn:active { background: #2a5a5a; color: white; transform: scale(1.03); }
+        .lang-flag { font-size: 22px; display: block; margin-bottom: 4px; }
+
+        /* GAME SCREEN */
+        #game-screen { display: none; width: 100%; max-width: 500px; padding: 15px; }
+        
+        header {
+            width: 100%; padding: 12px; text-align: center;
+            background: #2a5a5a; border-radius: 16px; margin-bottom: 12px;
+        }
+        header h1 { color: white; font-size: 20px; }
+        
+        .level-tabs {
+            display: flex; gap: 6px; margin-bottom: 12px; justify-content: center;
+        }
+        .level-tab {
+            padding: 8px 16px; border-radius: 20px; border: 2px solid #2a5a5a;
+            background: white; color: #2a5a5a; font-weight: 700; font-size: 13px;
+            cursor: pointer; font-family: 'Nunito', sans-serif; transition: all 0.2s;
+        }
+        .level-tab.active { background: #2a5a5a; color: white; }
+
+        .card-container {
+            width: 100%; aspect-ratio: 3/4; perspective: 1000px;
+            margin-bottom: 12px; cursor: pointer;
+        }
+        .card {
+            width: 100%; height: 100%; position: relative;
+            transform-style: preserve-3d; transition: transform 0.6s;
+        }
+        .card.flipped { transform: rotateY(180deg); }
+        .card-face {
+            position: absolute; width: 100%; height: 100%;
+            backface-visibility: hidden; border-radius: 20px;
+            display: flex; flex-direction: column; align-items: center;
+            justify-content: center; padding: 30px; text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        .card-front {
+            background: linear-gradient(145deg, #ffffff, #f0f7f0);
+            border: 3px solid #2a5a5a;
+        }
+        .card-back {
+            background: linear-gradient(145deg, #2a5a5a, #1a4040);
+            transform: rotateY(180deg);
+        }
+        .card-front .question { font-size: 22px; font-weight: 800; color: #2a5a5a; line-height: 1.4; }
+        .card-front .hint { font-size: 13px; color: #888; margin-top: 15px; font-style: italic; }
+        .card-front .level-badge {
+            position: absolute; top: 15px; left: 15px;
+            background: #2a5a5a; color: white; padding: 4px 12px;
+            border-radius: 10px; font-size: 11px; font-weight: 700;
+        }
+        .card-front .card-num {
+            position: absolute; top: 15px; right: 15px;
+            color: #aaa; font-size: 13px; font-weight: 700;
+        }
+        .card-back p { color: white; font-size: 16px; line-height: 1.6; padding: 20px; }
+        .card-back .tap-hint { color: rgba(255,255,255,0.5); font-size: 12px; margin-top: 15px; }
+
+        .controls { display: flex; gap: 10px; width: 100%; justify-content: center; }
+        .ctrl-btn {
+            padding: 12px 28px; border-radius: 25px; border: none;
+            font-family: 'Nunito', sans-serif; font-size: 15px; font-weight: 700;
+            cursor: pointer; transition: all 0.2s;
+        }
+        .btn-next { background: #2a5a5a; color: white; }
+        .btn-next:hover { background: #1a4040; transform: scale(1.05); }
+        .btn-shuffle { background: white; color: #2a5a5a; border: 2px solid #2a5a5a; }
+        .btn-lang { background: #f0f0f0; color: #666; font-size: 13px; padding: 10px 16px; }
+
+        .progress {
+            width: 100%; text-align: center; color: #999;
+            font-size: 12px; margin-top: 10px;
+        }
+
+        .branding {
+            margin-top: 20px; text-align: center; color: #bbb;
+            font-size: 11px; padding-bottom: 20px;
+        }
+        .branding a { color: #2a5a5a; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<!-- LANGUAGE SELECTION -->
+<div id="lang-screen">
+    <h1>🦋 The What If? Game</h1>
+    <p>Choose your language / Choisissez votre langue</p>
+    <div class="lang-grid" id="lang-grid"></div>
+    <div class="branding"><br>by <a href="https://tararaidolls.etsy.com">TararaiDolls</a></div>
+</div>
+
+<!-- GAME -->
+<div id="game-screen">
+    <header>
+        <h1 id="game-title">The What If? Game</h1>
+    </header>
+    
+    <div class="level-tabs" id="level-tabs"></div>
+
+    <div class="card-container" onclick="flipCard()">
+        <div class="card" id="card">
+            <div class="card-face card-front">
+                <div class="level-badge" id="card-level"></div>
+                <div class="card-num" id="card-num"></div>
+                <div class="question" id="card-question"></div>
+                <div class="hint" id="card-hint"></div>
+            </div>
+            <div class="card-face card-back">
+                <p>Think about it...<br><br>What would change?<br>Who would be affected?<br>What would be funny?<br>What would be dangerous?</p>
+                <div class="tap-hint">tap to flip back</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="ctrl-btn btn-shuffle" onclick="shuffle()">🔀</button>
+        <button class="ctrl-btn btn-next" onclick="nextCard()">Next →</button>
+        <button class="ctrl-btn btn-lang" onclick="changeLang()">🌍</button>
+    </div>
+    <div class="progress" id="progress"></div>
+    <div class="branding">by <a href="https://tararaidolls.etsy.com">TararaiDolls</a></div>
+</div>
+
+<script>
+const LANGS = {
+  en: {flag:"🇬🇧",name:"English",title:"The What If? Game",levels:["Silly","Tricky","Deep"],back:["Think about it...","What would change?","Who would be affected?","What would be funny?","What would be dangerous?"],next:"Next →"},
+  es: {flag:"🇪🇸",name:"Español",title:"El Juego del ¿Y Si...?",levels:["Divertido","Ingenioso","Profundo"],back:["Piénsalo...","¿Qué cambiaría?","¿A quién afectaría?","¿Qué sería gracioso?","¿Qué sería peligroso?"],next:"Siguiente →"},
+  de: {flag:"🇩🇪",name:"Deutsch",title:"Das Was Wäre Wenn? Spiel",levels:["Lustig","Knifflig","Tief"],back:["Denk darüber nach...","Was würde sich ändern?","Wen würde es betreffen?","Was wäre lustig?","Was wäre gefährlich?"],next:"Weiter →"},
+  fr: {flag:"🇫🇷",name:"Français",title:"Le Jeu du Et Si...?",levels:["Rigolo","Astucieux","Profond"],back:["Réfléchis...","Qu'est-ce qui changerait?","Qui serait affecté?","Qu'est-ce qui serait drôle?","Qu'est-ce qui serait dangereux?"],next:"Suivant →"},
+  nl: {flag:"🇳🇱",name:"Nederlands",title:"Het Wat Als? Spel",levels:["Grappig","Slim","Diep"],back:["Denk erover na...","Wat zou er veranderen?","Wie zou het raken?","Wat zou grappig zijn?","Wat zou gevaarlijk zijn?"],next:"Volgende →"},
+  pl: {flag:"🇵🇱",name:"Polski",title:"Gra Co By Było Gdyby...?",levels:["Śmieszny","Podchwytliwy","Głęboki"],back:["Pomyśl o tym...","Co by się zmieniło?","Kogo by to dotyczyło?","Co byłoby śmieszne?","Co byłoby niebezpieczne?"],next:"Dalej →"},
+  ro: {flag:"🇷🇴",name:"Română",title:"Jocul Ce-ar Fi Dacă...?",levels:["Amuzant","Ingenios","Profund"],back:["Gândește-te...","Ce s-ar schimba?","Pe cine ar afecta?","Ce ar fi amuzant?","Ce ar fi periculos?"],next:"Următorul →"},
+  sv: {flag:"🇸🇪",name:"Svenska",title:"Tänke Om-Spelet",levels:["Roligt","Klurit","Djupt"],back:["Tänk på det...","Vad skulle förändras?","Vem skulle påverkas?","Vad vore roligt?","Vad vore farligt?"],next:"Nästa →"},
+  da: {flag:"🇩🇰",name:"Dansk",title:"Hvad Nu Hvis-Spillet",levels:["Sjovt","Smart","Dybt"],back:["Tænk over det...","Hvad ville ændre sig?","Hvem ville det påvirke?","Hvad ville være sjovt?","Hvad ville være farligt?"],next:"Næste →"},
+  pt: {flag:"🇧🇷",name:"Português",title:"O Jogo do E Se...?",levels:["Divertido","Esperto","Profundo"],back:["Pense nisso...","O que mudaria?","Quem seria afetado?","O que seria engraçado?","O que seria perigoso?"],next:"Próximo →"},
+};
+
+const Q = {
+en:{L1:[["What if all wheels disappeared?","How would we move heavy things?"],["What if people only sang instead of talking?","How would we argue?"],["What if houses were made of jelly?","What happens during a rainstorm?"],["What if animals could read minds?","What would your pet think of you?"],["What if we never felt physical pain?","How would we know a stove is hot?"],["What if it rained lemonade?","Would shoes stick to the sidewalk?"],["What if humans had dog tails?","How would pants change?"],["What if the sun shone at night?","When would we sleep?"],["What if babies were born as adults?","Would they go straight to work?"],["What if all food tasted like broccoli?","Would people eat desserts?"],["What if trees could walk?","Would forests migrate in winter?"],["What if clouds were cotton candy?","Could we eat them?"],["What if mirrors showed the future?","Would you look every morning?"],["What if everything you drew became real?","What would you draw first?"],["What if we had to hop everywhere?","How long is a marathon?"],["What if clothes changed color with mood?","What color when angry?"],["What if pets could do our chores?","Who cleans your room?"],["What if there was only one season?","What about snowmen?"],["What if everyone had a personal robot?","What would yours do?"],["What if chocolate was healthy?","How much would you eat?"]],L2:[["What if electricity vanished for a year?","Food spoils, no light..."],["What if people always told the truth?","What about bad gifts?"],["What if money grew on trees?","Would anyone work?"],["What if we could fly 3 feet high?","Still need airplanes?"],["What if plastic turned into wood?","What about smartphones?"],["What if you learned by sleeping on a book?","Would schools exist?"],["What if drawings came alive at night?","What would they do?"],["What if we could breathe underwater?","Where would we build cities?"],["What if gravity turned off 5 min daily?","What about furniture?"],["What if the moon was a giant mirror?","What would we see?"],["What if cars ran on laughter?","How to drive on a highway?"],["What if we could only speak in questions?","How would news sound?"],["What if all oceans were freshwater?","What about sharks?"],["What if humans had four arms?","What new sports?"],["What if history was written by cats?","Biggest event?"],["What if we could change our age?","When would you be 80?"],["What if music was the only money?","Who'd be richest?"],["What if the alphabet had 10 letters?","How to spell?"],["What if we could see radio waves?","Sky too crowded?"],["What if humans didn't need sleep?","Work 20 hours a day?"]],L3:[["What if we could delete bad memories?","We wouldn't learn from mistakes..."],["What if animals sued humans?","What would they sue for?"],["What if we could pause time for 1 hour?","What about thieves?"],["What if internet had 10 searches/day?","How would libraries change?"],["What if teleportation was one-time?","Emergency or vacation?"],["What if we saw emotions as colored auras?","Could we lie?"],["What if all jobs paid the same?","Who'd be a firefighter?"],["What if children became teachers?","What would kids teach?"],["What if aging went backward?","What's kindergarten like?"],["What if art was illegal?","How to express yourself?"],["What if we paid for oxygen?","Breathe less?"],["What if your life was a reality show?","Act differently?"],["What if one timezone for the world?","Dark at 9 AM for some?"],["What if humans were solar-powered?","Still need food?"],["What if everyone had lie detectors?","Could politics exist?"],["What if we could download skills?","Schools disappear?"],["What if sleep was optional?","How would companies treat workers?"],["What if Earth stopped rotating?","Half the world freezes?"],["What if everyone had an identical twin?","How would sports work?"],["What if we knew when we'd meet our best friend?","Still exciting?"]]},
+es:{L1:[["¿Y si todas las ruedas desaparecieran?","¿Cómo moveríamos cosas pesadas?"],["¿Y si la gente solo cantara?","¿Cómo discutiríamos?"],["¿Y si las casas fueran de gelatina?","¿Qué pasa cuando llueve?"],["¿Y si los animales leyeran la mente?","¿Qué pensaría tu mascota?"],["¿Y si nunca sintiéramos dolor?","¿Cómo sabríamos que algo quema?"],["¿Y si lloviera limonada?","¿Se pegarían los zapatos?"],["¿Y si los humanos tuvieran cola de perro?","¿Cómo cambiarían los pantalones?"],["¿Y si el sol brillara de noche?","¿Cuándo dormiríamos?"],["¿Y si los bebés nacieran adultos?","¿Irían directo a trabajar?"],["¿Y si toda comida supiera a brócoli?","¿Comeríamos postres?"],["¿Y si los árboles pudieran caminar?","¿Migrarían los bosques?"],["¿Y si las nubes fueran algodón de azúcar?","¿Podríamos comerlas?"],["¿Y si los espejos mostraran el futuro?","¿Te mirarías cada mañana?"],["¿Y si todo lo que dibujaras fuera real?","¿Qué dibujarías primero?"],["¿Y si tuviéramos que saltar a todos lados?","¿Cuánto duraría un maratón?"],["¿Y si la ropa cambiara de color con tu humor?","¿Qué color al enojarte?"],["¿Y si las mascotas hicieran las tareas?","¿Quién limpiaría tu cuarto?"],["¿Y si hubiera una sola estación?","¿Qué pasa con los muñecos de nieve?"],["¿Y si todos tuvieran un robot personal?","¿Qué haría el tuyo?"],["¿Y si el chocolate fuera saludable?","¿Cuánto comerías?"]],L2:[["¿Y si la electricidad desapareciera un año?","La comida se echa a perder..."],["¿Y si siempre dijéramos la verdad?","¿Qué pasa con regalos malos?"],["¿Y si el dinero creciera en árboles?","¿Alguien trabajaría?"],["¿Y si pudiéramos volar a 1 metro?","¿Necesitaríamos aviones?"],["¿Y si el plástico se volviera madera?","¿Qué pasa con los teléfonos?"],["¿Y si aprendiéramos durmiendo sobre un libro?","¿Existirían escuelas?"],["¿Y si los dibujos cobraran vida de noche?","¿Qué harían?"],["¿Y si pudiéramos respirar bajo el agua?","¿Dónde construiríamos ciudades?"],["¿Y si la gravedad se apagara 5 min al día?","¿Qué pasa con los muebles?"],["¿Y si la luna fuera un espejo gigante?","¿Qué veríamos?"],["¿Y si los autos funcionaran con risas?","¿Cómo conducir en autopista?"],["¿Y si solo pudiéramos hablar con preguntas?","¿Cómo sería un noticiero?"],["¿Y si los océanos fueran de agua dulce?","¿Qué pasa con los tiburones?"],["¿Y si tuviéramos cuatro brazos?","¿Qué deportes nuevos?"],["¿Y si los libros de historia los escribieran gatos?","¿Evento más importante?"],["¿Y si pudiéramos cambiar de edad?","¿Cuándo elegirías tener 80?"],["¿Y si la música fuera la única moneda?","¿Quién sería el más rico?"],["¿Y si el alfabeto tuviera 10 letras?","¿Cómo deletrear?"],["¿Y si viéramos ondas de radio?","¿Cielo muy lleno?"],["¿Y si no necesitáramos dormir?","¿Trabajar 20 horas al día?"]],L3:[["¿Y si pudiéramos borrar malos recuerdos?","No aprenderíamos de errores..."],["¿Y si los animales nos demandaran?","¿Por qué nos demandarían?"],["¿Y si pudiéramos pausar el tiempo 1 hora?","¿Qué harían los ladrones?"],["¿Y si internet tuviera 10 búsquedas al día?","¿Cómo cambiarían las bibliotecas?"],["¿Y si la teletransportación fuera de un solo uso?","¿Emergencia o vacaciones?"],["¿Y si viéramos emociones como auras?","¿Se podría mentir?"],["¿Y si todas las profesiones pagaran igual?","¿Quién sería bombero?"],["¿Y si los niños fueran maestros?","¿Qué enseñarían?"],["¿Y si el envejecimiento fuera al revés?","¿Cómo sería el jardín de infantes?"],["¿Y si el arte fuera ilegal?","¿Cómo expresarse?"],["¿Y si pagáramos por oxígeno?","¿Respiraríamos menos?"],["¿Y si tu vida fuera un reality show?","¿Actuarías diferente?"],["¿Y si hubiera una sola zona horaria?","¿Oscuro a las 9 AM?"],["¿Y si fuéramos solares?","¿Necesitaríamos comer?"],["¿Y si todos tuvieran detector de mentiras?","¿Existiría la política?"],["¿Y si descargáramos habilidades al instante?","¿Desaparecerían las escuelas?"],["¿Y si dormir fuera opcional?","¿Cómo tratarían las empresas?"],["¿Y si la Tierra dejara de girar?","¿Se congelaría la mitad?"],["¿Y si todos tuvieran un gemelo idéntico?","¿Cómo funcionarían los deportes?"],["¿Y si supiéramos cuándo conoceríamos a nuestro mejor amigo?","¿Sería emocionante?"]]},
+de:{L1:[["Was wäre, wenn alle Räder verschwänden?","Wie bewegen wir schwere Dinge?"],["Was wäre, wenn Menschen nur singen könnten?","Wie würden wir streiten?"],["Was wäre, wenn Häuser aus Wackelpudding wären?","Was passiert bei Regen?"],["Was wäre, wenn Tiere Gedanken lesen könnten?","Was denkt dein Haustier über dich?"],["Was wäre, wenn wir nie Schmerzen fühlen würden?","Woher wissen wir, dass der Herd heiß ist?"],["Was wäre, wenn es Limonade regnen würde?","Kleben unsere Schuhe am Boden?"],["Was wäre, wenn Menschen Hundeschwänze hätten?","Wie ändern sich Hosen?"],["Was wäre, wenn die Sonne nachts scheinen würde?","Wann schlafen wir?"],["Was wäre, wenn Babys als Erwachsene geboren würden?","Gehen sie direkt arbeiten?"],["Was wäre, wenn alles nach Brokkoli schmecken würde?","Noch Nachtisch?"],["Was wäre, wenn Bäume laufen könnten?","Wandern Wälder im Winter?"],["Was wäre, wenn Wolken aus Zuckerwatte wären?","Können wir sie essen?"],["Was wäre, wenn Spiegel die Zukunft zeigten?","Jeden Morgen reinschauen?"],["Was wäre, wenn alles was du zeichnest real wird?","Was zeichnest du zuerst?"],["Was wäre, wenn wir überall hüpfen müssten?","Wie lange dauert ein Marathon?"],["Was wäre, wenn Kleidung die Farbe nach Stimmung ändert?","Welche Farbe bei Wut?"],["Was wäre, wenn Haustiere unsere Hausarbeit machen könnten?","Wer räumt dein Zimmer auf?"],["Was wäre, wenn es nur eine Jahreszeit gäbe?","Was passiert mit Schneemännern?"],["Was wäre, wenn jeder einen persönlichen Roboter hätte?","Was würde deiner tun?"],["Was wäre, wenn Schokolade gesund wäre?","Wie viel würdest du essen?"]],L2:[["Was wäre, wenn Strom für ein Jahr verschwände?","Essen verdirbt, kein Licht..."],["Was wäre, wenn Menschen immer die Wahrheit sagten?","Was bei schlechten Geschenken?"],["Was wäre, wenn Geld auf Bäumen wüchse?","Würde noch jemand arbeiten?"],["Was wäre, wenn wir 1 Meter hoch fliegen könnten?","Brauchen wir Flugzeuge?"],["Was wäre, wenn Plastik zu Holz würde?","Was mit Smartphones?"],["Was wäre, wenn man durch Schlafen auf Büchern lernte?","Gäbe es Schulen?"],["Was wäre, wenn Zeichnungen nachts lebendig würden?","Was würden sie tun?"],["Was wäre, wenn wir unter Wasser atmen könnten?","Wo bauen wir neue Städte?"],["Was wäre, wenn die Schwerkraft 5 Min. täglich ausfiele?","Was mit Möbeln?"],["Was wäre, wenn der Mond ein riesiger Spiegel wäre?","Was sehen wir nachts?"],["Was wäre, wenn Autos mit Lachen führen?","Wie fährt man auf der Autobahn?"],["Was wäre, wenn wir nur in Fragen sprechen könnten?","Wie klingen Nachrichten?"],["Was wäre, wenn alle Ozeane Süßwasser wären?","Was mit Haien?"],["Was wäre, wenn Menschen vier Arme hätten?","Welche neuen Sportarten?"],["Was wäre, wenn Geschichtsbücher von Katzen geschrieben würden?","Wichtigstes Ereignis?"],["Was wäre, wenn wir unser Alter ändern könnten?","Wann willst du 80 sein?"],["Was wäre, wenn Musik die einzige Währung wäre?","Wer wäre am reichsten?"],["Was wäre, wenn das Alphabet nur 10 Buchstaben hätte?","Wie buchstabieren?"],["Was wäre, wenn wir Radiowellen sehen könnten?","Himmel zu voll?"],["Was wäre, wenn Menschen keinen Schlaf bräuchten?","20 Stunden arbeiten?"]],L3:[["Was wäre, wenn wir schlechte Erinnerungen löschen könnten?","Nicht aus Fehlern lernen..."],["Was wäre, wenn Tiere Menschen verklagten?","Wofür verklagen sie uns?"],["Was wäre, wenn wir Zeit 1 Stunde anhalten könnten?","Was ist mit Dieben?"],["Was wäre, wenn Internet nur 10 Suchen pro Tag hätte?","Wie ändern sich Bibliotheken?"],["Was wäre, wenn Teleportation einmalig wäre?","Notfall oder Urlaub?"],["Was wäre, wenn wir Emotionen als farbige Auren sähen?","Kann man noch lügen?"],["Was wäre, wenn alle Berufe gleich bezahlt würden?","Wer wird Feuerwehrmann?"],["Was wäre, wenn Kinder die Lehrer wären?","Was lehren Kinder Erwachsenen?"],["Was wäre, wenn Altern rückwärts ginge?","Wie sieht Kindergarten aus?"],["Was wäre, wenn Kunst illegal wäre?","Wie drückt man sich aus?"],["Was wäre, wenn wir für Sauerstoff bezahlen müssten?","Weniger atmen?"],["Was wäre, wenn dein Leben eine Reality Show wäre?","Anders verhalten?"],["Was wäre, wenn die Welt eine Zeitzone hätte?","Dunkel um 9 Uhr?"],["Was wäre, wenn Menschen solarbetrieben wären?","Noch essen?"],["Was wäre, wenn jeder einen Lügendetektor hätte?","Gibt es noch Politik?"],["Was wäre, wenn wir Fähigkeiten herunterladen könnten?","Schulen verschwinden?"],["Was wäre, wenn Schlaf optional wäre?","Wie behandeln Firmen Arbeiter?"],["Was wäre, wenn die Erde aufhörte sich zu drehen?","Halbe Welt einfrieren?"],["Was wäre, wenn jeder einen identischen Zwilling hätte?","Wie funktionieren Sportteams?"],["Was wäre, wenn wir wüssten, wann wir unseren besten Freund treffen?","Noch aufregend?"]]},
+fr:{L1:[["Et si toutes les roues disparaissaient?","Comment déplacer les choses lourdes?"],["Et si les gens ne pouvaient que chanter?","Comment se disputerait-on?"],["Et si les maisons étaient en gelée?","Que se passe-t-il quand il pleut?"],["Et si les animaux lisaient dans les pensées?","Que penserait ton animal?"],["Et si on ne ressentait jamais la douleur?","Comment savoir si c'est chaud?"],["Et si il pleuvait de la limonade?","Les chaussures colleraient?"],["Et si les humains avaient des queues de chien?","Comment changer les pantalons?"],["Et si le soleil brillait la nuit?","Quand dormirait-on?"],["Et si les bébés naissaient adultes?","Iraient-ils travailler?"],["Et si tout avait le goût du brocoli?","Encore des desserts?"],["Et si les arbres pouvaient marcher?","Les forêts migrent en hiver?"],["Et si les nuages étaient en barbe à papa?","Peut-on les manger?"],["Et si les miroirs montraient le futur?","Regarderais-tu chaque matin?"],["Et si tout ce que tu dessines devenait réel?","Que dessinerais-tu?"],["Et si on devait sautiller partout?","Combien dure un marathon?"],["Et si les vêtements changeaient de couleur?","Quelle couleur quand tu es en colère?"],["Et si les animaux faisaient le ménage?","Qui nettoie ta chambre?"],["Et si il n'y avait qu'une saison?","Que deviennent les bonhommes de neige?"],["Et si tout le monde avait un robot?","Que ferait le tien?"],["Et si le chocolat était bon pour la santé?","Combien en mangerais-tu?"]],L2:[["Et si l'électricité disparaissait un an?","La nourriture pourrit, pas de lumière..."],["Et si on disait toujours la vérité?","Que se passe-t-il avec les cadeaux ratés?"],["Et si l'argent poussait sur les arbres?","Quelqu'un travaillerait encore?"],["Et si on pouvait voler à 1 mètre?","Besoin d'avions?"],["Et si le plastique devenait du bois?","Que deviennent les téléphones?"],["Et si on apprenait en dormant sur un livre?","Les écoles existeraient?"],["Et si les dessins prenaient vie la nuit?","Que feraient-ils?"],["Et si on pouvait respirer sous l'eau?","Où construire des villes?"],["Et si la gravité s'arrêtait 5 min par jour?","Que se passe-t-il avec les meubles?"],["Et si la lune était un miroir géant?","Que verrait-on?"],["Et si les voitures marchaient au rire?","Comment conduire sur l'autoroute?"],["Et si on ne pouvait parler qu'en questions?","Comment serait un journal télévisé?"],["Et si les océans étaient d'eau douce?","Que deviennent les requins?"],["Et si on avait quatre bras?","Quels nouveaux sports?"],["Et si l'histoire était écrite par des chats?","L'événement le plus important?"],["Et si on pouvait changer d'âge?","Quand choisirais-tu 80 ans?"],["Et si la musique était la seule monnaie?","Qui serait le plus riche?"],["Et si l'alphabet n'avait que 10 lettres?","Comment épeler?"],["Et si on voyait les ondes radio?","Ciel trop encombré?"],["Et si on n'avait pas besoin de dormir?","Travailler 20h par jour?"]],L3:[["Et si on pouvait effacer les mauvais souvenirs?","On n'apprendrait pas..."],["Et si les animaux poursuivaient les humains?","Pour quoi?"],["Et si on pouvait mettre le temps en pause 1h?","Et les voleurs?"],["Et si internet avait 10 recherches par jour?","Comment changent les bibliothèques?"],["Et si la téléportation était à usage unique?","Urgence ou vacances?"],["Et si on voyait les émotions en auras?","Peut-on mentir?"],["Et si toutes les professions payaient pareil?","Qui serait pompier?"],["Et si les enfants devenaient professeurs?","Qu'enseigneraient-ils?"],["Et si le vieillissement allait à l'envers?","À quoi ressemble la maternelle?"],["Et si l'art était illégal?","Comment s'exprimer?"],["Et si on payait pour l'oxygène?","Respirer moins?"],["Et si ta vie était une téléréalité?","Agirais-tu différemment?"],["Et si le monde avait un seul fuseau horaire?","Noir à 9h pour certains?"],["Et si on marchait à l'énergie solaire?","Besoin de manger?"],["Et si tout le monde avait un détecteur de mensonges?","La politique existerait?"],["Et si on pouvait télécharger des compétences?","Les écoles disparaîtraient?"],["Et si le sommeil était optionnel?","Comment les entreprises traitent les employés?"],["Et si la Terre s'arrêtait?","La moitié du monde gèle?"],["Et si tout le monde avait un jumeau?","Comment fonctionnent les équipes sportives?"],["Et si on connaissait la date de rencontre avec notre meilleur ami?","Encore excitant?"]]},
+nl:{L1:[["Wat als alle wielen verdwenen?","Hoe verplaatsen we zware dingen?"],["Wat als mensen alleen konden zingen?","Hoe maken we ruzie?"],["Wat als huizen van pudding waren?","Wat als het regent?"],["Wat als dieren gedachten konden lezen?","Wat denkt je huisdier?"],["Wat als we nooit pijn voelden?","Hoe weten we dat het fornuis heet is?"],["Wat als het limonade regende?","Plakken schoenen aan de grond?"],["Wat als mensen hondenstaarten hadden?","Hoe veranderen broeken?"],["Wat als de zon 's nachts scheen?","Wanneer slapen?"],["Wat als baby's als volwassenen geboren werden?","Meteen werken?"],["Wat als al het eten naar broccoli smaakte?","Nog steeds toetjes?"],["Wat als bomen konden lopen?","Verhuizen bossen in de winter?"],["Wat als wolken van suikerspin waren?","Kunnen we ze eten?"],["Wat als spiegels de toekomst lieten zien?","Elke ochtend kijken?"],["Wat als alles wat je tekent echt werd?","Wat teken je eerst?"],["Wat als we overal moesten hinkelen?","Hoe lang duurt een marathon?"],["Wat als kleren van kleur veranderden met je stemming?","Welke kleur bij boosheid?"],["Wat als huisdieren ons huishouden deden?","Wie ruimt je kamer op?"],["Wat als er maar één seizoen was?","Wat met sneeuwpoppen?"],["Wat als iedereen een robot had?","Wat zou die doen?"],["Wat als chocolade gezond was?","Hoeveel zou je eten?"]],L2:[["Wat als elektriciteit een jaar verdween?","Eten bederft, geen licht..."],["Wat als mensen altijd de waarheid vertelden?","Wat bij slechte cadeaus?"],["Wat als geld aan bomen groeide?","Zou iemand nog werken?"],["Wat als we 1 meter hoog konden vliegen?","Nog vliegtuigen nodig?"],["Wat als plastic in hout veranderde?","Wat met smartphones?"],["Wat als je leerde door op een boek te slapen?","Zouden scholen bestaan?"],["Wat als tekeningen 's nachts tot leven kwamen?","Wat zouden ze doen?"],["Wat als we onder water konden ademen?","Waar bouwen we steden?"],["Wat als zwaartekracht 5 min per dag uitviel?","Wat met meubels?"],["Wat als de maan een reuzenspiegel was?","Wat zien we 's nachts?"],["Wat als auto's op gelach reden?","Hoe rij je op de snelweg?"],["Wat als we alleen in vragen konden praten?","Hoe klinkt het nieuws?"],["Wat als alle oceanen zoet water waren?","Wat met haaien?"],["Wat als mensen vier armen hadden?","Welke nieuwe sporten?"],["Wat als geschiedenisboeken door katten geschreven waren?","Belangrijkste gebeurtenis?"],["Wat als we onze leeftijd konden veranderen?","Wanneer 80 zijn?"],["Wat als muziek het enige geld was?","Wie is het rijkst?"],["Wat als het alfabet 10 letters had?","Hoe spellen?"],["Wat als we radiogolven konden zien?","Lucht te vol?"],["Wat als mensen niet hoefden te slapen?","20 uur per dag werken?"]],L3:[["Wat als we slechte herinneringen konden wissen?","Niet leren van fouten..."],["Wat als dieren mensen aanklaagden?","Waarvoor?"],["Wat als we de tijd 1 uur konden pauzeren?","Wat met dieven?"],["Wat als internet 10 zoekopdrachten per dag had?","Hoe veranderen bibliotheken?"],["Wat als teleportatie eenmalig was?","Noodgeval of vakantie?"],["Wat als we emoties als gekleurde aura's zagen?","Nog liegen?"],["Wat als alle beroepen hetzelfde betaalden?","Wie wordt brandweerman?"],["Wat als kinderen de leraren werden?","Wat leren kinderen volwassenen?"],["Wat als veroudering achteruit ging?","Hoe ziet kleuterschool eruit?"],["Wat als kunst illegaal was?","Hoe uiten mensen zich?"],["Wat als we moesten betalen voor zuurstof?","Minder ademen?"],["Wat als je leven een realityshow was?","Anders doen?"],["Wat als de wereld één tijdzone had?","Om 9 uur donker voor sommigen?"],["Wat als mensen op zonne-energie werkten?","Nog eten?"],["Wat als iedereen een leugendetector had?","Zou politiek bestaan?"],["Wat als we vaardigheden konden downloaden?","Scholen verdwijnen?"],["Wat als slapen optioneel was?","Hoe behandelen bedrijven werknemers?"],["Wat als de aarde stopte met draaien?","Halve wereld bevriest?"],["Wat als iedereen een identieke tweeling had?","Hoe werken sportteams?"],["Wat als we wisten wanneer we onze beste vriend ontmoeten?","Nog spannend?"]]},
+pl:{L1:[["Co gdyby wszystkie koła zniknęły?","Jak przenosimy ciężkie rzeczy?"],["Co gdyby ludzie tylko śpiewali?","Jak się kłócimy?"],["Co gdyby domy były z galaretki?","Co gdy pada deszcz?"],["Co gdyby zwierzęta czytały myśli?","Co myśli twój zwierzak?"],["Co gdyby nigdy nie czuliśmy bólu?","Skąd wiemy że kuchenka jest gorąca?"],["Co gdyby padała lemoniada?","Buty kleją się do chodnika?"],["Co gdyby ludzie mieli psie ogony?","Jak zmienią się spodnie?"],["Co gdyby słońce świeciło w nocy?","Kiedy śpimy?"],["Co gdyby niemowlęta rodziły się dorosłymi?","Od razu do pracy?"],["Co gdyby wszystko smakowało jak brokuły?","Jemy desery?"],["Co gdyby drzewa mogły chodzić?","Lasy wędrują zimą?"],["Co gdyby chmury były z waty cukrowej?","Możemy je jeść?"],["Co gdyby lustra pokazywały przyszłość?","Patrzysz co rano?"],["Co gdyby wszystko co rysujesz stawało się prawdziwe?","Co rysujesz najpierw?"],["Co gdyby trzeba było wszędzie skakać?","Ile trwa maraton?"],["Co gdyby ubrania zmieniały kolor z nastrojem?","Jaki kolor przy złości?"],["Co gdyby zwierzęta mogły sprzątać?","Kto sprząta twój pokój?"],["Co gdyby była tylko jedna pora roku?","Co z bałwanami?"],["Co gdyby każdy miał robota?","Co robiłby twój?"],["Co gdyby czekolada była zdrowa?","Ile byś zjadł?"]],L2:[["Co gdyby prąd zniknął na rok?","Jedzenie się psuje, brak światła..."],["Co gdyby ludzie zawsze mówili prawdę?","Co ze złymi prezentami?"],["Co gdyby pieniądze rosły na drzewach?","Ktoś by jeszcze pracował?"],["Co gdyby mogliśmy latać na 1 metr?","Potrzebujemy samolotów?"],["Co gdyby plastik zmienił się w drewno?","Co ze smartfonami?"],["Co gdyby uczyć się można było śpiąc na książce?","Istniałyby szkoły?"],["Co gdyby rysunki ożywały w nocy?","Co by robiły?"],["Co gdyby oddychać można było pod wodą?","Gdzie budujemy miasta?"],["Co gdyby grawitacja wyłączała się na 5 min dziennie?","Co z meblami?"],["Co gdyby księżyc był wielkim lustrem?","Co widzimy nocą?"],["Co gdyby samochody jeździły na śmiechu?","Jak jechać autostradą?"],["Co gdyby można było mówić tylko pytaniami?","Jak brzmią wiadomości?"],["Co gdyby oceany miały słodką wodę?","Co z rekinami?"],["Co gdyby ludzie mieli cztery ręce?","Jakie nowe sporty?"],["Co gdyby książki historyczne pisały koty?","Najważniejsze wydarzenie?"],["Co gdyby można było zmienić wiek?","Kiedy chcesz mieć 80 lat?"],["Co gdyby muzyka była jedyną walutą?","Kto najboatszy?"],["Co gdyby alfabet miał 10 liter?","Jak literować?"],["Co gdyby widzieć fale radiowe?","Niebo za pełne?"],["Co gdyby nie trzeba było spać?","Pracujemy 20 godzin dziennie?"]],L3:[["Co gdyby można kasować złe wspomnienia?","Nie uczymy się na błędach..."],["Co gdyby zwierzęta pozwały ludzi?","Za co by nas pozwały?"],["Co gdyby można zatrzymać czas na 1 godzinę?","Co ze złodziejami?"],["Co gdyby internet miał 10 wyszukiwań dziennie?","Jak zmienią się biblioteki?"],["Co gdyby teleportacja była jednorazowa?","Nagły wypadek czy wakacje?"],["Co gdyby widzieliśmy emocje jako kolorowe aury?","Można by kłamać?"],["Co gdyby wszystkie zawody płaciły tyle samo?","Kto byłby strażakiem?"],["Co gdyby dzieci były nauczycielami?","Czego uczą dorosłych?"],["Co gdyby starzenie szło od tyłu?","Jak wygląda przedszkole?"],["Co gdyby sztuka była nielegalna?","Jak się wyrażamy?"],["Co gdyby trzeba było płacić za tlen?","Oddychamy mniej?"],["Co gdyby twoje życie było reality show?","Zachowujesz się inaczej?"],["Co gdyby świat miał jedną strefę czasową?","O 9 rano ciemno u niektórych?"],["Co gdyby ludzie działali na energii słonecznej?","Musimy jeść?"],["Co gdyby każdy miał wykrywacz kłamstw?","Polityka mogłaby istnieć?"],["Co gdyby można pobierać umiejętności?","Szkoły znikają?"],["Co gdyby sen był opcjonalny?","Jak firmy traktują pracowników?"],["Co gdyby Ziemia przestała się kręcić?","Połowa świata zamarza?"],["Co gdyby każdy miał identycznego bliźniaka?","Jak działają drużyny sportowe?"],["Co gdyby znać datę poznania najlepszego przyjaciela?","Byłoby ekscytujące?"]]},
+ro:{L1:[["Ce-ar fi dacă toate roțile ar dispărea?","Cum am muta lucrurile grele?"],["Ce-ar fi dacă oamenii ar putea doar să cânte?","Cum ne-am certa?"],["Ce-ar fi dacă casele ar fi din jeleu?","Ce se întâmplă când plouă?"],["Ce-ar fi dacă animalele ar citi gândurile?","Ce ar crede animalul tău?"],["Ce-ar fi dacă n-am simți niciodată durere?","Cum am ști că e fierbinte?"],["Ce-ar fi dacă ar ploua cu limonadă?","Pantofii ar lipi?"],["Ce-ar fi dacă oamenii ar avea cozi de câine?","Cum s-ar schimba pantalonii?"],["Ce-ar fi dacă soarele ar străluci noaptea?","Când am dormi?"],["Ce-ar fi dacă bebii s-ar naște adulți?","Ar merge direct la muncă?"],["Ce-ar fi dacă toată mâncarea ar avea gust de broccoli?","Am mai mânca deserturi?"],["Ce-ar fi dacă copacii ar putea merge?","Pădurile ar migra iarna?"],["Ce-ar fi dacă norii ar fi din vată de zahăr?","I-am putea mânca?"],["Ce-ar fi dacă oglinzile ar arăta viitorul?","Te-ai uita în fiecare dimineață?"],["Ce-ar fi dacă tot ce desenezi ar deveni real?","Ce ai desena primul?"],["Ce-ar fi dacă ar trebui să sărim peste tot?","Cât ar dura un maraton?"],["Ce-ar fi dacă hainele și-ar schimba culoarea după dispoziție?","Ce culoare când ești supărat?"],["Ce-ar fi dacă animalele ar face treburile casei?","Cine ți-ar curăța camera?"],["Ce-ar fi dacă ar fi un singur anotimp?","Ce s-ar întâmpla cu oamenii de zăpadă?"],["Ce-ar fi dacă toată lumea ar avea un robot?","Ce ar face al tău?"],["Ce-ar fi dacă ciocolata ar fi sănătoasă?","Cât ai mânca?"]],L2:[["Ce-ar fi dacă electricitatea ar dispărea un an?","Mâncarea se strică, fără lumină..."],["Ce-ar fi dacă oamenii ar spune mereu adevărul?","Ce se întâmplă cu cadourile proaste?"],["Ce-ar fi dacă banii ar crește în copaci?","Ar mai munci cineva?"],["Ce-ar fi dacă am putea zbura la 1 metru?","Am avea nevoie de avioane?"],["Ce-ar fi dacă plasticul s-ar transforma în lemn?","Ce se întâmplă cu telefoanele?"],["Ce-ar fi dacă am învăța dormind pe o carte?","Ar mai exista școli?"],["Ce-ar fi dacă desenele ar prinde viață noaptea?","Ce ar face?"],["Ce-ar fi dacă am putea respira sub apă?","Unde am construi orașe noi?"],["Ce-ar fi dacă gravitația s-ar opri 5 minute zilnic?","Ce cu mobilierul?"],["Ce-ar fi dacă luna ar fi o oglindă uriașă?","Ce am vedea noaptea?"],["Ce-ar fi dacă mașinile ar merge pe râs?","Cum conduci pe autostradă?"],["Ce-ar fi dacă am vorbi doar în întrebări?","Cum ar suna știrile?"],["Ce-ar fi dacă oceanele ar fi de apă dulce?","Ce cu rechinii?"],["Ce-ar fi dacă oamenii ar avea patru brațe?","Ce sporturi noi?"],["Ce-ar fi dacă cărțile de istorie ar fi scrise de pisici?","Cel mai important eveniment?"],["Ce-ar fi dacă ne-am putea schimba vârsta?","Când ai alege 80 de ani?"],["Ce-ar fi dacă muzica ar fi singura monedă?","Cine ar fi cel mai bogat?"],["Ce-ar fi dacă alfabetul ar avea doar 10 litere?","Cum scriem cuvintele?"],["Ce-ar fi dacă am vedea undele radio?","Cerul ar fi prea aglomerat?"],["Ce-ar fi dacă oamenii n-ar avea nevoie de somn?","Am munci 20 de ore pe zi?"]],L3:[["Ce-ar fi dacă am putea șterge amintirile rele?","N-am învăța din greșeli..."],["Ce-ar fi dacă animalele ar da oamenii în judecată?","Pentru ce?"],["Ce-ar fi dacă am pune timpul pe pauză 1 oră?","Dar hoții?"],["Ce-ar fi dacă internetul ar avea 10 căutări pe zi?","Cum s-ar schimba bibliotecile?"],["Ce-ar fi dacă teleportarea ar fi de o singură dată?","Urgență sau vacanță?"],["Ce-ar fi dacă am vedea emoțiile ca aure colorate?","S-ar mai putea minti?"],["Ce-ar fi dacă toate profesiile ar plăti la fel?","Cine ar fi pompier?"],["Ce-ar fi dacă copiii ar deveni profesorii?","Ce ar învăța copiii pe adulți?"],["Ce-ar fi dacă îmbătrânirea ar merge invers?","Cum ar arăta grădinița?"],["Ce-ar fi dacă arta ar fi ilegală?","Cum s-ar exprima oamenii?"],["Ce-ar fi dacă am plăti pentru oxigen?","Am respira mai puțin?"],["Ce-ar fi dacă viața ta ar fi un reality show?","Te-ai comporta altfel?"],["Ce-ar fi dacă lumea ar avea un singur fus orar?","Ar fi întuneric la 9 dimineața?"],["Ce-ar fi dacă oamenii ar funcționa pe energie solară?","Am mai avea nevoie să mâncăm?"],["Ce-ar fi dacă toată lumea ar avea detector de minciuni?","Ar putea exista politica?"],["Ce-ar fi dacă am descărca abilități instant?","Ar dispărea școlile?"],["Ce-ar fi dacă somnul ar fi opțional?","Cum ar trata companiile angajații?"],["Ce-ar fi dacă Pământul s-ar opri din rotit?","Jumătate din lume ar îngheța?"],["Ce-ar fi dacă toată lumea ar avea un geamăn identic?","Cum ar funcționa echipele sportive?"],["Ce-ar fi dacă am ști data exactă când ne întâlnim cel mai bun prieten?","Ar mai fi emoționant?"]]},
+sv:{L1:[["Tänk om alla hjul försvann?","Hur flyttar vi tunga saker?"],["Tänk om människor bara kunde sjunga?","Hur bråkar vi?"],["Tänk om hus var gjorda av gelé?","Vad händer när det regnar?"],["Tänk om djur kunde läsa tankar?","Vad tänker ditt husdjur?"],["Tänk om vi aldrig kände smärta?","Hur vet vi att spisen är het?"],["Tänk om det regnade lemonad?","Klistrar skorna fast?"],["Tänk om människor hade hundsvansar?","Hur ändras byxor?"],["Tänk om solen lyste på natten?","När sover vi?"],["Tänk om bebisar föddes som vuxna?","Direkt till jobbet?"],["Tänk om all mat smakade broccoli?","Fortfarande efterrätt?"],["Tänk om träd kunde gå?","Flyttar skogar på vintern?"],["Tänk om moln var av sockervadd?","Kan vi äta dem?"],["Tänk om speglar visade framtiden?","Tittar du varje morgon?"],["Tänk om allt du ritade blev verkligt?","Vad ritar du först?"],["Tänk om vi var tvungna att hoppa överallt?","Hur långt tar ett maraton?"],["Tänk om kläder bytte färg efter humör?","Vilken färg när du är arg?"],["Tänk om husdjur kunde göra våra sysslor?","Vem städar ditt rum?"],["Tänk om det bara fanns en årstid?","Vad händer med snögubbar?"],["Tänk om alla hade en robot?","Vad skulle din göra?"],["Tänk om choklad var nyttigt?","Hur mycket äter du?"]],L2:[["Tänk om elen försvann ett år?","Maten förstörs, inget ljus..."],["Tänk om folk alltid sa sanningen?","Vad med dåliga presenter?"],["Tänk om pengar växte på träd?","Skulle någon jobba?"],["Tänk om vi kunde flyga 1 meter högt?","Behöver vi flygplan?"],["Tänk om plast blev trä?","Vad med mobiler?"],["Tänk om man lärde sig genom att sova på en bok?","Finns skolor?"],["Tänk om teckningar vaknade till liv på natten?","Vad gör de?"],["Tänk om vi kunde andas under vatten?","Var bygger vi städer?"],["Tänk om gravitationen stängdes av 5 min dagligen?","Vad med möblerna?"],["Tänk om månen var en jättespegel?","Vad ser vi på natten?"],["Tänk om bilar drevs av skratt?","Hur kör man på motorvägen?"],["Tänk om vi bara kunde tala i frågor?","Hur låter nyheterna?"],["Tänk om alla hav var sötvatten?","Vad med hajarna?"],["Tänk om människor hade fyra armar?","Vilka nya sporter?"],["Tänk om historieböcker skrevs av katter?","Viktigaste händelsen?"],["Tänk om vi kunde ändra vår ålder?","När vill du vara 80?"],["Tänk om musik var den enda valutan?","Vem är rikast?"],["Tänk om alfabetet hade 10 bokstäver?","Hur stavar vi?"],["Tänk om vi kunde se radiovågor?","Himlen för full?"],["Tänk om människor inte behövde sova?","Jobba 20 timmar om dagen?"]],L3:[["Tänk om vi kunde radera dåliga minnen?","Vi lär oss inte av misstag..."],["Tänk om djur stämde människor?","Vad stämmer de oss för?"],["Tänk om vi kunde pausa tiden 1 timme?","Vad med tjuvar?"],["Tänk om internet hade 10 sökningar per dag?","Hur ändras bibliotek?"],["Tänk om teleportering var engångs?","Nödfall eller semester?"],["Tänk om vi såg känslor som färgade auror?","Kan man ljuga?"],["Tänk om alla yrken betalade lika?","Vem blir brandman?"],["Tänk om barn blev lärare?","Vad lär barn vuxna?"],["Tänk om åldrande gick bakåt?","Hur ser förskolan ut?"],["Tänk om konst var olagligt?","Hur uttrycker man sig?"],["Tänk om vi betalade för syre?","Andas mindre?"],["Tänk om ditt liv var en realityshow?","Beter du dig annorlunda?"],["Tänk om världen hade en enda tidszon?","Mörkt kl 9 för några?"],["Tänk om människor var soldrivna?","Behöver vi äta?"],["Tänk om alla hade en lögndetector?","Finns politik?"],["Tänk om vi kunde ladda ner färdigheter?","Försvinner skolor?"],["Tänk om sömn var frivilligt?","Hur behandlar företag anställda?"],["Tänk om jorden slutade snurra?","Halva världen fryser?"],["Tänk om alla hade en identisk tvilling?","Hur fungerar sportlag?"],["Tänk om vi visste när vi träffar vår bästa vän?","Fortfarande spännande?"]]},
+da:{L1:[["Hvad nu hvis alle hjul forsvandt?","Hvordan flytter vi tunge ting?"],["Hvad nu hvis mennesker kun kunne synge?","Hvordan skændes vi?"],["Hvad nu hvis huse var lavet af gelé?","Hvad sker der når det regner?"],["Hvad nu hvis dyr kunne læse tanker?","Hvad tænker dit kæledyr?"],["Hvad nu hvis vi aldrig følte smerte?","Hvordan ved vi komfuret er varmt?"],["Hvad nu hvis det regnede limonade?","Klistrer skoene fast?"],["Hvad nu hvis mennesker havde hundehaler?","Hvordan ændrer bukser sig?"],["Hvad nu hvis solen skinnede om natten?","Hvornår sover vi?"],["Hvad nu hvis babyer blev født som voksne?","Direkte på arbejde?"],["Hvad nu hvis al mad smagte af broccoli?","Stadig dessert?"],["Hvad nu hvis træer kunne gå?","Vandrer skove om vinteren?"],["Hvad nu hvis skyer var lavet af candyfloss?","Kan vi spise dem?"],["Hvad nu hvis spejle viste fremtiden?","Kigger du hver morgen?"],["Hvad nu hvis alt du tegnede blev virkeligt?","Hvad tegner du først?"],["Hvad nu hvis vi skulle hoppe alle steder?","Hvor lang tid tager et maraton?"],["Hvad nu hvis tøj skiftede farve med humør?","Hvilken farve når du er vred?"],["Hvad nu hvis kæledyr kunne gøre husarbejde?","Hvem rydder dit værelse?"],["Hvad nu hvis der kun var én årstid?","Hvad med snemænd?"],["Hvad nu hvis alle havde en robot?","Hvad ville din gøre?"],["Hvad nu hvis chokolade var sundt?","Hvor meget ville du spise?"]],L2:[["Hvad nu hvis strømmen forsvandt i et år?","Maden fordærves, intet lys..."],["Hvad nu hvis folk altid sagde sandheden?","Hvad med dårlige gaver?"],["Hvad nu hvis penge voksede på træer?","Ville nogen stadig arbejde?"],["Hvad nu hvis vi kunne flyve 1 meter højt?","Behøver vi fly?"],["Hvad nu hvis plastik blev til træ?","Hvad med smartphones?"],["Hvad nu hvis man lærte ved at sove på en bog?","Ville skoler eksistere?"],["Hvad nu hvis tegninger blev levende om natten?","Hvad ville de gøre?"],["Hvad nu hvis vi kunne ånde under vand?","Hvor bygger vi byer?"],["Hvad nu hvis tyngdekraften slukkede 5 min dagligt?","Hvad med møblerne?"],["Hvad nu hvis månen var et kæmpe spejl?","Hvad ser vi om natten?"],["Hvad nu hvis biler kørte på latter?","Hvordan kører man på motorvejen?"],["Hvad nu hvis vi kun kunne tale i spørgsmål?","Hvordan lyder nyheder?"],["Hvad nu hvis alle have var ferskvand?","Hvad med hajerne?"],["Hvad nu hvis mennesker havde fire arme?","Hvilke nye sportsgrene?"],["Hvad nu hvis historiebøger var skrevet af katte?","Vigtigste begivenhed?"],["Hvad nu hvis vi kunne ændre vores alder?","Hvornår vil du være 80?"],["Hvad nu hvis musik var den eneste valuta?","Hvem er rigest?"],["Hvad nu hvis alfabetet kun havde 10 bogstaver?","Hvordan staver vi?"],["Hvad nu hvis vi kunne se radiobølger?","Himlen for fuld?"],["Hvad nu hvis mennesker ikke behøvede at sove?","Arbejde 20 timer om dagen?"]],L3:[["Hvad nu hvis vi kunne slette dårlige minder?","Vi lærer ikke af fejl..."],["Hvad nu hvis dyr sagsøgte mennesker?","Hvad sagsøger de os for?"],["Hvad nu hvis vi kunne pause tiden i 1 time?","Hvad med tyve?"],["Hvad nu hvis internet havde 10 søgninger om dagen?","Hvordan ændrer biblioteker sig?"],["Hvad nu hvis teleportation var engangsbrug?","Nødsituation eller ferie?"],["Hvad nu hvis vi så følelser som farvede auraer?","Kan man lyve?"],["Hvad nu hvis alle erhverv betalte det samme?","Hvem bliver brandmand?"],["Hvad nu hvis børn blev lærerne?","Hvad lærer børn voksne?"],["Hvad nu hvis aldring gik baglæns?","Hvordan ser børnehaven ud?"],["Hvad nu hvis kunst var ulovligt?","Hvordan udtrykker folk sig?"],["Hvad nu hvis vi skulle betale for ilt?","Ånde mindre?"],["Hvad nu hvis dit liv var et reality show?","Ville du opføre dig anderledes?"],["Hvad nu hvis verden havde én tidszone?","Mørkt kl 9 for nogen?"],["Hvad nu hvis mennesker var soldrevne?","Behøver vi spise?"],["Hvad nu hvis alle havde en løgnedetektor?","Kunne politik eksistere?"],["Hvad nu hvis vi kunne downloade færdigheder?","Forsvinder skoler?"],["Hvad nu hvis søvn var valgfrit?","Hvordan behandler firmaer ansatte?"],["Hvad nu hvis Jorden stoppede med at dreje?","Halvdelen af verden fryser?"],["Hvad nu hvis alle havde en identisk tvilling?","Hvordan fungerer sportshold?"],["Hvad nu hvis vi vidste hvornår vi møder vores bedste ven?","Stadig spændende?"]]},
+pt:{L1:[["E se todas as rodas desaparecessem?","Como mover coisas pesadas?"],["E se as pessoas só pudessem cantar?","Como brigaríamos?"],["E se as casas fossem de gelatina?","O que acontece quando chove?"],["E se os animais lessem pensamentos?","O que seu pet pensaria?"],["E se nunca sentíssemos dor?","Como saber se algo está quente?"],["E se chovesse limonada?","Sapatos grudariam?"],["E se humanos tivessem rabos de cachorro?","Como as calças mudariam?"],["E se o sol brilhasse à noite?","Quando dormiríamos?"],["E se bebês nascessem adultos?","Iriam direto trabalhar?"],["E se toda comida tivesse gosto de brócolis?","Comeriam sobremesa?"],["E se as árvores pudessem andar?","Florestas migrariam no inverno?"],["E se as nuvens fossem de algodão doce?","Poderíamos comê-las?"],["E se os espelhos mostrassem o futuro?","Olharia toda manhã?"],["E se tudo que você desenhasse virasse real?","O que desenharia primeiro?"],["E se tivéssemos que pular em todo lugar?","Quanto duraria uma maratona?"],["E se roupas mudassem de cor com humor?","Que cor com raiva?"],["E se os pets fizessem as tarefas?","Quem limpa seu quarto?"],["E se houvesse só uma estação?","O que acontece com bonecos de neve?"],["E se todos tivessem um robô pessoal?","O que o seu faria?"],["E se chocolate fosse saudável?","Quanto comeria?"]],L2:[["E se a eletricidade desaparecesse por um ano?","Comida estraga, sem luz..."],["E se as pessoas sempre dissessem a verdade?","O que com presentes ruins?"],["E se dinheiro crescesse em árvores?","Alguém ainda trabalharia?"],["E se pudéssemos voar a 1 metro?","Precisamos de aviões?"],["E se plástico virasse madeira?","O que com smartphones?"],["E se aprendêssemos dormindo sobre um livro?","Escolas existiriam?"],["E se desenhos ganhassem vida à noite?","O que fariam?"],["E se pudéssemos respirar debaixo d'água?","Onde construir cidades?"],["E se a gravidade desligasse 5 min por dia?","O que com os móveis?"],["E se a lua fosse um espelho gigante?","O que veríamos?"],["E se carros funcionassem com risadas?","Como dirigir na rodovia?"],["E se só pudéssemos falar em perguntas?","Como seria o noticiário?"],["E se todos os oceanos fossem de água doce?","O que com tubarões?"],["E se humanos tivessem quatro braços?","Que esportes novos?"],["E se a história fosse escrita por gatos?","Evento mais importante?"],["E se pudéssemos mudar de idade?","Quando escolheria ter 80?"],["E se música fosse a única moeda?","Quem seria mais rico?"],["E se o alfabeto tivesse 10 letras?","Como soletrar?"],["E se pudéssemos ver ondas de rádio?","Céu lotado demais?"],["E se humanos não precisassem dormir?","Trabalhar 20 horas por dia?"]],L3:[["E se pudéssemos apagar memórias ruins?","Não aprenderíamos com erros..."],["E se animais processassem humanos?","Por quê?"],["E se pudéssemos pausar o tempo por 1 hora?","E os ladrões?"],["E se a internet tivesse 10 buscas por dia?","Como mudariam as bibliotecas?"],["E se teletransporte fosse de uso único?","Emergência ou férias?"],["E se víssemos emoções como auras coloridas?","Dá para mentir?"],["E se todas as profissões pagassem igual?","Quem seria bombeiro?"],["E se crianças fossem os professores?","O que ensinariam?"],["E se o envelhecimento fosse ao contrário?","Como seria a creche?"],["E se arte fosse ilegal?","Como se expressar?"],["E se pagássemos pelo oxigênio?","Respirar menos?"],["E se sua vida fosse um reality show?","Agiria diferente?"],["E se o mundo tivesse um único fuso horário?","Escuro às 9h para alguns?"],["E se humanos fossem movidos a energia solar?","Precisamos comer?"],["E se todos tivessem detector de mentiras?","Política existiria?"],["E se pudéssemos baixar habilidades?","Escolas desapareceriam?"],["E se dormir fosse opcional?","Como empresas tratariam funcionários?"],["E se a Terra parasse de girar?","Metade do mundo congelaria?"],["E se todos tivessem um gêmeo idêntico?","Como funcionariam times esportivos?"],["E se soubéssemos quando encontraríamos nosso melhor amigo?","Ainda emocionante?"]]},
+};
+
+let currentLang = null;
+let currentLevel = 0;
+let currentIndex = 0;
+let cards = [];
+
+// Check URL param
+const urlParams = new URLSearchParams(window.location.search);
+const langParam = urlParams.get('lang');
+
+function init() {
+    const grid = document.getElementById('lang-grid');
+    for (const [code, lang] of Object.entries(LANGS)) {
+        const btn = document.createElement('button');
+        btn.className = 'lang-btn';
+        btn.innerHTML = `<span class="lang-flag">${lang.flag}</span>${lang.name}`;
+        btn.onclick = () => startGame(code);
+        grid.appendChild(btn);
+    }
+    if (langParam && LANGS[langParam]) startGame(langParam);
+}
+
+function startGame(langCode) {
+    currentLang = langCode;
+    currentLevel = 0;
+    currentIndex = 0;
+    document.getElementById('lang-screen').style.display = 'none';
+    document.getElementById('game-screen').style.display = 'block';
+    document.getElementById('game-title').textContent = LANGS[langCode].title;
+    
+    buildLevelTabs();
+    loadLevel(0);
+}
+
+function buildLevelTabs() {
+    const tabs = document.getElementById('level-tabs');
+    tabs.innerHTML = '';
+    const levels = LANGS[currentLang].levels;
+    levels.forEach((name, idx) => {
+        const tab = document.createElement('button');
+        tab.className = 'level-tab' + (idx === currentLevel ? ' active' : '');
+        tab.textContent = name;
+        tab.onclick = () => loadLevel(idx);
+        tabs.appendChild(tab);
+    });
+}
+
+function loadLevel(lvl) {
+    currentLevel = lvl;
+    currentIndex = 0;
+    const levelKey = ['L1','L2','L3'][lvl];
+    cards = [...Q[currentLang][levelKey]];
+    buildLevelTabs();
+    showCard();
+}
+
+function showCard() {
+    if (currentIndex >= cards.length) currentIndex = 0;
+    const [question, hint] = cards[currentIndex];
+    document.getElementById('card-question').textContent = question;
+    document.getElementById('card-hint').textContent = hint ? `${LANGS[currentLang].levels[currentLevel] === LANGS[currentLang].levels[0] ? '💡 ' : '🤔 '}${hint}` : '';
+    document.getElementById('card-level').textContent = LANGS[currentLang].levels[currentLevel];
+    document.getElementById('card-num').textContent = `${currentIndex + 1}/${cards.length}`;
+    document.getElementById('card').classList.remove('flipped');
+    document.getElementById('progress').textContent = `Card ${currentIndex + 1} of ${cards.length}`;
+    
+    // Update back text
+    const back = LANGS[currentLang].back;
+    document.querySelector('.card-back p').innerHTML = back.join('<br>');
+    
+    // Update next button
+    document.querySelector('.btn-next').textContent = LANGS[currentLang].next;
+}
+
+function flipCard() {
+    document.getElementById('card').classList.toggle('flipped');
+}
+
+function nextCard() {
+    currentIndex++;
+    if (currentIndex >= cards.length) currentIndex = 0;
+    showCard();
+}
+
+function shuffle() {
+    for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    currentIndex = 0;
+    showCard();
+}
+
+function changeLang() {
+    document.getElementById('game-screen').style.display = 'none';
+    document.getElementById('lang-screen').style.display = 'flex';
+}
+
+init();
+</script>
+</body>
+</html>
