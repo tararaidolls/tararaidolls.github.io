@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TararaiDolls | Educational Printables & Tools</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9fafb; /* Soft light gray */
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* HEADER / BIO PROFILE */
+        .profile-header {
+            text-align: center;
+            padding: 50px 20px 30px;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #94a3b8;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .profile-header h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+        .profile-header p {
+            font-size: 15px;
+            color: #64748b;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        
+        /* SOCIAL LINKS */
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-btn {
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .social-btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .btn-etsy { background-color: #f1641e; }
+        .btn-tpt { background-color: #21a39d; }
+        .btn-amazon { background-color: #ff9900; color: #111; }
+
+        /* PRODUCT CATALOG GRID */
+        .catalog-container {
+            max-width: 1000px;
+            margin: 40px auto 60px;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* PRODUCT CARDS */
+        .card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px rgba(15, 23, 42, 0.1);
+        }
+        
+        .card-img-placeholder {
+            height: 180px;
+            background: linear-gradient(45deg, #e2e8f0, #cbd5e1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #94a3b8;
+            position: relative;
+        }
+        
+        .card-body {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .category-tag {
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .tag-stem { background: #e0e7ff; color: #3b82f6; }
+        .tag-lang { background: #fce7f3; color: #8b5cf6; }
+        .tag-skills { background: #dcfce7; color: #10b981; }
+
+        .card h3 {
+            font-size: 20px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .card p {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .action-btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .action-btn:hover { opacity: 0.8; }
+        .btn-primary { background: #0f172a; color: white; }
+        .btn-outline { background: transparent; border: 2px solid #cbd5e1; color: #475569; }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #0f172a;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- PROFILE HEADER (Like Linktree) -->
+    <header class="profile-header">
+        <div class="profile-avatar">✨</div>
+        <h1>TararaiDolls</h1>
+        <p>Printable educational workbooks & parenting tools for raising curious, focused, and creative kids.</p>
+        
+        <div class="social-links">
+            <a href="https://tararaidolls.etsy.com" class="social-btn btn-etsy" target="_blank">Shop on Etsy</a>
+            <a href="https://www.teacherspayteachers.com" class="social-btn btn-tpt" target="_blank">Shop on TPT</a>
+            <a href="https://amazon.com" class="social-btn btn-amazon" target="_blank">Books on Amazon</a>
+        </div>
+    </header>
+
+    <!-- CATALOG -->
+    <main class="catalog-container">
+        <h2 class="section-title">Explore Our Collections</h2>
+        
+        <div class="grid">
+            
+            <!-- PRODUCT 1: TRIZ -->
+            <div class="card">
+                <div class="card-img-placeholder" style="background: linear-gradient(45deg, #4f46e5, #818cf8);">
+                    <span style="color: white;">🚀</span>
+                </div>
+                <div class="card-body">
+                    <div><span class="category-tag tag-stem">STEM & Logic</span></div>
+                    <h3>Think Like an Inventor (TRIZ Series)</h3>
+                    <p>4-Volume curriculum of screen-free engineering challenges. Teach your child to solve impossible problems using pure logic and imagination.</p>
+                    <div class="card-actions">
+                        <a href="https://amazon.com" class="action-btn btn-primary" target="_blank">Paperback</a>
+                        <a href="https://www.teacherspayteachers.com" class="action-btn btn-outline" target="_blank">Printable PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2: ONE VERB A DAY -->
+            <div class="card">
+                <div class="card-img-placeholder" style="background: linear-gradient(45deg, #ec4899, #f472b6);">
+                    <span style="color: white;">🗣️</span>
+                </div>
+                <div class="card-body">
+                    <div><span class="category-tag tag-lang">Languages</span></div>
+                    <h3>One Verb a Day Workbooks</h3>
+                    <p>Overcome the language barrier in just 5 minutes a day. Master the 400 essential verbs in Spanish, French, German, or Polish. No complex grammar rules.</p>
+                    <div class="card-actions">
+                        <a href="https://amazon.com" class="action-btn btn-primary" target="_blank">View Languages</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3: LIFE SKILLS (POSTERS) -->
+            <div class="card">
+                <div class="card-img-placeholder" style="background: linear-gradient(45deg, #10b981, #34d399);">
+                    <span style="color: white;">🧠</span>
+                </div>
+                <div class="card-body">
+                    <div><span class="category-tag tag-skills">Parenting Tools</span></div>
+                    <h3>Life Skills Academy Posters</h3>
+                    <p>Gamify your child's daily routines. Stop procrastination, build focus, and conquer mornings with our interactive fridge posters and clothespin trackers.</p>
+                    <div class="card-actions">
+                        <a href="https://tararaidolls.etsy.com" class="action-btn btn-primary" target="_blank">Shop Printables</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4: DICTATIONS -->
+            <div class="card">
+                <div class="card-img-placeholder" style="background: linear-gradient(45deg, #0ea5e9, #38bdf8);">
+                    <span style="color: white;">🎧</span>
+                </div>
+                <div class="card-body">
+                    <div><span class="category-tag tag-lang">Languages</span></div>
+                    <h3>Listen & Write: Dictation Books</h3>
+                    <p>Master any language by ear. Daily dictation workbooks equipped with smart QR codes that play native audio directly to your phone.</p>
+                    <div class="card-actions">
+                        <a href="https://amazon.com" class="action-btn btn-primary" target="_blank">Paperback</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 5: TWIN TRACKS -->
+            <div class="card">
+                <div class="card-img-placeholder" style="background: linear-gradient(45deg, #d946ef, #f472b6);">
+                    <span style="color: white;">👶</span>
+                </div>
+                <div class="card-body">
+                    <div><span class="category-tag tag-skills">Parenting Tools</span></div>
+                    <h3>Twin Tracks Daily Log Book</h3>
+                    <p>The ultimate survival tool for moms of multiples. Easily track sleep, feedings, and diaper changes for both babies side-by-side.</p>
+                    <div class="card-actions">
+                        <a href="https://amazon.com" class="action-btn btn-primary" target="_blank">Paperback</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 6: KITCHEN BOSS -->
+            <div class="card">
+                <div class="card-img-placeholder" style="background: linear-gradient(45deg, #f59e0b, #fbbf24);">
+                    <span style="color: white;">🍏</span>
+                </div>
+                <div class="card-body">
+                    <div><span class="category-tag tag-skills">Life Skills</span></div>
+                    <h3>Kitchen Boss: The Food Engineer</h3>
+                    <p>Teach kids nutrition and smart shopping without lecturing. Interactive challenges to build a healthy plate and navigate supermarket traps.</p>
+                    <div class="card-actions">
+                        <a href="#" class="action-btn btn-outline" style="cursor: default;">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 TararaiDolls. Empowering kids and parents worldwide.</p>
+    </footer>
+
+</body>
+</html>
