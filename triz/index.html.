@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Like an Inventor | Bonus Page</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0d1b2a;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%);
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-bottom: 3px solid #f5c518;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: #f5c518;
+            color: #0d1b2a;
+            font-weight: 800;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 6px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: clamp(28px, 6vw, 52px);
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+        .hero h1 span { color: #f5c518; }
+        .hero p {
+            font-size: 18px;
+            color: #a8c0d6;
+            max-width: 600px;
+            margin: 15px auto 30px;
+        }
+        .gear-icon { font-size: 48px; margin-bottom: 15px; }
+
+        /* BONUS SECTION */
+        .section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .section h2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #f5c518;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* CHALLENGE CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        .card {
+            background: #1a3a5c;
+            border: 1px solid #2a4f73;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover { transform: translateY(-4px); border-color: #f5c518; }
+        .card .number {
+            font-size: 36px;
+            font-weight: 900;
+            color: #f5c518;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .card p { font-size: 14px; color: #a8c0d6; }
+        .card .tool-tag {
+            display: inline-block;
+            background: rgba(245, 197, 24, 0.15);
+            color: #f5c518;
+            border: 1px solid rgba(245, 197, 24, 0.3);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            border-radius: 10px;
+            margin-top: 12px;
+        }
+
+        /* WHAT IF ENGINE */
+        .engine-box {
+            background: #1a3a5c;
+            border: 2px solid #f5c518;
+            border-radius: 16px;
+            padding: 35px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .engine-box h3 { font-size: 22px; font-weight: 800; color: #ffffff; margin-bottom: 10px; }
+        .engine-box p { color: #a8c0d6; font-size: 15px; margin-bottom: 25px; }
+        .question-display {
+            background: #0d1b2a;
+            border-radius: 10px;
+            padding: 20px 25px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        .btn {
+            display: inline-block;
+            background: #f5c518;
+            color: #0d1b2a;
+            font-weight: 800;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 14px 35px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .btn:hover { transform: scale(1.04); opacity: 0.9; }
+        .btn.secondary {
+            background: transparent;
+            color: #f5c518;
+            border: 2px solid #f5c518;
+            margin-top: 15px;
+        }
+
+        /* CTA */
+        .cta {
+            background: linear-gradient(135deg, #1a3a5c 0%, #0d1b2a 100%);
+            border-top: 3px solid #f5c518;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .cta h2 { font-size: 30px; font-weight: 900; color: #ffffff; margin-bottom: 10px; }
+        .cta p { color: #a8c0d6; margin-bottom: 30px; max-width: 550px; margin-left: auto; margin-right: auto; margin-bottom: 30px; }
+
+        .volume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            max-width: 700px;
+            margin: 0 auto 35px;
+        }
+        .volume-item {
+            background: #1a3a5c;
+            border-radius: 10px;
+            padding: 15px 10px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #a8c0d6;
+        }
+        .volume-item strong { display: block; color: #f5c518; font-size: 15px; margin-bottom: 4px; }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #4a6a8a;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="gear-icon">⚙️</div>
+    <div class="badge">🎉 Bonus Content for Book Owners</div>
+    <h1>Think Like<br><span>an Inventor</span></h1>
+    <p>Thank you for getting the workbook! Here are your exclusive bonus challenges and tools to keep your brain inventing!</p>
+</div>
+
+<!-- BONUS CHALLENGES -->
+<div class="section">
+    <h2>⚡ 5 Bonus Engineering Challenges</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="number">01</div>
+            <h3>The Invisible Umbrella</h3>
+            <p>Design a way to keep a person dry from rain without using any fabric or traditional umbrella shape. What forces of nature can you use instead?</p>
+            <span class="tool-tag">TRIZ Tool: Inversion</span>
+        </div>
+        <div class="card">
+            <div class="number">02</div>
+            <h3>The Floating Library</h3>
+            <p>A library needs to serve 3 different towns but can only exist in one place. Redesign it so it can serve all 3 towns without moving people.</p>
+            <span class="tool-tag">TRIZ Tool: Segmentation</span>
+        </div>
+        <div class="card">
+            <div class="number">03</div>
+            <h3>The Zero-Space Chair</h3>
+            <p>Invent a chair that takes up zero space when not in use, but is fully comfortable when someone sits. No folding allowed.</p>
+            <span class="tool-tag">TRIZ Tool: Nesting</span>
+        </div>
+        <div class="card">
+            <div class="number">04</div>
+            <h3>The Noise-Eating Wall</h3>
+            <p>A school next to a busy road is too noisy. Design a wall that makes noise disappear instead of just blocking it.</p>
+            <span class="tool-tag">TRIZ Tool: Counteraction</span>
+        </div>
+        <div class="card">
+            <div class="number">05</div>
+            <h3>The Self-Cleaning Shoe</h3>
+            <p>Design a shoe that cleans itself while walking. It cannot use electricity or batteries. What material or mechanism would you use?</p>
+            <span class="tool-tag">TRIZ Tool: Self-Service</span>
+        </div>
+    </div>
+</div>
+
+<!-- WHAT IF ENGINE -->
+<div class="section">
+    <h2>🧠 The "What If?" Generator</h2>
+    <div class="engine-box">
+        <h3>Stuck? Hit the button for a brain spark!</h3>
+        <p>Each click gives you a random "What If?" question designed to unlock creative thinking.</p>
+        <div class="question-display" id="questionDisplay">
+            Press the button to get your first inventive question! ⬇️
+        </div>
+        <button class="btn" onclick="newQuestion()">⚡ Generate New Question</button>
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+    <h2>Ready for the Full Journey?</h2>
+    <p>This workbook is just Volume 1. Complete your 400-challenge inventor training with the full series!</p>
+    <div class="volume-grid">
+        <div class="volume-item"><strong>Vol. 1</strong>Survival & Basics (You're here! ✅)</div>
+        <div class="volume-item"><strong>Vol. 2</strong>Invention Machine</div>
+        <div class="volume-item"><strong>Vol. 3</strong>Mission Possible</div>
+        <div class="volume-item"><strong>Vol. 4</strong>The Blueprints</div>
+    </div>
+    <a href="https://www.amazon.com/s?k=Think+Like+an+Inventor+Maryna+Skliar" class="btn" target="_blank">🛒 Get All 4 Volumes on Amazon</a>
+    <br>
+    <a href="https://www.teacherspayteachers.com" class="btn secondary" target="_blank" style="margin-top: 15px; display: inline-block;">📄 Download PDF on TPT</a>
+</div>
+
+<footer>
+    © 2026 Maryna Skliar | Think Like an Inventor Series | tararaidolls.github.io
+</footer>
+
+<script>
+    const questions = [
+        "What if gravity worked sideways instead of downward?",
+        "What if every object could change its size on command?",
+        "What if water could think?",
+        "What if buildings could feel pain and heal themselves?",
+        "What if schools were underground?",
+        "What if you could store sunlight in a jar?",
+        "What if trees could walk?",
+        "What if all transportation had to be silent?",
+        "What if we could shrink problems to see them better?",
+        "What if roads were made of something soft?",
+        "What if packaging dissolved when it touched rain?",
+        "What if tools could sense when they were about to be used incorrectly?",
+        "What if bridges could grow longer when needed?",
+        "What if cities floated on water?",
+        "What if food could cook itself using its own energy?",
+        "What if windows could switch from transparent to opaque on command?",
+        "What if shoes got stronger the more you walked?",
+        "What if you could borrow someone else's skills for one hour?",
+        "What if everything had a built-in undo button?",
+        "What if the sky was a display screen?"
+    ];
+    let lastIndex = -1;
+    function newQuestion() {
+        let idx;
+        do { idx = Math.floor(Math.random() * questions.length); } while (idx === lastIndex);
+        lastIndex = idx;
+        document.getElementById('questionDisplay').textContent = questions[idx];
+    }
+</script>
+</body>
+</html>
