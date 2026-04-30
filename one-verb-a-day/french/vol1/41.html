@@ -1,64 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>French Verb of the Day 41</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f7f9fc;
-            color: #333;
-        }
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 90%;
-            width: 400px;
-        }
-        .verb {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin: 10px 0;
-            color: #1a73e8;
-        }
-        .translation {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        audio {
-            width: 100%;
-            margin-top: 15px;
-        }
-        .day-badge {
-            background: #e8f0fe;
-            color: #1a73e8;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Day 41 - chercher</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background-color: #f4f9f7; margin:0; }
+.player { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); text-align: center; width: 80%; max-width: 350px; border: 2px solid #e0ece6;}
+h2 { color: #2a5a5a; font-size: 24px; margin-bottom: 10px;}
+p.trans { color: #7f8c8d; font-size: 16px; margin-bottom: 30px; }
+button { width: 100%; padding: 18px; margin-bottom: 15px; font-size: 16px; font-weight: bold; border: none; border-radius: 14px; cursor: pointer; color: white; transition: 0.2s; box-shadow: 0 5px 15px rgba(0,0,0,0.1);}
+button:active { transform: scale(0.95); }
+.normal { background: linear-gradient(135deg, #2a5a5a, #3a7a7a); }
+.ai-coach { background: linear-gradient(135deg, #8e44ad, #9b59b6); margin-top: 10px; }
+.back { background: #95a5a6; margin-top: 20px; }
+</style>
 </head>
 <body>
-    <div class="card">
-        <div class="day-badge">Day 41</div>
-        <div class="verb">chercher</div>
-        <div class="translation">to look for</div>
-        <!-- Note: We are using placeholder HTML generation for now -->
-        <p style="margin-top:20px; font-size:14px; color:#555;">[Audio generation requires ElevenLabs or similar TTS tool. Placeholder for bridge page.]</p>
-    </div>
+<div class="player">
+<h2>Day 41: chercher</h2>
+<p class="trans">to look for</p>
+<audio id="audio"></audio>
+<button class="normal" onclick="play()">▶ LISTEN</button>
+<button class="ai-coach" onclick="window.location.href='https://chatgpt.com/g/g-your-coach-id-here'">📸 Check Sentences with AI</button>
+<button class="back" onclick="window.location.href='https://tararaidolls.github.io/'">🏠 Back to Hub</button>
+</div>
+<script>
+function play() {
+ var audio = document.getElementById('audio');
+ audio.src = 'https://tararaidolls.github.io/one-verb-a-day/french/audio/41.mp3';
+ audio.play();
+}
+</script>
 </body>
 </html>
