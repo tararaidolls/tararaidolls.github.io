@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One Verb a Day</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #f7fbfb, #eff4f2);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #2d4b4d;
+    }
+    .shell {
+      width: min(420px, 92vw);
+      background: #fff;
+      border-radius: 28px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, .08);
+      padding: 42px 24px 30px;
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, .05);
+    }
+    .title {
+      font-size: 2rem;
+      line-height: 1.15;
+      font-weight: 800;
+      margin: 4px 0 6px;
+      color: #31595a;
+    }
+    .subtitle {
+      font-size: 1.05rem;
+      color: #8b9496;
+      margin: 0 0 28px;
+    }
+    .lang-btn {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 18px;
+      padding: 16px 16px;
+      margin: 0 auto 14px;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: .2px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .11);
+      cursor: pointer;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+    .lang-btn:active { transform: scale(.99); }
+    .lang-btn .flag { font-size: 1.4rem; vertical-align: middle; margin-right: 8px; }
+    .lang-btn .count { font-size: .8rem; font-weight: 600; opacity: .8; }
+
+    .spanish  { background: linear-gradient(135deg, #c14b3d, #e06b4f); }
+    .french   { background: linear-gradient(135deg, #2b5fa3, #4a82d6); }
+    .german   { background: linear-gradient(135deg, #444, #666); }
+    .romanian { background: linear-gradient(135deg, #f2a900, #ffb52e); color: #3a2a00; }
+    .english  { background: linear-gradient(135deg, #1a6b4e, #2d9b73); }
+
+    .purchase {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 18px;
+      padding: 16px 16px;
+      margin: 20px auto 0;
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 800;
+      letter-spacing: .2px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, .11);
+      cursor: pointer;
+      background: linear-gradient(135deg, #9747b3, #b05ad0);
+      box-sizing: border-box;
+    }
+    .purchase:active { transform: scale(.99); }
+
+    .purchase-list {
+      display: none;
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .purchase-list.open { display: block; }
+    .purchase-list a {
+      display: block;
+      padding: 12px 16px;
+      margin: 0 auto 10px;
+      border-radius: 14px;
+      background: #f4f6f6;
+      color: #2d4b4d;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .95rem;
+      border: 1px solid rgba(0, 0, 0, .06);
+      transition: background .2s;
+    }
+    .purchase-list a:hover { background: #e9eded; }
+    .purchase-list .flag { font-size: 1.2rem; vertical-align: middle; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <div class="title">📖 One Verb a Day</div>
+    <div class="subtitle">Learn a new verb every day</div>
+
+    <a class="lang-btn spanish"  href="spanish/index.html"><span class="flag">🇪🇸</span> Spanish <span class="count">400 verbs</span></a>
+    <a class="lang-btn french"   href="french/index.html"><span class="flag">🇫🇷</span> French <span class="count">400 verbs</span></a>
+    <a class="lang-btn german"   href="german/index.html"><span class="flag">🇩🇪</span> German <span class="count">400 verbs</span></a>
+    <a class="lang-btn romanian" href="romanian/index.html"><span class="flag">🇷🇴</span> Romanian <span class="count">400 verbs</span></a>
+    <a class="lang-btn english"  href="english/index.html"><span class="flag">🇬🇧</span> English <span class="count">400 verbs</span></a>
+
+    <button class="purchase" onclick="document.getElementById('purchase-list').classList.toggle('open')">📚 Purchase the Book</button>
+    <ul class="purchase-list" id="purchase-list">
+      <li><a href="#" target="_blank"><span class="flag">🇪🇸</span> Spanish Book</a></li>
+      <li><a href="#" target="_blank"><span class="flag">🇫🇷</span> French Book</a></li>
+      <li><a href="#" target="_blank"><span class="flag">🇩🇪</span> German Book</a></li>
+      <li><a href="#" target="_blank"><span class="flag">🇷🇴</span> Romanian Book</a></li>
+      <li><a href="#" target="_blank"><span class="flag">🇬🇧</span> English Book</a></li>
+    </ul>
+  </main>
+</body>
+</html>
