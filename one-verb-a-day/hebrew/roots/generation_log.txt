@@ -1,65 +1,65 @@
-gtts  u1-w1.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=12f26d1db6fa4bc18134594c860acd4e')
-gtts  u1-w2.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=19e852386cfa468581791aca547513e6')
-gtts  u1-w3.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=153b82685ddd4655b215ed8083120ad3')
-gtts  u1-w4.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=cad582cc40e4454c8e20cb5e364f6504')
-gtts  u1-w5.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=62954942bfc048588ccc314e3b975881')
-gtts  u1-s.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=1e043aa2aee745be81da0b048cc8afe1')
-gtts  u1-s-slow.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=4d6457ded2764189aa0655e4a4659cab')
-gtts  u1-t.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=ff607db3070a4854be9d92bdf9cfff02')
-gtts  u2-w1.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=9e52e34266664802a88a2fbe6f58b0ec')
-gtts  u2-w2.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=9441e1fb2bee4e309a136b983b9108cb')
-gtts  u2-w3.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=39fa6574969c4135b6afcbfc4d287b40')
-gtts  u2-w4.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=5ca9693f8847435d99d43cca78383856')
-gtts  u2-w5.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=e5b17f5aa03c41fe90baa2e9d68be91a')
-gtts  u2-s.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=f0fbf40f56b34ea0914fcaa54372217e')
-gtts  u2-s-slow.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=0ea440e20a9d49d383adb1b69f3fcded')
-gtts  u2-t.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=1444eb3229004b6b8a857663667a7226')
-gtts  u3-w1.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=62fc11df8f22400581263a5fe327a8d8')
-gtts  u3-w2.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=6e506219bd9a4b43becc3f402ea19618')
-gtts  u3-w3.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=c030bc7e3504472bb5656aec1cdd47c8')
-gtts  u3-w4.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=6561ade9a3df4b6c9717bf9ff26677e3')
-gtts  u3-w5.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=1780713dd237463697ad670e04c56b82')
-gtts  u3-s.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=841e6bf07e084fc29a8e40092bb0dc14')
-gtts  u3-s-slow.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=369869449a594a359f2ed2d2c12e238a')
-gtts  u3-t.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=ae7934a0d19840acb80b4cdfdde9f620')
-gtts  u4-w1.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=8dcb7c1e474740d397cbc2783ec9068c')
-gtts  u4-w2.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=e1957b98add0431cbe29f9d86d574ea5')
-gtts  u4-w3.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=7022e05d619149468a81cda3ada532d9')
-gtts  u4-w4.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=5df69c4b4a50436bbb7f1e2631976516')
-gtts  u4-w5.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=981fbd2c102d462bb26a47f11cd6173b')
-gtts  u4-s.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=8b2c96b43c0c4a6ea13ad6774f2e58b6')
-gtts  u4-s-slow.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=bc5728515fc749aa943c1f722320ade1')
-gtts  u4-t.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=8dc2dd93222042fc84ae647b095dc649')
-gtts  u5-w1.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=745d97c201414781a3181b1e3eaafff4')
-gtts  u5-w2.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=ed3a9267d0a54441bc610351531cd308')
-gtts  u5-w3.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=8af1e484869f49adaba5ff0b5431d2fd')
-gtts  u5-w4.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=0aa3e5cfbced43458812fc4f16e8b493')
-gtts  u5-w5.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=972fcffb7a47496ab8790ec211062083')
-gtts  u5-w6.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=6cfedeb1c6bd475d99e9b3f99ac4c479')
-gtts  u5-s.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=5ea39e6eefdd452283bf5743f0e78e5d')
-gtts  u5-s-slow.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=acc0cde77e9541a7af2ebf367b8ee109')
-gtts  u5-t.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=86cb0c58d43e4d84a3ec7dec9b9a53ca')
-gtts  u6-w1.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=0ee32a1d7aab41b6af1b69f1955e2b64')
-gtts  u6-w2.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=c977569f04604750b14e2585e7c53ad1')
-gtts  u6-w3.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=68f672e54fd04a53bd99af4f9e32847f')
-gtts  u6-w4.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=9a16f2b35f1e43a6b9b4612fa948d45d')
-gtts  u6-w5.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=8169b03e933145fcba57a52fc2519378')
-gtts  u6-s.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=9695d8d7fe0e4a069818770f2f23f992')
-gtts  u6-s-slow.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=fd017d3a8f9243fbaeaa9dce22b4f694')
-gtts  u6-t.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=ad78a5500f654a2f9c51f747f6c60ee9')
-gtts  u7-w1.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=4aa5423d7fd843df92c8cd5c58467e0b')
-gtts  u7-w2.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=b489dc7ae8174a239412c0ab4ea1e7bb')
-gtts  u7-w3.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=62234b0c1a244d489f0b6be76f55f0a2')
-gtts  u7-w4.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=b4c847303e284ef2b700f6f5119f7a19')
-gtts  u7-w5.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=4aedcb3b7fd04a80a01e7a0ca0dc33f3')
-gtts  u7-s.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=7c0ed074b25e4ed3be5521f794a3dc28')
-gtts  u7-s-slow.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=d2f374fcf4614dc791c034783b2ceda7')
-gtts  u7-t.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=2b23776f715f429784fc3eeaf9c5275d')
-gtts  u8-w1.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=ad4b9fc37f054caeb4f24db859f295c9')
-gtts  u8-w2.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=3b00f8098d5b44cea91b07b4a4e6edcb')
-gtts  u8-w3.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=53a33b4b7ee4471ab2e7c5bf7d6d83cf')
-gtts  u8-w4.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=73471b4ed73c42e19e6ed43e0cefc4b0')
-gtts  u8-w5.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=397fc270c4ba47d4bd5faa1bc75faf00')
-gtts  u8-s.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=20e53a933bab4e9084f16f7e9027b8f1')
-gtts  u8-s-slow.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=1e8275ed99a240bfbf056983684c202a')
-gtts  u8-t.mp3  (403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=9058F5FD645287A4395BA9AA934555F6B0919F6ED41223C06E24E23389DD0994&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=cf2775c2c97d408e88bc2c48e59220f2')
+edge  u1-w1.mp3
+edge  u1-w2.mp3
+edge  u1-w3.mp3
+edge  u1-w4.mp3
+edge  u1-w5.mp3
+edge  u1-s.mp3
+edge  u1-s-slow.mp3
+edge  u1-t.mp3
+edge  u2-w1.mp3
+edge  u2-w2.mp3
+edge  u2-w3.mp3
+edge  u2-w4.mp3
+edge  u2-w5.mp3
+edge  u2-s.mp3
+edge  u2-s-slow.mp3
+edge  u2-t.mp3
+edge  u3-w1.mp3
+edge  u3-w2.mp3
+edge  u3-w3.mp3
+edge  u3-w4.mp3
+edge  u3-w5.mp3
+edge  u3-s.mp3
+edge  u3-s-slow.mp3
+edge  u3-t.mp3
+edge  u4-w1.mp3
+edge  u4-w2.mp3
+edge  u4-w3.mp3
+edge  u4-w4.mp3
+edge  u4-w5.mp3
+edge  u4-s.mp3
+edge  u4-s-slow.mp3
+edge  u4-t.mp3
+edge  u5-w1.mp3
+edge  u5-w2.mp3
+edge  u5-w3.mp3
+edge  u5-w4.mp3
+edge  u5-w5.mp3
+edge  u5-w6.mp3
+edge  u5-s.mp3
+edge  u5-s-slow.mp3
+edge  u5-t.mp3
+edge  u6-w1.mp3
+edge  u6-w2.mp3
+edge  u6-w3.mp3
+edge  u6-w4.mp3
+edge  u6-w5.mp3
+edge  u6-s.mp3
+edge  u6-s-slow.mp3
+edge  u6-t.mp3
+edge  u7-w1.mp3
+edge  u7-w2.mp3
+edge  u7-w3.mp3
+edge  u7-w4.mp3
+edge  u7-w5.mp3
+edge  u7-s.mp3
+edge  u7-s-slow.mp3
+edge  u7-t.mp3
+edge  u8-w1.mp3
+edge  u8-w2.mp3
+edge  u8-w3.mp3
+edge  u8-w4.mp3
+edge  u8-w5.mp3
+edge  u8-s.mp3
+edge  u8-s-slow.mp3
+edge  u8-t.mp3
