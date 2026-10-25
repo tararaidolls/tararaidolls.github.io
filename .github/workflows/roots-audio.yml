@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install tools
-        run: pip install edge-tts==7.0.2 "qrcode[pil]==8.0" gTTS==2.5.4
+        run: pip install -U edge-tts "qrcode[pil]" gTTS
       - name: Generate audio and QR codes
         working-directory: one-verb-a-day/hebrew/roots
         run: |
