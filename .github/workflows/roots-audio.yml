@@ -1,0 +1,57 @@
+name: Generate Read Hebrew by Roots audio
+
+on:
+  push:
+    paths:
+      - "one-verb-a-day/hebrew/roots/audio_script.json"
+      - ".github/workflows/roots-audio.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools
+        run: pip install edge-tts==7.0.2 "qrcode[pil]==8.0" gTTS==2.5.4
+      - name: Generate audio and QR codes
+        working-directory: one-verb-a-day/hebrew/roots
+        run: |
+          python - <<'PY'
+          import json, os, asyncio, qrcode
+          import edge_tts
+          from gtts import gTTS
+          s = json.load(open("audio_script.json", encoding="utf-8"))
+          os.makedirs("audio", exist_ok=True); os.makedirs("qr", exist_ok=True)
+          log = []
+          async def one(it):
+              out = os.path.join("audio", it["file"])
+              try:
+                  await edge_tts.Communicate(it["text"], s["voice"], rate=it["rate"]).save(out)
+                  log.append(f"edge  {it['file']}")
+              except Exception as e:
+                  gTTS(it["text"], lang="iw", slow=it["rate"].startswith("-3")).save(out)
+                  log.append(f"gtts  {it['file']}  ({e})")
+          async def main():
+              for it in s["items"]:
+                  await one(it)
+          asyncio.run(main())
+          for q in s["qr"]:
+              img = qrcode.make(q["url"], box_size=10, border=2)
+              img.save(os.path.join("qr", q["file"]))
+          open("generation_log.txt", "w").write("\n".join(log) + "\n")
+          print("\n".join(log))
+          PY
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add one-verb-a-day/hebrew/roots/audio one-verb-a-day/hebrew/roots/qr one-verb-a-day/hebrew/roots/generation_log.txt
+          git commit -m "Generate Read Hebrew by Roots audio and QR codes" || echo "nothing to commit"
+          git push
