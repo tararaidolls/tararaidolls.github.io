@@ -1,0 +1,364 @@
+{
+ "voice": "ar-SA-ZariyahNeural",
+ "gtts_lang": "ar",
+ "items": [
+  {
+   "file": "u1-w1.mp3",
+   "text": "كَتَبَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w2.mp3",
+   "text": "كِتَاب",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w3.mp3",
+   "text": "مَكْتَب",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w4.mp3",
+   "text": "مَكْتَبَة",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w5.mp3",
+   "text": "كَاتِب",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-s.mp3",
+   "text": "أَنَا أَكْتُبُ رِسَالَةً لِجَدَّتِي.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u1-s-slow.mp3",
+   "text": "أَنَا أَكْتُبُ رِسَالَةً لِجَدَّتِي.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u1-t.mp3",
+   "text": "مرحبا! أمس كتبت لك رسالة، لكني نسيت أن أرسلها. سأرسلها غدا. ما عنوانك الجديد؟",
+   "rate": "-5%"
+  },
+  {
+   "file": "u2-w1.mp3",
+   "text": "دَرَسَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w2.mp3",
+   "text": "دَرْس",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w3.mp3",
+   "text": "مَدْرَسَة",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w4.mp3",
+   "text": "مُدَرِّس",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w5.mp3",
+   "text": "دِرَاسَة",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-s.mp3",
+   "text": "يَدْرُسُ أَخِي فِي الْمَدْرَسَةِ.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u2-s-slow.mp3",
+   "text": "يَدْرُسُ أَخِي فِي الْمَدْرَسَةِ.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u2-t.mp3",
+   "text": "أولياء الأمور الكرام، غدا يدرس الطلاب في المكتبة. يرجى إحضار دفتر وقلم.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u3-w1.mp3",
+   "text": "عَمِلَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w2.mp3",
+   "text": "عَمَل",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w3.mp3",
+   "text": "عَامِل",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w4.mp3",
+   "text": "مَعْمَل",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w5.mp3",
+   "text": "أَعْمَال",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-s.mp3",
+   "text": "أَبِي يَعْمَلُ فِي مُسْتَشْفًى.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u3-s-slow.mp3",
+   "text": "أَبِي يَعْمَلُ فِي مُسْتَشْفًى.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u3-t.mp3",
+   "text": "مطلوب عمال لمقهى! العمل صباحا أو مساء. الخبرة ليست ضرورية.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u4-w1.mp3",
+   "text": "طَعَام",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w2.mp3",
+   "text": "مَطْعَم",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w3.mp3",
+   "text": "طَعْم",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w4.mp3",
+   "text": "أَطْعَمَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w5.mp3",
+   "text": "مَطَاعِم",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-s.mp3",
+   "text": "الطَّعَامُ فِي هَذَا الْمَطْعَمِ لَذِيذٌ.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u4-s-slow.mp3",
+   "text": "الطَّعَامُ فِي هَذَا الْمَطْعَمِ لَذِيذٌ.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u4-t.mp3",
+   "text": "مطعم السوق. طعام بيتي. الغداء من الساعة الثانية عشرة حتى الرابعة. طبق اليوم: شكشوكة.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u5-w1.mp3",
+   "text": "فَتَحَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w2.mp3",
+   "text": "مَفْتُوح",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w3.mp3",
+   "text": "مِفْتَاح",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w4.mp3",
+   "text": "فَتْح",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w5.mp3",
+   "text": "افْتِتَاح",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-s.mp3",
+   "text": "الْمَتْجَرُ مَفْتُوحٌ حَتَّى السَّاعَةِ السَّابِعَةِ.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u5-s-slow.mp3",
+   "text": "الْمَتْجَرُ مَفْتُوحٌ حَتَّى السَّاعَةِ السَّابِعَةِ.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u5-t.mp3",
+   "text": "مفتوح. من السبت إلى الخميس، من الساعة التاسعة حتى السابعة مساء. الجمعة: مغلق. المفتاح عند الجار.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u6-w1.mp3",
+   "text": "خَرَجَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w2.mp3",
+   "text": "مَخْرَج",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w3.mp3",
+   "text": "خُرُوج",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w4.mp3",
+   "text": "خَارِج",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w5.mp3",
+   "text": "تَخَرَّجَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-s.mp3",
+   "text": "أَيْنَ الْمَخْرَجُ، مِنْ فَضْلِكَ؟",
+   "rate": "+0%"
+  },
+  {
+   "file": "u6-s-slow.mp3",
+   "text": "أَيْنَ الْمَخْرَجُ، مِنْ فَضْلِكَ؟",
+   "rate": "-35%"
+  },
+  {
+   "file": "u6-t.mp3",
+   "text": "مدخل المترو. مخرج رقم اثنين: إلى السوق. مخرج الطوارئ.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u7-w1.mp3",
+   "text": "سَافَرَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w2.mp3",
+   "text": "سَفَر",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w3.mp3",
+   "text": "مُسَافِر",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w4.mp3",
+   "text": "سَفَارَة",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w5.mp3",
+   "text": "سَفِير",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-s.mp3",
+   "text": "سَنُسَافِرُ إِلَى دُبَيّ غَدًا.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u7-s-slow.mp3",
+   "text": "سَنُسَافِرُ إِلَى دُبَيّ غَدًا.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u7-t.mp3",
+   "text": "المغادرة. الرحلة إلى دبي، الساعة العاشرة والنصف. البوابة رقم خمسة. على المسافرين التوجه إلى البوابة.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u8-w1.mp3",
+   "text": "عَلِمَ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w2.mp3",
+   "text": "عِلْم",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w3.mp3",
+   "text": "مُعَلِّم",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w4.mp3",
+   "text": "عَالِم",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w5.mp3",
+   "text": "مَعْلُومَات",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-s.mp3",
+   "text": "الْمُعَلِّمُ يَشْرَحُ الدَّرْسَ.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u8-s-slow.mp3",
+   "text": "الْمُعَلِّمُ يَشْرَحُ الدَّرْسَ.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u8-t.mp3",
+   "text": "مركز العلوم. معرض جديد: عالم الفضاء. معلومات: عند المدخل.",
+   "rate": "-5%"
+  }
+ ],
+ "qr": [
+  {
+   "file": "u1.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/1.html"
+  },
+  {
+   "file": "u2.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/2.html"
+  },
+  {
+   "file": "u3.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/3.html"
+  },
+  {
+   "file": "u4.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/4.html"
+  },
+  {
+   "file": "u5.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/5.html"
+  },
+  {
+   "file": "u6.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/6.html"
+  },
+  {
+   "file": "u7.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/7.html"
+  },
+  {
+   "file": "u8.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/8.html"
+  },
+  {
+   "file": "hub.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/arabic/roots/index.html"
+  }
+ ]
+}
