@@ -1,0 +1,404 @@
+{
+ "voice": "zh-CN-XiaoxiaoNeural",
+ "gtts_lang": "zh-CN",
+ "items": [
+  {
+   "file": "u1-w1.mp3",
+   "text": "河",
+   "rate": "-15%"
+  },
+  {
+   "file": "u1-w2.mp3",
+   "text": "海",
+   "rate": "-15%"
+  },
+  {
+   "file": "u1-w3.mp3",
+   "text": "洗",
+   "rate": "-15%"
+  },
+  {
+   "file": "u1-w4.mp3",
+   "text": "汤",
+   "rate": "-15%"
+  },
+  {
+   "file": "u1-w5.mp3",
+   "text": "酒",
+   "rate": "-15%"
+  },
+  {
+   "file": "u1-w6.mp3",
+   "text": "游泳",
+   "rate": "-15%"
+  },
+  {
+   "file": "u1-s.mp3",
+   "text": "我想喝汤。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u1-s-slow.mp3",
+   "text": "我想喝汤。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u1-t.mp3",
+   "text": "游泳池。禁止跳水。请先洗澡。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w1.mp3",
+   "text": "吃",
+   "rate": "-15%"
+  },
+  {
+   "file": "u2-w2.mp3",
+   "text": "喝",
+   "rate": "-15%"
+  },
+  {
+   "file": "u2-w3.mp3",
+   "text": "叫",
+   "rate": "-15%"
+  },
+  {
+   "file": "u2-w4.mp3",
+   "text": "唱",
+   "rate": "-15%"
+  },
+  {
+   "file": "u2-w5.mp3",
+   "text": "吗",
+   "rate": "-15%"
+  },
+  {
+   "file": "u2-w6.mp3",
+   "text": "听",
+   "rate": "-15%"
+  },
+  {
+   "file": "u2-s.mp3",
+   "text": "你叫什么名字？",
+   "rate": "+0%"
+  },
+  {
+   "file": "u2-s-slow.mp3",
+   "text": "你叫什么名字？",
+   "rate": "-40%"
+  },
+  {
+   "file": "u2-t.mp3",
+   "text": "你吃饭了吗？今天晚上我们去唱歌，你来吗？",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w1.mp3",
+   "text": "树",
+   "rate": "-15%"
+  },
+  {
+   "file": "u3-w2.mp3",
+   "text": "森林",
+   "rate": "-15%"
+  },
+  {
+   "file": "u3-w3.mp3",
+   "text": "桌子",
+   "rate": "-15%"
+  },
+  {
+   "file": "u3-w4.mp3",
+   "text": "椅子",
+   "rate": "-15%"
+  },
+  {
+   "file": "u3-w5.mp3",
+   "text": "杯子",
+   "rate": "-15%"
+  },
+  {
+   "file": "u3-w6.mp3",
+   "text": "学校",
+   "rate": "-15%"
+  },
+  {
+   "file": "u3-s.mp3",
+   "text": "桌子上有一个杯子。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u3-s-slow.mp3",
+   "text": "桌子上有一个杯子。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u3-t.mp3",
+   "text": "学校图书馆。开放时间：早上八点到下午五点。请保持安静。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w1.mp3",
+   "text": "你",
+   "rate": "-15%"
+  },
+  {
+   "file": "u4-w2.mp3",
+   "text": "他",
+   "rate": "-15%"
+  },
+  {
+   "file": "u4-w3.mp3",
+   "text": "你们",
+   "rate": "-15%"
+  },
+  {
+   "file": "u4-w4.mp3",
+   "text": "住",
+   "rate": "-15%"
+  },
+  {
+   "file": "u4-w5.mp3",
+   "text": "休息",
+   "rate": "-15%"
+  },
+  {
+   "file": "u4-w6.mp3",
+   "text": "工作",
+   "rate": "-15%"
+  },
+  {
+   "file": "u4-s.mp3",
+   "text": "他们住在北京。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u4-s-slow.mp3",
+   "text": "他们住在北京。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u4-t.mp3",
+   "text": "员工休息室。午休：十二点到一点。请勿打扰。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w1.mp3",
+   "text": "说",
+   "rate": "-15%"
+  },
+  {
+   "file": "u5-w2.mp3",
+   "text": "话",
+   "rate": "-15%"
+  },
+  {
+   "file": "u5-w3.mp3",
+   "text": "汉语",
+   "rate": "-15%"
+  },
+  {
+   "file": "u5-w4.mp3",
+   "text": "请",
+   "rate": "-15%"
+  },
+  {
+   "file": "u5-w5.mp3",
+   "text": "读",
+   "rate": "-15%"
+  },
+  {
+   "file": "u5-w6.mp3",
+   "text": "谢谢",
+   "rate": "-15%"
+  },
+  {
+   "file": "u5-s.mp3",
+   "text": "我会说一点儿汉语。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u5-s-slow.mp3",
+   "text": "我会说一点儿汉语。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u5-t.mp3",
+   "text": "同学们：明天我们读第三课。请带汉语书。谢谢！",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w1.mp3",
+   "text": "草",
+   "rate": "-15%"
+  },
+  {
+   "file": "u6-w2.mp3",
+   "text": "花",
+   "rate": "-15%"
+  },
+  {
+   "file": "u6-w3.mp3",
+   "text": "茶",
+   "rate": "-15%"
+  },
+  {
+   "file": "u6-w4.mp3",
+   "text": "菜",
+   "rate": "-15%"
+  },
+  {
+   "file": "u6-w5.mp3",
+   "text": "药",
+   "rate": "-15%"
+  },
+  {
+   "file": "u6-w6.mp3",
+   "text": "苹果",
+   "rate": "-15%"
+  },
+  {
+   "file": "u6-s.mp3",
+   "text": "我喜欢喝绿茶。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u6-s-slow.mp3",
+   "text": "我喜欢喝绿茶。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u6-t.mp3",
+   "text": "茶馆菜单。绿茶，十五块。花茶，十八块。今天的菜：西红柿炒鸡蛋。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w1.mp3",
+   "text": "打",
+   "rate": "-15%"
+  },
+  {
+   "file": "u7-w2.mp3",
+   "text": "找",
+   "rate": "-15%"
+  },
+  {
+   "file": "u7-w3.mp3",
+   "text": "推",
+   "rate": "-15%"
+  },
+  {
+   "file": "u7-w4.mp3",
+   "text": "拉",
+   "rate": "-15%"
+  },
+  {
+   "file": "u7-w5.mp3",
+   "text": "换",
+   "rate": "-15%"
+  },
+  {
+   "file": "u7-w6.mp3",
+   "text": "手机",
+   "rate": "-15%"
+  },
+  {
+   "file": "u7-s.mp3",
+   "text": "我在找我的手机。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u7-s-slow.mp3",
+   "text": "我在找我的手机。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u7-t.mp3",
+   "text": "银行。推。营业时间：上午九点到下午五点。周六、周日休息。这里可以换钱。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w1.mp3",
+   "text": "明天",
+   "rate": "-15%"
+  },
+  {
+   "file": "u8-w2.mp3",
+   "text": "早上",
+   "rate": "-15%"
+  },
+  {
+   "file": "u8-w3.mp3",
+   "text": "晚上",
+   "rate": "-15%"
+  },
+  {
+   "file": "u8-w4.mp3",
+   "text": "时间",
+   "rate": "-15%"
+  },
+  {
+   "file": "u8-w5.mp3",
+   "text": "星期日",
+   "rate": "-15%"
+  },
+  {
+   "file": "u8-w6.mp3",
+   "text": "晴",
+   "rate": "-15%"
+  },
+  {
+   "file": "u8-s.mp3",
+   "text": "明天是晴天。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u8-s-slow.mp3",
+   "text": "明天是晴天。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u8-t.mp3",
+   "text": "天气预报。今天：晴，二十五度。明天：小雨，十八度。星期日：晴。",
+   "rate": "-10%"
+  }
+ ],
+ "qr": [
+  {
+   "file": "u1.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/1.html"
+  },
+  {
+   "file": "u2.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/2.html"
+  },
+  {
+   "file": "u3.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/3.html"
+  },
+  {
+   "file": "u4.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/4.html"
+  },
+  {
+   "file": "u5.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/5.html"
+  },
+  {
+   "file": "u6.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/6.html"
+  },
+  {
+   "file": "u7.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/7.html"
+  },
+  {
+   "file": "u8.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/8.html"
+  },
+  {
+   "file": "hub.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/index.html"
+  }
+ ]
+}

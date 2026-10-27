@@ -1,0 +1,61 @@
+name: Generate workbook audio (all languages)
+
+on:
+  push:
+    paths:
+      - "one-verb-a-day/**/audio_script.json"
+      - ".github/workflows/language-audio.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools
+        run: pip install -U edge-tts "qrcode[pil]" gTTS
+      - name: Generate missing audio and QR codes
+        run: |
+          python - <<'PY'
+          import json, os, glob, asyncio, qrcode
+          import edge_tts
+          from gtts import gTTS
+          async def main():
+              for script in glob.glob("one-verb-a-day/**/audio_script.json", recursive=True):
+                  d = os.path.dirname(script)
+                  s = json.load(open(script, encoding="utf-8"))
+                  os.makedirs(os.path.join(d, "audio"), exist_ok=True)
+                  os.makedirs(os.path.join(d, "qr"), exist_ok=True)
+                  log = []
+                  for it in s["items"]:
+                      out = os.path.join(d, "audio", it["file"])
+                      if os.path.exists(out):
+                          continue
+                      try:
+                          await edge_tts.Communicate(it["text"], s["voice"], rate=it["rate"]).save(out)
+                          log.append(f"edge  {it['file']}")
+                      except Exception as e:
+                          gTTS(it["text"], lang=s.get("gtts_lang", "en"), slow=it["rate"].startswith("-3") or it["rate"].startswith("-4")).save(out)
+                          log.append(f"gtts  {it['file']}  ({e})")
+                  for q in s["qr"]:
+                      out = os.path.join(d, "qr", q["file"])
+                      if not os.path.exists(out):
+                          qrcode.make(q["url"], box_size=10, border=2).save(out)
+                  if log:
+                      open(os.path.join(d, "generation_log.txt"), "a").write("\n".join(log) + "\n")
+                      print(d, len(log), "files")
+          asyncio.run(main())
+          PY
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add -A one-verb-a-day
+          git commit -m "Generate workbook audio and QR codes" || echo "nothing to commit"
+          git push

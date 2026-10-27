@@ -1,0 +1,364 @@
+{
+ "voice": "ko-KR-SunHiNeural",
+ "gtts_lang": "ko",
+ "items": [
+  {
+   "file": "u1-w1.mp3",
+   "text": "학교",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w2.mp3",
+   "text": "학생",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w3.mp3",
+   "text": "대학교",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w4.mp3",
+   "text": "학원",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w5.mp3",
+   "text": "방학",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-s.mp3",
+   "text": "저는 대학교에서 한국어를 공부해요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u1-s-slow.mp3",
+   "text": "저는 대학교에서 한국어를 공부해요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u1-t.mp3",
+   "text": "한국어 학원. 외국인 학생 환영! 수업: 월요일부터 금요일, 오후 일곱 시.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w1.mp3",
+   "text": "식당",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w2.mp3",
+   "text": "음식",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w3.mp3",
+   "text": "한식",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w4.mp3",
+   "text": "식사",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w5.mp3",
+   "text": "간식",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-s.mp3",
+   "text": "우리는 식당에서 한식을 먹어요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u2-s-slow.mp3",
+   "text": "우리는 식당에서 한식을 먹어요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u2-t.mp3",
+   "text": "한식당 서울. 점심 식사: 열한 시 반부터 두 시까지. 오늘의 메뉴: 비빔밥, 김치찌개.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w1.mp3",
+   "text": "한국",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w2.mp3",
+   "text": "중국",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w3.mp3",
+   "text": "외국",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w4.mp3",
+   "text": "국가",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w5.mp3",
+   "text": "외국인",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-s.mp3",
+   "text": "저는 미국에서 왔어요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u3-s-slow.mp3",
+   "text": "저는 미국에서 왔어요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u3-t.mp3",
+   "text": "입국 심사. 내국인, 외국인. 여권을 준비해 주세요.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w1.mp3",
+   "text": "대학생",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w2.mp3",
+   "text": "선생님",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w3.mp3",
+   "text": "생일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w4.mp3",
+   "text": "생활",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w5.mp3",
+   "text": "생선",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-s.mp3",
+   "text": "오늘은 제 생일이에요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u4-s-slow.mp3",
+   "text": "오늘은 제 생일이에요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u4-t.mp3",
+   "text": "민지야, 생일 축하해! 오늘 저녁에 같이 밥 먹자! 일곱 시에 학교 앞에서 만나.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w1.mp3",
+   "text": "일요일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w2.mp3",
+   "text": "휴일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w3.mp3",
+   "text": "매일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w4.mp3",
+   "text": "내일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w5.mp3",
+   "text": "일본",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-s.mp3",
+   "text": "내일은 일요일이에요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u5-s-slow.mp3",
+   "text": "내일은 일요일이에요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u5-t.mp3",
+   "text": "휴무 안내. 시월 삼일 일요일 휴무. 매일 오전 열 시부터 오후 아홉 시까지 영업.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w1.mp3",
+   "text": "전화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w2.mp3",
+   "text": "전기",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w3.mp3",
+   "text": "전철",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w4.mp3",
+   "text": "전자",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w5.mp3",
+   "text": "충전",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-s.mp3",
+   "text": "휴대폰을 충전해야 해요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u6-s-slow.mp3",
+   "text": "휴대폰을 충전해야 해요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u6-t.mp3",
+   "text": "무료 와이파이. 휴대폰 충전 가능. 비밀번호: 카페 일 이 삼 사.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w1.mp3",
+   "text": "문",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w2.mp3",
+   "text": "정문",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w3.mp3",
+   "text": "출입문",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w4.mp3",
+   "text": "문자",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w5.mp3",
+   "text": "문법",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-s.mp3",
+   "text": "정문 앞에서 문자를 보낼게요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u7-s-slow.mp3",
+   "text": "정문 앞에서 문자를 보낼게요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u7-t.mp3",
+   "text": "출입문. 당기세요. 후문은 오후 여섯 시 이후 닫힙니다.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w1.mp3",
+   "text": "운동",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w2.mp3",
+   "text": "자동차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w3.mp3",
+   "text": "동물",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w4.mp3",
+   "text": "이동",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w5.mp3",
+   "text": "활동",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-s.mp3",
+   "text": "저는 매일 공원에서 운동해요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u8-s-slow.mp3",
+   "text": "저는 매일 공원에서 운동해요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u8-t.mp3",
+   "text": "이십사 시간 운동센터. 첫 달 오십 퍼센트 할인! 운동화 필수.",
+   "rate": "-10%"
+  }
+ ],
+ "qr": [
+  {
+   "file": "u1.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/1.html"
+  },
+  {
+   "file": "u2.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/2.html"
+  },
+  {
+   "file": "u3.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/3.html"
+  },
+  {
+   "file": "u4.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/4.html"
+  },
+  {
+   "file": "u5.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/5.html"
+  },
+  {
+   "file": "u6.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/6.html"
+  },
+  {
+   "file": "u7.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/7.html"
+  },
+  {
+   "file": "u8.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/8.html"
+  },
+  {
+   "file": "hub.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/index.html"
+  }
+ ]
+}
