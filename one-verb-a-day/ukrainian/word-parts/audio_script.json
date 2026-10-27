@@ -1,0 +1,364 @@
+{
+ "voice": "uk-UA-PolinaNeural",
+ "gtts_lang": "uk",
+ "items": [
+  {
+   "file": "u1-w1.mp3",
+   "text": "ходити",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w2.mp3",
+   "text": "вхід",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w3.mp3",
+   "text": "вихід",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w4.mp3",
+   "text": "перехід",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w5.mp3",
+   "text": "пішохід",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-s.mp3",
+   "text": "Скажіть, будь ласка, де вихід?",
+   "rate": "+0%"
+  },
+  {
+   "file": "u1-s-slow.mp3",
+   "text": "Скажіть, будь ласка, де вихід?",
+   "rate": "-35%"
+  },
+  {
+   "file": "u1-t.mp3",
+   "text": "Вхід. Вихід до міста. Перехід на станцію «Театральна».",
+   "rate": "-5%"
+  },
+  {
+   "file": "u2-w1.mp3",
+   "text": "писати",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w2.mp3",
+   "text": "підпис",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w3.mp3",
+   "text": "записка",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w4.mp3",
+   "text": "письменник",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w5.mp3",
+   "text": "опис",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-s.mp3",
+   "text": "Я пишу записку мамі.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u2-s-slow.mp3",
+   "text": "Я пишу записку мамі.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u2-t.mp3",
+   "text": "Мамо, я вже в школі! Записку для вчителя підписала? Напиши мені, будь ласка! Оля.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u3-w1.mp3",
+   "text": "читати",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w2.mp3",
+   "text": "читач",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w3.mp3",
+   "text": "читання",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w4.mp3",
+   "text": "прочитати",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w5.mp3",
+   "text": "читальня",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-s.mp3",
+   "text": "Я люблю читати перед сном.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u3-s-slow.mp3",
+   "text": "Я люблю читати перед сном.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u3-t.mp3",
+   "text": "Бібліотека. Читальна зала: з дев'ятої до вісімнадцятої. Неділя — вихідний. Прочитали книжку? Поверніть її вчасно!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u4-w1.mp3",
+   "text": "їсти",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w2.mp3",
+   "text": "їжа",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w3.mp3",
+   "text": "їдальня",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w4.mp3",
+   "text": "з'їсти",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w5.mp3",
+   "text": "доїдати",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-s.mp3",
+   "text": "У їдальні смачна їжа.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u4-s-slow.mp3",
+   "text": "У їдальні смачна їжа.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u4-t.mp3",
+   "text": "Їдальня «Смакота». Обід: з дванадцятої до п'ятнадцятої. Сьогодні: борщ, вареники, компот. Їжа з собою — так!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u5-w1.mp3",
+   "text": "робити",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w2.mp3",
+   "text": "робота",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w3.mp3",
+   "text": "робітник",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w4.mp3",
+   "text": "заробити",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w5.mp3",
+   "text": "виробник",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-s.mp3",
+   "text": "Що ти робиш у вільний час?",
+   "rate": "+0%"
+  },
+  {
+   "file": "u5-s-slow.mp3",
+   "text": "Що ти робиш у вільний час?",
+   "rate": "-35%"
+  },
+  {
+   "file": "u5-t.mp3",
+   "text": "Потрібні працівники! Робота в кав'ярні. Гарний заробіток. Досвід не потрібен.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u6-w1.mp3",
+   "text": "вчити",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w2.mp3",
+   "text": "учень",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w3.mp3",
+   "text": "вчитель",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w4.mp3",
+   "text": "навчання",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w5.mp3",
+   "text": "наука",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-s.mp3",
+   "text": "Моя сестра вчиться в університеті.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u6-s-slow.mp3",
+   "text": "Моя сестра вчиться в університеті.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u6-t.mp3",
+   "text": "Шановні батьки! Завтра учні п'ятого-А класу вивчають тему «Рослини» в ботанічному саду. Зустріч о дев'ятій біля школи.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u7-w1.mp3",
+   "text": "любити",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w2.mp3",
+   "text": "любов",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w3.mp3",
+   "text": "улюблений",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w4.mp3",
+   "text": "любий",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w5.mp3",
+   "text": "полюбити",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-s.mp3",
+   "text": "Моя улюблена страва — вареники.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u7-s-slow.mp3",
+   "text": "Моя улюблена страва — вареники.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u7-t.mp3",
+   "text": "Люба бабусю! Вітаю з днем народження! Ми тебе дуже любимо. Твоя улюблена онука Марта.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u8-w1.mp3",
+   "text": "їхати",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w2.mp3",
+   "text": "поїзд",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w3.mp3",
+   "text": "виїзд",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w4.mp3",
+   "text": "приїзд",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w5.mp3",
+   "text": "проїзний",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-s.mp3",
+   "text": "Завтра ми їдемо поїздом до Львова.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u8-s-slow.mp3",
+   "text": "Завтра ми їдемо поїздом до Львова.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u8-t.mp3",
+   "text": "Вокзал. Поїзд Київ — Львів. Відправлення о сьомій п'ятнадцять. Прибуття о дванадцятій сорок. Квитки — каса номер три.",
+   "rate": "-5%"
+  }
+ ],
+ "qr": [
+  {
+   "file": "u1.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/1.html"
+  },
+  {
+   "file": "u2.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/2.html"
+  },
+  {
+   "file": "u3.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/3.html"
+  },
+  {
+   "file": "u4.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/4.html"
+  },
+  {
+   "file": "u5.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/5.html"
+  },
+  {
+   "file": "u6.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/6.html"
+  },
+  {
+   "file": "u7.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/7.html"
+  },
+  {
+   "file": "u8.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/8.html"
+  },
+  {
+   "file": "hub.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/ukrainian/word-parts/index.html"
+  }
+ ]
+}
