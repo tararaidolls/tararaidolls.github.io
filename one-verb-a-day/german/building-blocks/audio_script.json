@@ -1,0 +1,364 @@
+{
+ "voice": "de-DE-KatjaNeural",
+ "gtts_lang": "de",
+ "items": [
+  {
+   "file": "u1-w1.mp3",
+   "text": "der Bahnhof",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w2.mp3",
+   "text": "der Hauptbahnhof",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w3.mp3",
+   "text": "die Autobahn",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w4.mp3",
+   "text": "die U-Bahn",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w5.mp3",
+   "text": "die Straßenbahn",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-s.mp3",
+   "text": "Der Zug fährt vom Hauptbahnhof ab.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u1-s-slow.mp3",
+   "text": "Der Zug fährt vom Hauptbahnhof ab.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u1-t.mp3",
+   "text": "Hauptbahnhof. ICE nach München: Gleis sieben. Abfahrt: vierzehn Uhr zweiunddreißig. Bitte zurücktreten!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u2-w1.mp3",
+   "text": "das Krankenhaus",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w2.mp3",
+   "text": "das Rathaus",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w3.mp3",
+   "text": "das Kaufhaus",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w4.mp3",
+   "text": "die Hausaufgabe",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w5.mp3",
+   "text": "die Haustür",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-s.mp3",
+   "text": "Meine Mutter arbeitet im Krankenhaus.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u2-s-slow.mp3",
+   "text": "Meine Mutter arbeitet im Krankenhaus.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u2-t.mp3",
+   "text": "Liebe Eltern, die Hausaufgaben für Montag: Mathebuch Seite vierundzwanzig und ein Bild vom eigenen Haustier malen. Danke!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u3-w1.mp3",
+   "text": "die Freizeit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w2.mp3",
+   "text": "die Mahlzeit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w3.mp3",
+   "text": "die Öffnungszeiten",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w4.mp3",
+   "text": "die Hochzeit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w5.mp3",
+   "text": "die Arbeitszeit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-s.mp3",
+   "text": "In meiner Freizeit lese ich gern.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u3-s-slow.mp3",
+   "text": "In meiner Freizeit lese ich gern.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u3-t.mp3",
+   "text": "Bäckerei Schmidt. Öffnungszeiten: Montag bis Freitag, sechs Uhr dreißig bis achtzehn Uhr. Samstag, sieben bis dreizehn Uhr. Sonntag geschlossen.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u4-w1.mp3",
+   "text": "die Fahrkarte",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w2.mp3",
+   "text": "die Speisekarte",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w3.mp3",
+   "text": "die Landkarte",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w4.mp3",
+   "text": "die Postkarte",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w5.mp3",
+   "text": "die Eintrittskarte",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-s.mp3",
+   "text": "Ich kaufe eine Fahrkarte am Automaten.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u4-s-slow.mp3",
+   "text": "Ich kaufe eine Fahrkarte am Automaten.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u4-t.mp3",
+   "text": "Speisekarte. Tagessuppe: vier Euro fünfzig. Kartoffelsalat mit Würstchen: acht Euro neunzig. Apfelstrudel: fünf Euro zwanzig.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u5-w1.mp3",
+   "text": "der Ausgang",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w2.mp3",
+   "text": "der Eingang",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w3.mp3",
+   "text": "der Notausgang",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w4.mp3",
+   "text": "der Spaziergang",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w5.mp3",
+   "text": "der Durchgang",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-s.mp3",
+   "text": "Der Notausgang ist links.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u5-s-slow.mp3",
+   "text": "Der Notausgang ist links.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u5-t.mp3",
+   "text": "Eingang. Ausgang und Garderobe. Notausgang – bitte freihalten! Kein Durchgang.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u6-w1.mp3",
+   "text": "die Grundschule",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w2.mp3",
+   "text": "die Hochschule",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w3.mp3",
+   "text": "der Schulhof",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w4.mp3",
+   "text": "die Fahrschule",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w5.mp3",
+   "text": "die Schultasche",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-s.mp3",
+   "text": "Meine Schwester geht in die Grundschule.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u6-s-slow.mp3",
+   "text": "Meine Schwester geht in die Grundschule.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u6-t.mp3",
+   "text": "Liebe Eltern, morgen fährt die Klasse drei b mit dem Schulbus in den Zoo. Treffpunkt: acht Uhr auf dem Schulhof.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u7-w1.mp3",
+   "text": "der Parkplatz",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w2.mp3",
+   "text": "der Spielplatz",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w3.mp3",
+   "text": "der Arbeitsplatz",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w4.mp3",
+   "text": "der Sitzplatz",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w5.mp3",
+   "text": "der Marktplatz",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-s.mp3",
+   "text": "Wir suchen einen Parkplatz in der Nähe.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u7-s-slow.mp3",
+   "text": "Wir suchen einen Parkplatz in der Nähe.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u7-t.mp3",
+   "text": "Parkplatz nur für Kunden. Montag bis Samstag, acht bis zwanzig Uhr. Parkdauer: maximal zwei Stunden. Spielplatz hinter dem Gebäude.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u8-w1.mp3",
+   "text": "das Schlafzimmer",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w2.mp3",
+   "text": "das Wohnzimmer",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w3.mp3",
+   "text": "das Badezimmer",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w4.mp3",
+   "text": "das Kinderzimmer",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w5.mp3",
+   "text": "das Wartezimmer",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-s.mp3",
+   "text": "Die Wohnung hat zwei Schlafzimmer.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u8-s-slow.mp3",
+   "text": "Die Wohnung hat zwei Schlafzimmer.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u8-t.mp3",
+   "text": "Wohnung zu vermieten! Drei Zimmer: Wohnzimmer, Schlafzimmer, Kinderzimmer. Badezimmer mit Fenster. Miete: neunhundertfünfzig Euro warm.",
+   "rate": "-5%"
+  }
+ ],
+ "qr": [
+  {
+   "file": "u1.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/1.html"
+  },
+  {
+   "file": "u2.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/2.html"
+  },
+  {
+   "file": "u3.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/3.html"
+  },
+  {
+   "file": "u4.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/4.html"
+  },
+  {
+   "file": "u5.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/5.html"
+  },
+  {
+   "file": "u6.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/6.html"
+  },
+  {
+   "file": "u7.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/7.html"
+  },
+  {
+   "file": "u8.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/8.html"
+  },
+  {
+   "file": "hub.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/german/building-blocks/index.html"
+  }
+ ]
+}
