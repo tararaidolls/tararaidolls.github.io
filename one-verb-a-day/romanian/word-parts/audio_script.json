@@ -1,0 +1,364 @@
+{
+ "voice": "ro-RO-AlinaNeural",
+ "gtts_lang": "ro",
+ "items": [
+  {
+   "file": "u1-w1.mp3",
+   "text": "a scrie",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w2.mp3",
+   "text": "scris",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w3.mp3",
+   "text": "scriitor",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w4.mp3",
+   "text": "scrisoare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w5.mp3",
+   "text": "înscriere",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-s.mp3",
+   "text": "Îi scriu o scrisoare bunicii.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u1-s-slow.mp3",
+   "text": "Îi scriu o scrisoare bunicii.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u1-t.mp3",
+   "text": "Salut! Te-ai înscris la cursul de română? Eu m-am înscris ieri. Scrie-mi diseară!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u2-w1.mp3",
+   "text": "a citi",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w2.mp3",
+   "text": "cititor",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w3.mp3",
+   "text": "citire",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w4.mp3",
+   "text": "cititoare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w5.mp3",
+   "text": "recitire",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-s.mp3",
+   "text": "Îmi place să citesc seara.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u2-s-slow.mp3",
+   "text": "Îmi place să citesc seara.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u2-t.mp3",
+   "text": "Biblioteca orașului. Sala de lectură: de la nouă la nouăsprezece. Duminică: închis. Vă rugăm să returnați cărțile la timp!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u3-w1.mp3",
+   "text": "a lucra",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w2.mp3",
+   "text": "lucru",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w3.mp3",
+   "text": "lucrare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w4.mp3",
+   "text": "lucrător",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w5.mp3",
+   "text": "prelucrare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-s.mp3",
+   "text": "Lucrez într-o cafenea în centru.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u3-s-slow.mp3",
+   "text": "Lucrez într-o cafenea în centru.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u3-t.mp3",
+   "text": "Angajăm! Lucrător în cafenea, program flexibil. Salariu bun. Experiența nu este necesară.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u4-w1.mp3",
+   "text": "a mânca",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w2.mp3",
+   "text": "mâncare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w3.mp3",
+   "text": "mâncarea",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w4.mp3",
+   "text": "mâncăruri",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w5.mp3",
+   "text": "mâncăcios",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-s.mp3",
+   "text": "Mâncarea de aici e foarte bună.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u4-s-slow.mp3",
+   "text": "Mâncarea de aici e foarte bună.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u4-t.mp3",
+   "text": "Cantina „La bunica”. Prânz: de la douăsprezece la cincisprezece. Meniul zilei: ciorbă, sarmale, papanași. Mâncare la pachet — da!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u5-w1.mp3",
+   "text": "a vinde",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w2.mp3",
+   "text": "vânzare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w3.mp3",
+   "text": "vânzător",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w4.mp3",
+   "text": "vânzătoare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w5.mp3",
+   "text": "revânzare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-s.mp3",
+   "text": "Vânzătoarea vinde flori la piață.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u5-s-slow.mp3",
+   "text": "Vânzătoarea vinde flori la piață.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u5-t.mp3",
+   "text": "De vânzare. Bicicletă aproape nouă. Preț: cinci sute de lei. Sunați după ora optsprezece.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u6-w1.mp3",
+   "text": "a învăța",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w2.mp3",
+   "text": "învățătoare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w3.mp3",
+   "text": "învățătură",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w4.mp3",
+   "text": "învățământ",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w5.mp3",
+   "text": "neînvățat",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-s.mp3",
+   "text": "Învăț limba română de un an.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u6-s-slow.mp3",
+   "text": "Învăț limba română de un an.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u6-t.mp3",
+   "text": "Dragi părinți, mâine elevii clasei a cincea învață despre plante în Grădina Botanică. Ne întâlnim la ora nouă în fața școlii.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u7-w1.mp3",
+   "text": "a cumpăra",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w2.mp3",
+   "text": "cumpărător",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w3.mp3",
+   "text": "cumpărături",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w4.mp3",
+   "text": "cumpărare",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w5.mp3",
+   "text": "cumpărat",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-s.mp3",
+   "text": "Mama cumpără pâine și lapte.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u7-s-slow.mp3",
+   "text": "Mama cumpără pâine și lapte.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u7-t.mp3",
+   "text": "Lista de cumpărături: pâine, lapte, ouă, mere. Nu uita: cumpără și flori pentru bunica!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u8-w1.mp3",
+   "text": "a călători",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w2.mp3",
+   "text": "călătorie",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w3.mp3",
+   "text": "călător",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w4.mp3",
+   "text": "călătoria",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w5.mp3",
+   "text": "călătorii",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-s.mp3",
+   "text": "Mâine călătorim cu trenul la Brașov.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u8-s-slow.mp3",
+   "text": "Mâine călătorim cu trenul la Brașov.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u8-t.mp3",
+   "text": "Gara de Nord. Tren București — Brașov. Plecare la ora șapte și cincisprezece, linia trei. Sosire la ora nouă și cincizeci. Călători, vă dorim drum bun!",
+   "rate": "-5%"
+  }
+ ],
+ "qr": [
+  {
+   "file": "u1.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/1.html"
+  },
+  {
+   "file": "u2.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/2.html"
+  },
+  {
+   "file": "u3.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/3.html"
+  },
+  {
+   "file": "u4.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/4.html"
+  },
+  {
+   "file": "u5.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/5.html"
+  },
+  {
+   "file": "u6.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/6.html"
+  },
+  {
+   "file": "u7.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/7.html"
+  },
+  {
+   "file": "u8.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/8.html"
+  },
+  {
+   "file": "hub.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/index.html"
+  }
+ ]
+}
