@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentation: TRIZ Principle 1 | Think Like an Inventor</title>
+    <meta name="description" content="Animated explainer of TRIZ Principle 1, Segmentation, for teens: see how splitting one object into parts solves a contradiction, then try a challenge yourself.">
+    <link rel="canonical" href="https://tararaidolls.github.io/triz/segmentation/">
+    <meta property="og:title" content="Segmentation: TRIZ Principle 1">
+    <meta property="og:description" content="An animated, step-by-step explanation of the Segmentation principle for teenagers, with a challenge at the end.">
+    <meta property="og:url" content="https://tararaidolls.github.io/triz/segmentation/">
+    <meta property="og:type" content="article">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LearningResource",
+      "name": "Segmentation: TRIZ Principle 1",
+      "description": "Animated explainer of the TRIZ Segmentation principle for teenagers, with a hands-on challenge.",
+      "url": "https://tararaidolls.github.io/triz/segmentation/",
+      "inLanguage": "en",
+      "educationalLevel": "Ages 12-17",
+      "learningResourceType": "Interactive animation",
+      "teaches": "TRIZ inventive principle 1: Segmentation",
+      "author": { "@type": "Person", "name": "Maryna Skliar" },
+      "isPartOf": { "@type": "CreativeWorkSeries", "name": "Think Like an Inventor (TRIZ Series)" }
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --navy: #0d1b2a; --panel: #1a3a5c; --line: #2a4f73; --gold: #f5c518;
+            --text: #f0f0f0; --soft: #a8c0d6; --bad: #ff7a62; --good: #4cd08b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--navy); color: var(--text); line-height: 1.6;
+        }
+        a { color: var(--gold); }
+
+        .topbar { max-width: 800px; margin: 0 auto; padding: 16px 20px 0; font-size: 14px; }
+        .topbar a { text-decoration: none; font-weight: 700; }
+
+        .hero {
+            text-align: center; padding: 28px 20px 30px;
+            border-bottom: 3px solid var(--gold);
+            background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%);
+        }
+        .badge {
+            display: inline-block; background: var(--gold); color: var(--navy);
+            font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: 2px;
+            padding: 6px 20px; border-radius: 20px; margin-bottom: 16px;
+        }
+        .hero h1 {
+            font-size: clamp(28px, 6vw, 48px); font-weight: 900; color: #fff;
+            text-transform: uppercase; letter-spacing: 1px; line-height: 1.1;
+        }
+        .hero h1 span { color: var(--gold); }
+        .hero p { font-size: 17px; color: var(--soft); max-width: 600px; margin: 12px auto 0; }
+
+        .section { max-width: 800px; margin: 32px auto; padding: 0 20px; display: flex; flex-direction: column; gap: 18px; }
+
+        /* STAGE */
+        .stage {
+            position: relative; border: 2px solid var(--gold); border-radius: 16px; overflow: hidden;
+            background-color: var(--panel);
+            background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .stage svg { display: block; width: 100%; height: auto; }
+        svg text { font-family: inherit; fill: var(--text); }
+        .lbl { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 10px; }
+        .seg { transform-box: fill-box; transform-origin: center; transition: transform .9s cubic-bezier(.6,.05,.25,1); }
+        .seg rect.body { fill: var(--gold); stroke: var(--navy); stroke-width: 1.5; }
+        .seg line { stroke: var(--navy); stroke-width: 1; }
+        .seg text { font-family: ui-monospace, Menlo, monospace; font-size: 7px; fill: var(--navy); }
+        .bag-shape { fill: #4f6bff; stroke: var(--navy); stroke-width: 1.5; }
+        .bag-flap { fill: none; stroke: #c9d4ff; stroke-width: 1.5; opacity: .7; }
+        .fade { transition: opacity .5s ease; opacity: 0; }
+        .cut { stroke: var(--bad); stroke-width: 1.5; stroke-dasharray: 4 3; }
+        .hinge { fill: var(--navy); }
+        [data-scene="0"] .s0, [data-scene="1"] .s1, [data-scene="2"] .s2, [data-scene="3"] .s3,
+        [data-scene="0"] .bag, [data-scene="1"] .bag, [data-scene="2"] .bag, [data-scene="3"] .bag { opacity: 1; }
+        .ruler { transition: opacity .4s; }
+        [data-scene="4"] .ruler, [data-scene="5"] .ruler { opacity: 0; }
+
+        .overlay {
+            position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+            padding: 12px; opacity: 0; pointer-events: none; transition: opacity .5s;
+        }
+        [data-scene="4"] .ov4, [data-scene="5"] .ov5 { opacity: 1; pointer-events: auto; }
+        .levels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; width: 100%; }
+        .lv {
+            background: var(--navy); border: 1.5px solid var(--line); border-radius: 10px; padding: 8px;
+            display: flex; flex-direction: column; gap: 4px; align-items: center; text-align: center; min-width: 0;
+            transform: translateY(12px); opacity: 0; transition: transform .5s, opacity .5s;
+        }
+        [data-scene="4"] .lv { transform: none; opacity: 1; }
+        [data-scene="4"] .lv:nth-child(2) { transition-delay: .35s; }
+        [data-scene="4"] .lv:nth-child(3) { transition-delay: .7s; }
+        .lv svg { width: 56px; height: 40px; }
+        .lv b { font-size: 13px; line-height: 1.15; color: #fff; }
+        .lv span { font-size: 11px; color: var(--soft); line-height: 1.25; }
+        .lv .n { font-family: ui-monospace, Menlo, monospace; font-size: 10px; color: var(--gold); }
+
+        .challenge { text-align: center; display: flex; flex-direction: column; gap: 8px; align-items: center; max-width: 46ch; }
+        .challenge .tag { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); }
+        .challenge .big { font-weight: 900; font-size: clamp(18px, 4.6vw, 24px); line-height: 1.15; color: #fff; }
+        .challenge p { font-size: 14px; color: var(--soft); }
+
+        /* CAPTION + CONTROLS */
+        .caption { display: flex; flex-direction: column; gap: 6px; min-height: 7em; }
+        .step { font-size: 12px; font-weight: 800; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; }
+        .caption h2 { font-size: 24px; font-weight: 900; line-height: 1.15; color: #fff; text-transform: uppercase; letter-spacing: .5px; }
+        .caption p { color: var(--soft); max-width: 62ch; }
+
+        .controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .btn {
+            font: inherit; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;
+            background: transparent; color: var(--gold); border: 2px solid var(--gold);
+            border-radius: 50px; padding: 9px 20px; cursor: pointer; text-decoration: none; display: inline-block;
+            transition: transform .2s, opacity .2s;
+        }
+        .btn:hover { transform: scale(1.04); }
+        .btn.primary { background: var(--gold); color: var(--navy); }
+        .btn:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+        .dots { display: flex; gap: 6px; margin-left: auto; }
+        .dots button { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid var(--gold); background: transparent; cursor: pointer; padding: 0; }
+        .dots button[aria-current="true"] { background: var(--gold); }
+
+        .ideas { display: none; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+        .ideas.show { display: block; }
+        .ideas ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; color: var(--soft); }
+        .ideas strong { color: #fff; }
+
+        .cta-box { background: var(--panel); border: 2px solid var(--gold); border-radius: 16px; padding: 26px; text-align: center; }
+        .cta-box h3 { font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+        .cta-box p { color: var(--soft); font-size: 15px; margin-bottom: 18px; }
+        .cta-box .btn { margin: 4px; }
+
+        .spot { color: var(--soft); font-size: 15px; border-top: 1px dashed var(--line); padding-top: 16px; }
+        .spot strong { color: var(--gold); }
+
+        footer { text-align: center; padding: 20px; color: #4a6a8a; font-size: 13px; }
+
+        @media (max-width: 440px) { .lv span { display: none; } .lv b { font-size: 12px; } .dots { margin-left: 0; } }
+        @media (prefers-reduced-motion: reduce) {
+            .seg, .fade, .overlay, .lv, .ruler { transition-duration: .01s !important; transition-delay: 0s !important; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="topbar"><a href="/triz/">← Think Like an Inventor</a></div>
+
+<div class="hero">
+    <div class="badge">TRIZ Principle 1 of 40</div>
+    <h1>Cut it into <span>pieces</span></h1>
+    <p>Segmentation: when one solid object can't do two jobs at once, split it into parts.</p>
+</div>
+
+<div class="section">
+    <div class="stage" id="stage" data-scene="0" aria-live="polite">
+        <svg viewBox="0 0 340 210" role="img" aria-label="A long measuring ruler and a school bag">
+            <g class="bag fade">
+                <path class="bag-shape" d="M248 110 q0 -14 14 -14 h52 q14 0 14 14 v78 q0 8 -8 8 h-64 q-8 0 -8 -8z"/>
+                <path class="bag-flap" d="M252 122 h72"/>
+                <path d="M276 96 q12 -16 24 0" fill="none" stroke="#c9d4ff" stroke-width="2"/>
+                <text class="lbl" x="288" y="208" text-anchor="middle" style="fill:#a8c0d6">school bag</text>
+            </g>
+            <g class="ruler" id="ruler"></g>
+            <g class="fade s0">
+                <text x="20" y="118" font-weight="700" style="fill:#ff7a62">✗ Doesn't fit.</text>
+                <text class="lbl" x="20" y="132" style="fill:#a8c0d6">150 cm ruler · 40 cm bag</text>
+            </g>
+            <g class="fade s1">
+                <text x="20" y="100" font-weight="700" style="fill:#4cd08b">✓ Long: measures a whole wall</text>
+                <text x="20" y="122" font-weight="700" style="fill:#ff7a62">✗ Long: won't go in the bag</text>
+                <text class="lbl" x="20" y="146" style="fill:#a8c0d6">improve #3 length → worsens #33 ease of use</text>
+            </g>
+            <g class="fade s2">
+                <line class="cut" x1="75" y1="30" x2="75" y2="84"/>
+                <line class="cut" x1="139" y1="30" x2="139" y2="84"/>
+                <line class="cut" x1="203" y1="30" x2="203" y2="84"/>
+                <line class="cut" x1="267" y1="30" x2="267" y2="84"/>
+                <text x="20" y="112" font-weight="700">5 pieces × 30 cm</text>
+                <text class="lbl" x="20" y="128" style="fill:#a8c0d6">same total length</text>
+            </g>
+            <g class="fade s3">
+                <text x="20" y="62" font-weight="700" style="fill:#4cd08b">✓ Hinges + fold</text>
+                <text class="lbl" x="20" y="78" style="fill:#a8c0d6">unfold → 150 cm</text>
+                <text class="lbl" x="20" y="92" style="fill:#a8c0d6">fold → 30 cm</text>
+                <path d="M120 72 q60 -10 112 40" fill="none" stroke="#f5c518" stroke-width="2" marker-end="url(#arr)"/>
+            </g>
+            <defs>
+                <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                    <path d="M0 0 L10 5 L0 10z" fill="#f5c518"/>
+                </marker>
+            </defs>
+        </svg>
+
+        <div class="overlay ov4">
+            <div class="levels">
+                <div class="lv">
+                    <span class="n">1A</span>
+                    <svg viewBox="0 0 56 40" aria-hidden="true"><rect x="6" y="6" width="44" height="28" rx="2" fill="#f5c518" stroke="#f0f0f0" stroke-width="1.5"/><path d="M20.7 6v28M35.3 6v28M6 20h44" stroke="#0d1b2a" stroke-width="1"/></svg>
+                    <b>Split into separate parts</b>
+                    <span>chocolate bar, train cars</span>
+                </div>
+                <div class="lv">
+                    <span class="n">1B</span>
+                    <svg viewBox="0 0 56 40" aria-hidden="true"><rect x="6" y="20" width="22" height="14" fill="#4f6bff" stroke="#f0f0f0" stroke-width="1.5"/><rect x="28" y="20" width="22" height="14" fill="#f5c518" stroke="#f0f0f0" stroke-width="1.5"/><rect x="17" y="6" width="22" height="14" fill="#ff7a62" stroke="#f0f0f0" stroke-width="1.5"/></svg>
+                    <b>Easy to take apart</b>
+                    <span>building bricks, phone case</span>
+                </div>
+                <div class="lv">
+                    <span class="n">1C</span>
+                    <svg viewBox="0 0 56 40" aria-hidden="true"><g fill="none" stroke="#f5c518" stroke-width="1.5"><rect x="4" y="15" width="12" height="10" rx="5"/><rect x="13" y="15" width="12" height="10" rx="5"/><rect x="22" y="15" width="12" height="10" rx="5"/><rect x="31" y="15" width="12" height="10" rx="5"/><rect x="40" y="15" width="12" height="10" rx="5"/></g></svg>
+                    <b>Go finer and finer</b>
+                    <span>bike chain, sand, spray</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay ov5">
+            <div class="challenge">
+                <div class="tag">Your turn</div>
+                <div class="big">Your school bag is too big on light days and too small on project days.</div>
+                <p>How would you segment it? Think first, then tap "Show ideas".</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="caption">
+        <div class="step" id="step">Step 1 / 6</div>
+        <h2 id="cap-h"></h2>
+        <p id="cap-p"></p>
+    </div>
+
+    <div class="controls">
+        <button id="back" class="btn" type="button">Back</button>
+        <button id="play" class="btn primary" type="button">Pause</button>
+        <button id="next" class="btn" type="button">Next</button>
+        <div class="dots" id="dots"></div>
+    </div>
+
+    <div class="ideas" id="ideas">
+        <ul>
+            <li><strong>Zip-off pockets:</strong> add a module on project days, remove it on light days (1B).</li>
+            <li><strong>Two bags that clip together</strong> into one big bag (1A).</li>
+            <li><strong>Accordion sections</strong> that fold flat and expand when needed (1A + hinges).</li>
+        </ul>
+    </div>
+
+    <p class="spot"><strong>Spot it in the wild:</strong> pizza slices, a folding phone, train cars, a playlist split into tracks. Each one turns one big thing into many small things that work together.</p>
+
+    <div class="cta-box">
+        <h3>Got your own idea?</h3>
+        <p>Describe it to the Inventor's Sidekick and get feedback, or try the Floating Library challenge from the workbook bonus page.</p>
+        <a class="btn primary" href="https://chatgpt.com/g/g-69eb5ed091b081919c8c792a9c05e22a-inventor-s-sidekick" target="_blank" rel="noopener">💡 Ask Inventor's Sidekick</a>
+        <a class="btn" href="/triz/">⚡ Bonus challenges</a>
+    </div>
+</div>
+
+<footer>
+    © 2026 Maryna Skliar | Think Like an Inventor Series | tararaidolls.github.io
+</footer>
+
+<script>
+const scenes = [
+    { h: "The problem", p: "You need a 150 cm ruler to measure a wall. But you also need to carry it to school. One solid stick can't do both." },
+    { h: "The contradiction", p: "Being long is good for measuring and bad for carrying. TRIZ calls this a technical contradiction: improving one thing makes another worse." },
+    { h: "The trick: segment it", p: "Cut the ruler into five equal pieces. Nothing is lost: it is still 150 cm in total." },
+    { h: "Connect and fold", p: "Add hinges between the pieces. Unfold it to measure, fold it to carry. That is a carpenter's folding rule." },
+    { h: "Three levels", p: "Principle 1 has three parts: split an object into separate parts (1A), make it easy to take apart (1B), and divide it more and more finely (1C)." },
+    { h: "Now you try", p: "Use Segmentation on a problem of your own. Ask yourself: what if this thing were in pieces?" }
+];
+const N = 5, W = 60, H = 14, NS = 'http://www.w3.org/2000/svg';
+const ruler = document.getElementById('ruler');
+const segs = [], hinges = [];
+for (let i = 0; i < N; i++) {
+    const g = document.createElementNS(NS, 'g');
+    g.setAttribute('class', 'seg');
+    let ticks = '';
+    for (let t = 6; t < W; t += 6) ticks += `<line x1="${t}" y1="0" x2="${t}" y2="${t % 30 === 0 ? 7 : 4}"/>`;
+    g.innerHTML = `<rect class="body" x="0" y="0" width="${W}" height="${H}" rx="1.5"/>${ticks}<text x="3" y="12">${(i + 1) * 30}</text>`;
+    ruler.appendChild(g); segs.push(g);
+}
+for (let i = 0; i < N - 1; i++) {
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('r', '2.6'); c.setAttribute('class', 'hinge fade');
+    ruler.appendChild(c); hinges.push(c);
+}
+function place(s) {
+    segs.forEach((g, i) => {
+        let x, y, r = 0, d = i * 70;
+        if (s === 0) { x = 10 + i * W; y = 150; }
+        else if (s === 2) { x = 13 + i * 64; y = 50; }
+        else if (s === 3) { x = 235 + i * 13; y = 136; r = (i % 2 ? 90 : -90); d = (N - 1 - i) * 110; }
+        else { x = 10 + i * W; y = 50; }
+        g.style.transitionDelay = d + 'ms';
+        g.style.transform = `translate(${x}px,${y}px) rotate(${r}deg)`;
+    });
+    hinges.forEach((c, i) => {
+        if (s === 3) {
+            c.setAttribute('cx', 271.5 + i * 13); c.setAttribute('cy', i % 2 ? 113 : 171);
+            c.style.opacity = 1; c.style.transitionDelay = '900ms';
+        } else { c.style.opacity = 0; c.style.transitionDelay = '0ms'; }
+    });
+}
+const stage = document.getElementById('stage'), stepEl = document.getElementById('step'),
+      capH = document.getElementById('cap-h'), capP = document.getElementById('cap-p'),
+      playBtn = document.getElementById('play'), nextBtn = document.getElementById('next'),
+      ideas = document.getElementById('ideas'), dots = document.getElementById('dots');
+scenes.forEach((_, i) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.setAttribute('aria-label', 'Go to step ' + (i + 1));
+    b.onclick = () => { stop(); go(i); };
+    dots.appendChild(b);
+});
+let cur = 0, timer = null, playing = true;
+function go(i) {
+    cur = Math.max(0, Math.min(scenes.length - 1, i));
+    stage.dataset.scene = cur; place(cur);
+    stepEl.textContent = `Step ${cur + 1} / ${scenes.length}`;
+    capH.textContent = scenes[cur].h; capP.textContent = scenes[cur].p;
+    [...dots.children].forEach((b, k) => b.setAttribute('aria-current', k === cur));
+    ideas.classList.remove('show');
+    const last = cur === scenes.length - 1;
+    nextBtn.textContent = last ? 'Show ideas' : 'Next';
+    if (last) stop();
+}
+function tick() { if (cur < scenes.length - 1) go(cur + 1); }
+function start() { playing = true; playBtn.textContent = 'Pause'; clearInterval(timer); timer = setInterval(tick, 6000); if (cur === scenes.length - 1) go(0); }
+function stop() { playing = false; playBtn.textContent = cur === scenes.length - 1 ? 'Replay' : 'Play'; clearInterval(timer); }
+playBtn.onclick = () => playing ? stop() : start();
+document.getElementById('back').onclick = () => { stop(); go(cur - 1); };
+nextBtn.onclick = () => {
+    if (cur === scenes.length - 1) { ideas.classList.add('show'); return; }
+    stop(); go(cur + 1);
+};
+go(0); start();
+</script>
+</body>
+</html>
