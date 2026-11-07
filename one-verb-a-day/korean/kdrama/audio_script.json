@@ -1,0 +1,540 @@
+{
+ "voice": "ko-KR-SunHiNeural",
+ "gtts_lang": "ko",
+ "items": [
+  {
+   "file": "u1-w1.mp3",
+   "text": "식당",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w2.mp3",
+   "text": "음식",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w3.mp3",
+   "text": "한식",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w4.mp3",
+   "text": "식사",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-w5.mp3",
+   "text": "간식",
+   "rate": "-10%"
+  },
+  {
+   "file": "u1-s.mp3",
+   "text": "식사하셨어요?",
+   "rate": "+0%"
+  },
+  {
+   "file": "u1-s-slow.mp3",
+   "text": "식사하셨어요?",
+   "rate": "-40%"
+  },
+  {
+   "file": "u1-t.mp3",
+   "text": "한식당 서울. 점심 식사: 열한 시 반부터 두 시까지. 오늘의 메뉴: 비빔밥, 김치찌개.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w1.mp3",
+   "text": "기차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w2.mp3",
+   "text": "주차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w3.mp3",
+   "text": "세차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w4.mp3",
+   "text": "차표",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-w5.mp3",
+   "text": "정차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u2-s.mp3",
+   "text": "차에 타요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u2-s-slow.mp3",
+   "text": "차에 타요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u2-t.mp3",
+   "text": "서울역. 부산행 케이티엑스. 출발 아홉 시 삼십 분, 삼 번 승강장. 다음 정차역: 대전.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w1.mp3",
+   "text": "시간",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w2.mp3",
+   "text": "시계",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w3.mp3",
+   "text": "시대",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w4.mp3",
+   "text": "동시",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-w5.mp3",
+   "text": "시차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u3-s.mp3",
+   "text": "시간 있어요?",
+   "rate": "+0%"
+  },
+  {
+   "file": "u3-s-slow.mp3",
+   "text": "시간 있어요?",
+   "rate": "-40%"
+  },
+  {
+   "file": "u3-t.mp3",
+   "text": "시차 때문에 너무 피곤해! 지금 한국은 밤 열한 시야. 내일 시간 있어?",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w1.mp3",
+   "text": "일요일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w2.mp3",
+   "text": "휴일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w3.mp3",
+   "text": "매일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w4.mp3",
+   "text": "내일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-w5.mp3",
+   "text": "일본",
+   "rate": "-10%"
+  },
+  {
+   "file": "u4-s.mp3",
+   "text": "내일 봐요!",
+   "rate": "+0%"
+  },
+  {
+   "file": "u4-s-slow.mp3",
+   "text": "내일 봐요!",
+   "rate": "-40%"
+  },
+  {
+   "file": "u4-t.mp3",
+   "text": "휴무 안내. 시월 삼일 일요일 휴무. 매일 오전 열 시부터 오후 아홉 시까지 영업.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w1.mp3",
+   "text": "한국인",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w2.mp3",
+   "text": "인구",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w3.mp3",
+   "text": "인기",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w4.mp3",
+   "text": "성인",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-w5.mp3",
+   "text": "인사",
+   "rate": "-10%"
+  },
+  {
+   "file": "u5-s.mp3",
+   "text": "인사해. 우리 엄마야.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u5-s-slow.mp3",
+   "text": "인사해. 우리 엄마야.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u5-t.mp3",
+   "text": "시립 미술관 관람료. 성인: 오천 원. 만 육십오 세 이상: 무료. 외국인 관광객 환영.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w1.mp3",
+   "text": "한국",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w2.mp3",
+   "text": "중국",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w3.mp3",
+   "text": "외국",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w4.mp3",
+   "text": "국가",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-w5.mp3",
+   "text": "외국인",
+   "rate": "-10%"
+  },
+  {
+   "file": "u6-s.mp3",
+   "text": "한국 사람이에요?",
+   "rate": "+0%"
+  },
+  {
+   "file": "u6-s-slow.mp3",
+   "text": "한국 사람이에요?",
+   "rate": "-40%"
+  },
+  {
+   "file": "u6-t.mp3",
+   "text": "입국 심사. 내국인, 외국인. 여권을 준비해 주세요.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w1.mp3",
+   "text": "대학생",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w2.mp3",
+   "text": "선생님",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w3.mp3",
+   "text": "생일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w4.mp3",
+   "text": "생활",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-w5.mp3",
+   "text": "생선",
+   "rate": "-10%"
+  },
+  {
+   "file": "u7-s.mp3",
+   "text": "생일 축하해요!",
+   "rate": "+0%"
+  },
+  {
+   "file": "u7-s-slow.mp3",
+   "text": "생일 축하해요!",
+   "rate": "-40%"
+  },
+  {
+   "file": "u7-t.mp3",
+   "text": "지수 씨, 생일 축하해요! 오늘 저녁에 같이 식사해요. 일곱 시에 식당 앞에서 만나요.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w1.mp3",
+   "text": "전화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w2.mp3",
+   "text": "대화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w3.mp3",
+   "text": "회화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w4.mp3",
+   "text": "동화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-w5.mp3",
+   "text": "통화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u8-s.mp3",
+   "text": "우리 대화 좀 해요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u8-s-slow.mp3",
+   "text": "우리 대화 좀 해요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u8-t.mp3",
+   "text": "한국어 회화 모임. 매주 화요일 저녁 일곱 시. 외국인 환영! 문의: 전화 또는 문자.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w1.mp3",
+   "text": "전화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w2.mp3",
+   "text": "전기",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w3.mp3",
+   "text": "전철",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w4.mp3",
+   "text": "전자",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w5.mp3",
+   "text": "충전",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-s.mp3",
+   "text": "전화 좀 받아요!",
+   "rate": "+0%"
+  },
+  {
+   "file": "u9-s-slow.mp3",
+   "text": "전화 좀 받아요!",
+   "rate": "-40%"
+  },
+  {
+   "file": "u9-t.mp3",
+   "text": "무료 와이파이. 휴대폰 충전 가능. 비밀번호: 카페 일 이 삼 사.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w1.mp3",
+   "text": "문",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w2.mp3",
+   "text": "정문",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w3.mp3",
+   "text": "출입문",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w4.mp3",
+   "text": "문자",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w5.mp3",
+   "text": "문법",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-s.mp3",
+   "text": "문 열어!",
+   "rate": "+0%"
+  },
+  {
+   "file": "u10-s-slow.mp3",
+   "text": "문 열어!",
+   "rate": "-40%"
+  },
+  {
+   "file": "u10-t.mp3",
+   "text": "출입문. 당기세요. 후문은 오후 여섯 시 이후 닫힙니다.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w1.mp3",
+   "text": "교실",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w2.mp3",
+   "text": "화장실",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w3.mp3",
+   "text": "사무실",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w4.mp3",
+   "text": "침실",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w5.mp3",
+   "text": "실내",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-s.mp3",
+   "text": "화장실이 어디예요?",
+   "rate": "+0%"
+  },
+  {
+   "file": "u11-s-slow.mp3",
+   "text": "화장실이 어디예요?",
+   "rate": "-40%"
+  },
+  {
+   "file": "u11-t.mp3",
+   "text": "이 층: 내과 진료실. 삼 층: 검사실. 화장실은 이쪽입니다. 대기실에서 기다려 주세요.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w1.mp3",
+   "text": "시장",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w2.mp3",
+   "text": "주차장",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w3.mp3",
+   "text": "운동장",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w4.mp3",
+   "text": "공장",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w5.mp3",
+   "text": "장소",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-s.mp3",
+   "text": "시장에 가요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u12-s-slow.mp3",
+   "text": "시장에 가요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u12-t.mp3",
+   "text": "시장 주차장. 삼십 분에 오백 원. 주말 무료. 이십사 시간 운영.",
+   "rate": "-10%"
+  }
+ ],
+ "qr": [
+  {
+   "file": "u1.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/1.html"
+  },
+  {
+   "file": "u2.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/2.html"
+  },
+  {
+   "file": "u3.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/3.html"
+  },
+  {
+   "file": "u4.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/4.html"
+  },
+  {
+   "file": "u5.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/5.html"
+  },
+  {
+   "file": "u6.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/6.html"
+  },
+  {
+   "file": "u7.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/7.html"
+  },
+  {
+   "file": "u8.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/8.html"
+  },
+  {
+   "file": "u9.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/9.html"
+  },
+  {
+   "file": "u10.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/10.html"
+  },
+  {
+   "file": "u11.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/11.html"
+  },
+  {
+   "file": "u12.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/12.html"
+  },
+  {
+   "file": "hub.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/kdrama/index.html"
+  }
+ ]
+}

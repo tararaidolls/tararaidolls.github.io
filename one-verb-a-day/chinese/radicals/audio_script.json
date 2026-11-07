@@ -361,6 +361,366 @@
    "file": "u8-t.mp3",
    "text": "天气预报。今天：晴，二十五度。明天：小雨，十八度。星期日：晴。",
    "rate": "-10%"
+  },
+  {
+   "file": "u9-w1.mp3",
+   "text": "妈妈",
+   "rate": "-15%"
+  },
+  {
+   "file": "u9-w2.mp3",
+   "text": "姐姐",
+   "rate": "-15%"
+  },
+  {
+   "file": "u9-w3.mp3",
+   "text": "妹妹",
+   "rate": "-15%"
+  },
+  {
+   "file": "u9-w4.mp3",
+   "text": "奶奶",
+   "rate": "-15%"
+  },
+  {
+   "file": "u9-w5.mp3",
+   "text": "她",
+   "rate": "-15%"
+  },
+  {
+   "file": "u9-w6.mp3",
+   "text": "好",
+   "rate": "-15%"
+  },
+  {
+   "file": "u9-s.mp3",
+   "text": "她是我姐姐。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u9-s-slow.mp3",
+   "text": "她是我姐姐。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u9-t.mp3",
+   "text": "今天奶奶来我们家。你和妹妹早点回来，好吗？",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w1.mp3",
+   "text": "饭",
+   "rate": "-15%"
+  },
+  {
+   "file": "u10-w2.mp3",
+   "text": "饺子",
+   "rate": "-15%"
+  },
+  {
+   "file": "u10-w3.mp3",
+   "text": "饿",
+   "rate": "-15%"
+  },
+  {
+   "file": "u10-w4.mp3",
+   "text": "饱",
+   "rate": "-15%"
+  },
+  {
+   "file": "u10-w5.mp3",
+   "text": "饮料",
+   "rate": "-15%"
+  },
+  {
+   "file": "u10-w6.mp3",
+   "text": "饼干",
+   "rate": "-15%"
+  },
+  {
+   "file": "u10-s.mp3",
+   "text": "我饿了，我们吃饺子吧！",
+   "rate": "+0%"
+  },
+  {
+   "file": "u10-s-slow.mp3",
+   "text": "我饿了，我们吃饺子吧！",
+   "rate": "-40%"
+  },
+  {
+   "file": "u10-t.mp3",
+   "text": "饺子馆。猪肉饺子，二十元。鸡蛋饺子，十八元。饮料，五元。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w1.mp3",
+   "text": "忙",
+   "rate": "-15%"
+  },
+  {
+   "file": "u11-w2.mp3",
+   "text": "快乐",
+   "rate": "-15%"
+  },
+  {
+   "file": "u11-w3.mp3",
+   "text": "慢",
+   "rate": "-15%"
+  },
+  {
+   "file": "u11-w4.mp3",
+   "text": "怕",
+   "rate": "-15%"
+  },
+  {
+   "file": "u11-w5.mp3",
+   "text": "想",
+   "rate": "-15%"
+  },
+  {
+   "file": "u11-w6.mp3",
+   "text": "您",
+   "rate": "-15%"
+  },
+  {
+   "file": "u11-s.mp3",
+   "text": "生日快乐！",
+   "rate": "+0%"
+  },
+  {
+   "file": "u11-s-slow.mp3",
+   "text": "生日快乐！",
+   "rate": "-40%"
+  },
+  {
+   "file": "u11-t.mp3",
+   "text": "小心地滑。慢行。注意安全。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w1.mp3",
+   "text": "家",
+   "rate": "-15%"
+  },
+  {
+   "file": "u12-w2.mp3",
+   "text": "安全",
+   "rate": "-15%"
+  },
+  {
+   "file": "u12-w3.mp3",
+   "text": "教室",
+   "rate": "-15%"
+  },
+  {
+   "file": "u12-w4.mp3",
+   "text": "字",
+   "rate": "-15%"
+  },
+  {
+   "file": "u12-w5.mp3",
+   "text": "客人",
+   "rate": "-15%"
+  },
+  {
+   "file": "u12-w6.mp3",
+   "text": "宿舍",
+   "rate": "-15%"
+  },
+  {
+   "file": "u12-s.mp3",
+   "text": "我家有四口人。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u12-s-slow.mp3",
+   "text": "我家有四口人。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u12-t.mp3",
+   "text": "教室，一零一到一零五。办公室，二楼。安全出口。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w1.mp3",
+   "text": "这",
+   "rate": "-15%"
+  },
+  {
+   "file": "u13-w2.mp3",
+   "text": "进",
+   "rate": "-15%"
+  },
+  {
+   "file": "u13-w3.mp3",
+   "text": "远",
+   "rate": "-15%"
+  },
+  {
+   "file": "u13-w4.mp3",
+   "text": "近",
+   "rate": "-15%"
+  },
+  {
+   "file": "u13-w5.mp3",
+   "text": "送",
+   "rate": "-15%"
+  },
+  {
+   "file": "u13-w6.mp3",
+   "text": "快递",
+   "rate": "-15%"
+  },
+  {
+   "file": "u13-s.mp3",
+   "text": "超市离这儿很近。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u13-s-slow.mp3",
+   "text": "超市离这儿很近。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u13-t.mp3",
+   "text": "您好，您的快递到了！我在您家附近，请出来取一下。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w1.mp3",
+   "text": "钱",
+   "rate": "-15%"
+  },
+  {
+   "file": "u14-w2.mp3",
+   "text": "银行",
+   "rate": "-15%"
+  },
+  {
+   "file": "u14-w3.mp3",
+   "text": "地铁",
+   "rate": "-15%"
+  },
+  {
+   "file": "u14-w4.mp3",
+   "text": "钟",
+   "rate": "-15%"
+  },
+  {
+   "file": "u14-w5.mp3",
+   "text": "钥匙",
+   "rate": "-15%"
+  },
+  {
+   "file": "u14-w6.mp3",
+   "text": "锅",
+   "rate": "-15%"
+  },
+  {
+   "file": "u14-s.mp3",
+   "text": "我的钱包不见了！",
+   "rate": "+0%"
+  },
+  {
+   "file": "u14-s-slow.mp3",
+   "text": "我的钱包不见了！",
+   "rate": "-40%"
+  },
+  {
+   "file": "u14-t.mp3",
+   "text": "地铁二号线。下一站：银行大楼。首班车，六点。末班车，二十三点。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w1.mp3",
+   "text": "红",
+   "rate": "-15%"
+  },
+  {
+   "file": "u15-w2.mp3",
+   "text": "绿",
+   "rate": "-15%"
+  },
+  {
+   "file": "u15-w3.mp3",
+   "text": "纸",
+   "rate": "-15%"
+  },
+  {
+   "file": "u15-w4.mp3",
+   "text": "线",
+   "rate": "-15%"
+  },
+  {
+   "file": "u15-w5.mp3",
+   "text": "练习",
+   "rate": "-15%"
+  },
+  {
+   "file": "u15-w6.mp3",
+   "text": "给",
+   "rate": "-15%"
+  },
+  {
+   "file": "u15-s.mp3",
+   "text": "红灯停，绿灯行。",
+   "rate": "+0%"
+  },
+  {
+   "file": "u15-s-slow.mp3",
+   "text": "红灯停，绿灯行。",
+   "rate": "-40%"
+  },
+  {
+   "file": "u15-t.mp3",
+   "text": "买东西：红笔，两支。练习本，三本。纸巾，一包。",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w1.mp3",
+   "text": "贵",
+   "rate": "-15%"
+  },
+  {
+   "file": "u16-w2.mp3",
+   "text": "购物",
+   "rate": "-15%"
+  },
+  {
+   "file": "u16-w3.mp3",
+   "text": "免费",
+   "rate": "-15%"
+  },
+  {
+   "file": "u16-w4.mp3",
+   "text": "货",
+   "rate": "-15%"
+  },
+  {
+   "file": "u16-w5.mp3",
+   "text": "账单",
+   "rate": "-15%"
+  },
+  {
+   "file": "u16-w6.mp3",
+   "text": "赚钱",
+   "rate": "-15%"
+  },
+  {
+   "file": "u16-s.mp3",
+   "text": "这个太贵了！",
+   "rate": "+0%"
+  },
+  {
+   "file": "u16-s-slow.mp3",
+   "text": "这个太贵了！",
+   "rate": "-40%"
+  },
+  {
+   "file": "u16-t.mp3",
+   "text": "购物节！全场八折。满两百元免费送货。",
+   "rate": "-10%"
   }
  ],
  "qr": [
@@ -395,6 +755,38 @@
   {
    "file": "u8.png",
    "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/8.html"
+  },
+  {
+   "file": "u9.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/9.html"
+  },
+  {
+   "file": "u10.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/10.html"
+  },
+  {
+   "file": "u11.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/11.html"
+  },
+  {
+   "file": "u12.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/12.html"
+  },
+  {
+   "file": "u13.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/13.html"
+  },
+  {
+   "file": "u14.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/14.html"
+  },
+  {
+   "file": "u15.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/15.html"
+  },
+  {
+   "file": "u16.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/chinese/radicals/16.html"
   },
   {
    "file": "hub.png",

@@ -321,6 +321,326 @@
    "file": "u8-t.mp3",
    "text": "이십사 시간 운동센터. 첫 달 오십 퍼센트 할인! 운동화 필수.",
    "rate": "-10%"
+  },
+  {
+   "file": "u9-w1.mp3",
+   "text": "한국인",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w2.mp3",
+   "text": "인구",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w3.mp3",
+   "text": "인기",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w4.mp3",
+   "text": "성인",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w5.mp3",
+   "text": "인사",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-s.mp3",
+   "text": "그 가수는 한국에서 인기가 많아요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u9-s-slow.mp3",
+   "text": "그 가수는 한국에서 인기가 많아요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u9-t.mp3",
+   "text": "놀이공원 입장료. 성인: 삼만 원. 어린이: 이만 원. 외국인 십 퍼센트 할인.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w1.mp3",
+   "text": "대학생",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w2.mp3",
+   "text": "대형",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w3.mp3",
+   "text": "대문",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w4.mp3",
+   "text": "대회",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w5.mp3",
+   "text": "최대",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-s.mp3",
+   "text": "제 동생은 대학생이에요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u10-s-slow.mp3",
+   "text": "제 동생은 대학생이에요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u10-t.mp3",
+   "text": "대형 마트 세일! 최대 오십 퍼센트 할인. 이번 주 토요일까지.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w1.mp3",
+   "text": "시간",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w2.mp3",
+   "text": "시계",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w3.mp3",
+   "text": "시대",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w4.mp3",
+   "text": "동시",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w5.mp3",
+   "text": "시차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-s.mp3",
+   "text": "지금 몇 시예요? 시계가 없어요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u11-s-slow.mp3",
+   "text": "지금 몇 시예요? 시계가 없어요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u11-t.mp3",
+   "text": "시차 때문에 너무 피곤해! 지금 한국은 밤 열한 시야. 내일 시간 있어?",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w1.mp3",
+   "text": "수영",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w2.mp3",
+   "text": "생수",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w3.mp3",
+   "text": "수요일",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w4.mp3",
+   "text": "수도",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w5.mp3",
+   "text": "정수기",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-s.mp3",
+   "text": "저는 수요일마다 수영을 해요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u12-s-slow.mp3",
+   "text": "저는 수요일마다 수영을 해요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u12-t.mp3",
+   "text": "시민 수영장. 운영 시간: 오전 여섯 시부터 오후 열 시까지. 매주 월요일 휴관. 수영모 필수!",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w1.mp3",
+   "text": "교실",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w2.mp3",
+   "text": "화장실",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w3.mp3",
+   "text": "사무실",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w4.mp3",
+   "text": "침실",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w5.mp3",
+   "text": "실내",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-s.mp3",
+   "text": "화장실은 어디에 있어요?",
+   "rate": "+0%"
+  },
+  {
+   "file": "u13-s-slow.mp3",
+   "text": "화장실은 어디에 있어요?",
+   "rate": "-40%"
+  },
+  {
+   "file": "u13-t.mp3",
+   "text": "이 층: 사무실. 삼 층: 교실 삼백일 호부터 삼백오 호까지. 화장실은 이쪽입니다. 실내 금연.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w1.mp3",
+   "text": "시장",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w2.mp3",
+   "text": "주차장",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w3.mp3",
+   "text": "운동장",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w4.mp3",
+   "text": "공장",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w5.mp3",
+   "text": "장소",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-s.mp3",
+   "text": "우리는 시장에서 과일을 사요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u14-s-slow.mp3",
+   "text": "우리는 시장에서 과일을 사요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u14-t.mp3",
+   "text": "시장 주차장. 삼십 분에 오백 원. 주말 무료. 이십사 시간 운영.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w1.mp3",
+   "text": "기차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w2.mp3",
+   "text": "주차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w3.mp3",
+   "text": "세차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w4.mp3",
+   "text": "차표",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w5.mp3",
+   "text": "정차",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-s.mp3",
+   "text": "우리는 기차로 부산에 가요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u15-s-slow.mp3",
+   "text": "우리는 기차로 부산에 가요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u15-t.mp3",
+   "text": "서울역. 부산행 케이티엑스. 출발 아홉 시 삼십 분, 삼 번 승강장. 다음 정차역: 대전.",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w1.mp3",
+   "text": "전화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w2.mp3",
+   "text": "대화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w3.mp3",
+   "text": "회화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w4.mp3",
+   "text": "동화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w5.mp3",
+   "text": "통화",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-s.mp3",
+   "text": "저는 매일 한국어 회화를 연습해요.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u16-s-slow.mp3",
+   "text": "저는 매일 한국어 회화를 연습해요.",
+   "rate": "-40%"
+  },
+  {
+   "file": "u16-t.mp3",
+   "text": "한국어 회화 모임. 매주 화요일 저녁 일곱 시. 외국인 환영! 문의: 전화 또는 문자.",
+   "rate": "-10%"
   }
  ],
  "qr": [
@@ -355,6 +675,38 @@
   {
    "file": "u8.png",
    "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/8.html"
+  },
+  {
+   "file": "u9.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/9.html"
+  },
+  {
+   "file": "u10.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/10.html"
+  },
+  {
+   "file": "u11.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/11.html"
+  },
+  {
+   "file": "u12.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/12.html"
+  },
+  {
+   "file": "u13.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/13.html"
+  },
+  {
+   "file": "u14.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/14.html"
+  },
+  {
+   "file": "u15.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/15.html"
+  },
+  {
+   "file": "u16.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/korean/meaning-syllables/16.html"
   },
   {
    "file": "hub.png",
