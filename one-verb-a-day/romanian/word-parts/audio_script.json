@@ -321,6 +321,326 @@
    "file": "u8-t.mp3",
    "text": "Gara de Nord. Tren București — Brașov. Plecare la ora șapte și cincisprezece, linia trei. Sosire la ora nouă și cincizeci. Călători, vă dorim drum bun!",
    "rate": "-5%"
+  },
+  {
+   "file": "u9-w1.mp3",
+   "text": "a juca",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w2.mp3",
+   "text": "joc",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w3.mp3",
+   "text": "jucărie",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w4.mp3",
+   "text": "jucător",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-w5.mp3",
+   "text": "jucăuș",
+   "rate": "-10%"
+  },
+  {
+   "file": "u9-s.mp3",
+   "text": "Copiii se joacă în parc cu mingea.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u9-s-slow.mp3",
+   "text": "Copiii se joacă în parc cu mingea.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u9-t.mp3",
+   "text": "Magazin de jucării. Reduceri la jocuri de societate: minus treizeci la sută. Deschis zilnic, de la zece la douăzeci.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u10-w1.mp3",
+   "text": "a dormi",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w2.mp3",
+   "text": "dormitor",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w3.mp3",
+   "text": "dormit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w4.mp3",
+   "text": "a adormi",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-w5.mp3",
+   "text": "adormit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u10-s.mp3",
+   "text": "Bebelușul doarme în dormitor.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u10-s-slow.mp3",
+   "text": "Bebelușul doarme în dormitor.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u10-t.mp3",
+   "text": "De închiriat. Apartament cu două dormitoare. Aproape de metrou. Preț: patru sute de euro pe lună.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u11-w1.mp3",
+   "text": "a închide",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w2.mp3",
+   "text": "închis",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w3.mp3",
+   "text": "a deschide",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w4.mp3",
+   "text": "deschis",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-w5.mp3",
+   "text": "deschidere",
+   "rate": "-10%"
+  },
+  {
+   "file": "u11-s.mp3",
+   "text": "Magazinul se deschide la ora nouă.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u11-s-slow.mp3",
+   "text": "Magazinul se deschide la ora nouă.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u11-t.mp3",
+   "text": "Închis pentru renovare. Redeschidere: luni, trei martie. Ne cerem scuze!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u12-w1.mp3",
+   "text": "a vorbi",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w2.mp3",
+   "text": "vorbă",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w3.mp3",
+   "text": "vorbitor",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w4.mp3",
+   "text": "vorbire",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-w5.mp3",
+   "text": "vorbăreț",
+   "rate": "-10%"
+  },
+  {
+   "file": "u12-s.mp3",
+   "text": "Vorbești românește? Da, puțin.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u12-s-slow.mp3",
+   "text": "Vorbești românește? Da, puțin.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u12-t.mp3",
+   "text": "Curs de română pentru nevorbitori de limba română. Vorbim de la prima lecție! Marți și joi, la ora optsprezece.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u13-w1.mp3",
+   "text": "a sosi",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w2.mp3",
+   "text": "sosire",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w3.mp3",
+   "text": "sosit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w4.mp3",
+   "text": "nou-sosit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-w5.mp3",
+   "text": "sosirile",
+   "rate": "-10%"
+  },
+  {
+   "file": "u13-s.mp3",
+   "text": "Trenul sosește la ora zece.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u13-s-slow.mp3",
+   "text": "Trenul sosește la ora zece.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u13-t.mp3",
+   "text": "Sosiri. Londra, paisprezece și douăzeci, a sosit. Paris, cincisprezece și cinci, întârziere. Roma, cincisprezece și patruzeci, la timp.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u14-w1.mp3",
+   "text": "a cânta",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w2.mp3",
+   "text": "cântec",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w3.mp3",
+   "text": "cântăreț",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w4.mp3",
+   "text": "cântăreață",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-w5.mp3",
+   "text": "încântat",
+   "rate": "-10%"
+  },
+  {
+   "file": "u14-s.mp3",
+   "text": "Încântat de cunoștință!",
+   "rate": "+0%"
+  },
+  {
+   "file": "u14-s-slow.mp3",
+   "text": "Încântat de cunoștință!",
+   "rate": "-35%"
+  },
+  {
+   "file": "u14-t.mp3",
+   "text": "Concert în parc. Cântece populare românești. Sâmbătă, ora nouăsprezece. Intrarea liberă.",
+   "rate": "-5%"
+  },
+  {
+   "file": "u15-w1.mp3",
+   "text": "a plăti",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w2.mp3",
+   "text": "plată",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w3.mp3",
+   "text": "plătit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w4.mp3",
+   "text": "neplătit",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-w5.mp3",
+   "text": "plătitor",
+   "rate": "-10%"
+  },
+  {
+   "file": "u15-s.mp3",
+   "text": "Pot să plătesc cu cardul?",
+   "rate": "+0%"
+  },
+  {
+   "file": "u15-s-slow.mp3",
+   "text": "Pot să plătesc cu cardul?",
+   "rate": "-35%"
+  },
+  {
+   "file": "u15-t.mp3",
+   "text": "Casa trei. Plata cu cardul sau numerar. Vă rugăm să păstrați bonul!",
+   "rate": "-5%"
+  },
+  {
+   "file": "u16-w1.mp3",
+   "text": "a fuma",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w2.mp3",
+   "text": "fum",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w3.mp3",
+   "text": "fumător",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w4.mp3",
+   "text": "nefumător",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-w5.mp3",
+   "text": "fumat",
+   "rate": "-10%"
+  },
+  {
+   "file": "u16-s.mp3",
+   "text": "În restaurant nu se fumează.",
+   "rate": "+0%"
+  },
+  {
+   "file": "u16-s-slow.mp3",
+   "text": "În restaurant nu se fumează.",
+   "rate": "-35%"
+  },
+  {
+   "file": "u16-t.mp3",
+   "text": "Fumatul interzis în gară și pe peroane. Zonă pentru fumători: lângă ieșire.",
+   "rate": "-5%"
   }
  ],
  "qr": [
@@ -355,6 +675,38 @@
   {
    "file": "u8.png",
    "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/8.html"
+  },
+  {
+   "file": "u9.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/9.html"
+  },
+  {
+   "file": "u10.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/10.html"
+  },
+  {
+   "file": "u11.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/11.html"
+  },
+  {
+   "file": "u12.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/12.html"
+  },
+  {
+   "file": "u13.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/13.html"
+  },
+  {
+   "file": "u14.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/14.html"
+  },
+  {
+   "file": "u15.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/15.html"
+  },
+  {
+   "file": "u16.png",
+   "url": "https://tararaidolls.github.io/one-verb-a-day/romanian/word-parts/16.html"
   },
   {
    "file": "hub.png",
